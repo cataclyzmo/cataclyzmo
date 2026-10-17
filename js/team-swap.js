@@ -1,28 +1,28 @@
 // Arrays of headings and image URLs
 const sorArr = [
-  { name: "SoR - Bandit", img: "../images/bandit-bg.jpg"},
-  { name: "SoR - Quick Draw", img: "../images/quickdraw-bg.jpeg"},
-  { name: "SoR - Gunslinger", img: "../images/gunslinger-bg.jpeg"},
+  { name: "SoR - Bandit", img: "../images/bandit-design.png"},
+  { name: "SoR - Quick Draw", img: "../images/quickdraw-design.png"},
+  { name: "SoR - Gunslinger", img: "../images/gunslinger-design.png"},
   { name: "SoR - Viper", img: "../images/viper-bg.jpeg"},
   { name: "SoR - Red Back", img: "../images/redback-bg.jpeg"}
 ];
 
 const tigerArr = [
-  { name: "Tiger Hide", img: "../images/tigerhide-bg.jpeg"},
+  { name: "Tiger Hide", img: "../images/tigerhide-design.png"},
   { name: "Tiger Hide - Enhanced", img: "../images/tigerhideenhanced-bg.jpeg"}
 ];
 
 const centuryArr = [
-  { name: "The Century", img: "../images/century-bg.jpeg" },
+  { name: "The Century", img: "../images/century-design.png" },
   { name: "Proto-Armor", img: "../images/protoarmor-bg.jpeg" },
   { name: "Michael Preston", img: "../images/michael-bg.jpeg" }
 ];
 
 const syndicateArr = [
-  { name: "Syndicate - Nemesis", img: "../images/nemesis-bg.jpeg" },
-  { name: "Syndicate - Quick Draw", img: "../images/quickdraw-bg.jpeg" },
-  { name: "Syndicate - Vex Krueger", img: "../images/vexkrueger-bg.jpeg" },
-  { name: "Syndicate - Pyro II", img: "../images/pyromaniac-bg.jpeg" },
+  { name: "Syndicate - Nemesis", img: "../images/nemesis-design.png" },
+  { name: "Syndicate - Quick Draw", img: "../images/quickdraw-design.png" },
+  { name: "Syndicate - Vex Krueger", img: "../images/vexkrueger-design.png" },
+  { name: "Syndicate - Pyro II", img: "../images/pyromaniac-design.png" },
   { name: "Syndicate - Tiger Hide", img: "../images/tigerhideenhanced-bg.jpeg" },
 ];
 

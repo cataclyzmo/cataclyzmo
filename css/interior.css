@@ -231,9 +231,112 @@ body.interior-page {
     font-size: 14px;
 }
 
-.profile-page .stats th:nth-child(1),
-.profile-page .stats td:nth-child(1) {
-    width: 35%;
+/* Comic dossier: ink, paper, and sharply cut power meters. */
+.profile-page .power-scanner {
+    --stat-base-color: #bd2838;
+    --stat-boost-color: #eab733;
+    padding: 0 16px 18px;
+    color: #202126;
+    background: radial-gradient(#292a3012 .7px, transparent .8px) 0 0 / 5px 5px, #f0eadc;
+    border-block: 2px solid #202126;
+    font-family: "Roboto", sans-serif;
+}
+
+.profile-page .scanner-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 16px;
+    margin: 0 -16px 18px;
+    background: #202126;
+    border-bottom: 4px solid var(--stat-base-color);
+    font-style: italic;
+    color: #fff8e9;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.profile-page .scanner-status {
+    width: 9px;
+    height: 18px;
+    transform: skewX(-18deg);
+    background: var(--stat-base-color);
+}
+
+.profile-page .scanner-scale { margin-left: auto; color: #e7d8b8; font-style: normal; font-size: 11px; }
+.profile-page .scanner-stat + .scanner-stat { margin-top: 18px; }
+.profile-page .scanner-stat-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 12px; }
+.profile-page .scanner-stat-heading a {
+    padding-block: 4px;
+    color: #202126;
+    font: 800 12px/1.5 "Roboto", sans-serif;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #998b73;
+    text-underline-offset: 4px;
+}
+.profile-page .scanner-stat-heading a:hover { color: var(--stat-base-color); }
+.profile-page .power-scanner :is(a, input):focus-visible { outline: 2px solid var(--stat-boost-color); outline-offset: 4px; }
+.profile-page .stat-rating { display: block; margin-left: auto; color: #383a40; font: 700 12px/1.5 "Roboto", sans-serif; }
+.profile-page .stat-boost-note { display: block; color: #735208; font-size: 10px; text-align: right; }
+
+.profile-page .scanner-meter {
+    position: relative;
+    height: 14px;
+    margin-top: 6px;
+    overflow: hidden;
+    border: 0;
+    clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+    background: #292a30;
+}
+.profile-page .scanner-fill {
+    display: block;
+    height: 100%;
+    background: linear-gradient(to right, var(--stat-base-color) 0 var(--base), var(--stat-boost-color) var(--base) 100%);
+    /* The gradient uses the whole track as its reference, keeping the base length exact. */
+    width: 100%;
+    clip-path: inset(0 calc(100% - var(--equipped)) 0 0);
+}
+.profile-page .scanner-meter::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(to right, transparent 0 calc(10% - 1px), #292a3070 calc(10% - 1px) 10%);
+    pointer-events: none;
+}
+.profile-page .stats-base-only .scanner-fill { clip-path: inset(0 calc(100% - var(--base)) 0 0); }
+.profile-page .power-scanner .stat-base,
+.profile-page .stats-base-only .stat-equipped { display: none; }
+.profile-page .stats-base-only .stat-base { display: block; }
+
+.profile-page .stats-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 14px;
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 2px solid #202126;
+    color: #51504c;
+    font: 11px/1.6 "Roboto", sans-serif;
+}
+.profile-page .stats-legend p { width: 100%; margin: 2px 0 0; font: inherit; }
+.profile-page .stat-key { display: inline-block; width: 14px; height: 3px; margin-right: 5px; vertical-align: middle; }
+.profile-page .stat-key-base { background: var(--stat-base-color); }
+.profile-page .stat-key-boost { background: var(--stat-boost-color); }
+.profile-page .stats-toggle { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 44px; cursor: pointer; font-size: 12px; color: #202126; }
+.profile-page .stats-toggle input { width: 18px; height: 18px; margin: 0; accent-color: #bd2838; }
+
+@media screen and (max-width: 380px) {
+    .profile-page main { padding-right: 12px; padding-left: 12px; }
+    .profile-page .power-scanner { padding-inline: 12px; }
+    .profile-page .scanner-header { margin-inline: -12px; padding-inline: 12px; }
+}
+
+.reference-page h2[id] {
+    scroll-margin-top: 90px;
 }
 
 .profile-page article,

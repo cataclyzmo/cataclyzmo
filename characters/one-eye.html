@@ -60,101 +60,54 @@
 
 		<aside>
             <h2> The One Eye </h2>
-			<img src="../images/oneeye-bg.jpeg" id="characterImage">
+			<img src="../images/oneeye-design.png" id="characterImage">
 
-			<table class="stats">
-				<tr> <!-- table row -->
-					<th>Power Index</th> <!-- table head cell -->
-					<th class="one">1</th>
-					<th>2</th>
-					<th>3</th>
-					<th>4</th>
-					<th>5</th>
-					<th>6</th>
-					<th>7</th>
-					<th>8</th>
-					<th>9</th>
-					<th>10</th>
-				</tr>
-				<tr>
-					<td>Durability</td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Energy</td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in-yellow"></td>
-					<td class="filled-in-yellow"></td>
-					<td class="filled-in-yellow"></td>
-				</tr>
-				<tr>
-					<td>Intelligence</td> <!-- table data cell -->
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td></td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Psionics</td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-			    </tr>
-				<tr>
-					<td>Speed</td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				<tr>
-					<td>Strength</td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td class="filled-in"></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
-				</tr>
-	    	</table>
+			<section class="power-scanner" aria-label="Power dossier">
+                <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
+                <div class="scanner-readings">
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#durability">Durability</a><span class="stat-rating">6/10 · Enhanced</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Durability" aria-valuemin="0" aria-valuemax="10" aria-valuenow="6" data-base="6" data-equipped="6" style="--base: 60%; --equipped: 60%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#energy">Energy</a><span class="stat-rating stat-equipped">7 → 10/10 · Star-Destroyer+<span class="stat-boost-note">with equipment</span></span><span class="stat-rating stat-base">7/10 · Nuclear</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Energy" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10" data-base="7" data-equipped="10" style="--base: 70%; --equipped: 100%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#intelligence">Intelligence</a><span class="stat-rating">8/10 · Super Genius</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Intelligence" aria-valuemin="0" aria-valuemax="10" aria-valuenow="8" data-base="8" data-equipped="8" style="--base: 80%; --equipped: 80%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#psionics">Psionics</a><span class="stat-rating">2/10 · Levitator</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Psionics" aria-valuemin="0" aria-valuemax="10" aria-valuenow="2" data-base="2" data-equipped="2" style="--base: 20%; --equipped: 20%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#speed">Speed</a><span class="stat-rating">5/10 · Subsonic</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Speed" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5" data-base="5" data-equipped="5" style="--base: 50%; --equipped: 50%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#strength">Strength</a><span class="stat-rating">6/10 · Enhanced</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Strength" aria-valuemin="0" aria-valuemax="10" aria-valuenow="6" data-base="6" data-equipped="6" style="--base: 60%; --equipped: 60%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-legend">
+                    <span><i class="stat-key stat-key-base" aria-hidden="true"></i> Base rating</span>
+                    <span><i class="stat-key stat-key-boost" aria-hidden="true"></i> Equipment boost</span>
+                    <p>Ratings out of 10. Select a stat for its definition.</p>
+                </div>
+            </section>
 
             <h2>Physical:</h2>
 	    	<table class="traits">
@@ -264,5 +217,6 @@
         </div>
     </footer>
 
+    <script src="../js/character-stats.js" defer></script>
 </body>
 </html>
