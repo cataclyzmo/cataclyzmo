@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="powerful robotic villain">
 	<meta name="description" content="Learn more about Omni, a world-colonizing tyrant villain of pure malice and devastation.">
-	<title>Villain - Omni Bio</title>
+	<title>OMNI | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>OMNI</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1> OMNI </h1>
+            <h2> OMNI </h2>
 			<img src="../images/omni-bg.jpeg" id="characterImage">
 
 			<table class="stats">
@@ -147,7 +156,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -179,7 +188,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -217,15 +226,15 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				Not much is known about Omni other than his desire to travel to remote planets and conquer them, claiming them for his galactic emperor. But it doesn't stop there; Omni not only invades those planets in his universe, but he also travels to other universes in order to fuel his nonstop desire for control and devastation.
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				At this time, Omni has no known affiliations. Note, there are those who claim he was once a citizen of New Mascarro; however, no concrete evidence has come in to back this up.
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				Omni can manipulate the gravitational fields around him in order to <i>fly</i>. His skin is made up of some unknown but extremely durable metal, a polymer concoction, and the remains of a supercompressed dying planet. Omni is able to project large beams of violent energy that can seemingly tear planets apart, ripping right through them but not outright exploding them. <br><br>
 
@@ -236,5 +245,16 @@
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

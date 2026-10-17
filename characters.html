@@ -9,51 +9,61 @@
     <meta name="description" content="Learn about the latest, greatest, and most spectacular heroes & most devious villains this universe has to offer.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cataclyzmo.com/characters">
-    <title>Original Sci-Fi Characters | Heroes, villains & More</title>
+    <title>Characters | Cataclyzmo</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-  </head>
+      <link href="css/interior.css" rel="stylesheet">
+</head>
 
-  <body>
+  <body class="interior-page catalog-page">
 
      <!-- used only on small screens, this sidescreen appears when clicking the hamburger menu -->
-     <div class="nav-sidescreen">
+     <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
            <ul>
              <li><a href="index.html">Home</a></li>
-             <li><a href="characters.html">Characters</a></li>
+             <li><a href="books.html">Comics</a></li>
+             <li><a href="characters.html" aria-current="page">Characters</a></li>
              <li><a href="items.html">Items</a></li>
-             <li><a href="geo.html">Geo</a></li>
+             <li><a href="geo.html">Worlds</a></li>
              <li><a href="power-index.html">Power Index</a></li>
              <li><a href="credits.html">Credits</a></li>
-             <li><a href="books.html">Books</a></li>
            </ul>
      </div>
-  
+
      <!-- main navigation bar -->
      <nav>
-       <a href="index.html"><img class="logo" src="images/logo.png" alt="Cataclyzmo logo"></a>
+       <a class="site-brand" href="index.html">
+           <img class="logo" src="images/logo.png" alt="">
+           <span>Cataclyzmo</span>
+       </a>
            <ul class= "nav-options-fullscreen">
              <li><a href="index.html">Home</a></li>
-             <li><a href="characters.html">Characters</a></li>
+             <li><a href="books.html">Comics</a></li>
+             <li><a href="characters.html" aria-current="page">Characters</a></li>
              <li><a href="items.html">Items</a></li>
-             <li><a href="geo.html">Geo</a></li>
+             <li><a href="geo.html">Worlds</a></li>
              <li><a href="power-index.html">Power Index</a></li>
              <li><a href="credits.html">Credits</a></li>
-             <li><a href="books.html">Books</a></li>
        </ul>
-          <div class="ham-menu">
+          <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
              <span></span>
              <span></span>
              <span></span>
-          </div>
+          </button>
     </nav>
 
     <!-- Used for hamburger menu & side screen toggle (small screens) -->
     <script src="js/sidescreen.js"></script>
-    
+    <header class="page-header">
+        <p class="page-eyebrow">Explore Cataclyzmo</p>
+        <h1>Characters</h1>
+        <p class="page-intro">Meet the time travelers, machines, heroes, and threats shaping the Cataclyzmo universe.</p>
+    </header>
 
-    <h1>Characters </h1>
+
+
+
 
 
     <!-- dropdown menu to filter characters by series -->
@@ -70,7 +80,7 @@
           <div class="option" data-value="diabloUnleashed">Diablo Unleashed</div>
           <div class="option" data-value="theCouncilSeries">The Council</div>
           <div class="option" data-value="vigilanteXSeries">Vigilante-X</div>
-          <div class="option" data-value="cataclismoSeries">Cataclyzmo</div>
+          <div class="option" data-value="cataclyzmoSeries">Cataclyzmo</div>
         </div>
       </div>
     </div>
@@ -359,42 +369,42 @@
         <h2>THE EXECUTIONER</h2>
       </div>
 
-      <div class="character cataclismoSeries">
+      <div class="character cataclyzmoSeries">
         <a href="characters/grand-inquisitor.html">
           <img src="images/grandinquisitor-nobg.png" loading="lazy" alt="Grand Inquisitor character"/>
         </a><hr/>
         <h2>GRAND INQUISITOR</h2>
       </div>
 
-      <div class="character team-div cataclismoSeries">
+      <div class="character team-div cataclyzmoSeries">
         <a href="characters/the-syndicate.html">
           <img src="images/syndicate-nobg.png" loading="lazy" class="team-img" alt="The Syndicate team"/>
         </a><hr/>
         <h2>THE SYNDICATE</h2>
       </div>
 
-      <div class="character cataclismoSeries">
+      <div class="character cataclyzmoSeries">
         <a href="characters/the-end.html">
           <img src="images/theend-nobg.png" loading="lazy" alt="The End character"/>
         </a><hr/>
         <h2>THE END</h2>
       </div>
 
-      <div class="character cataclismoSeries">
+      <div class="character cataclyzmoSeries">
         <a href="characters/mastermind.html">
           <img src="images/mastermind-nobg.png" loading="lazy" alt="Mastermind character"/>
         </a><hr/>
         <h2>MASTERMIND</h2>
       </div>
 
-      <div class="character cataclismoSeries">
+      <div class="character cataclyzmoSeries">
         <a href="characters/omni.html">
           <img src="images/omni-nobg.png" loading="lazy" alt="Omni character"/>
         </a><hr/>
         <h2>OMNI</h2>
       </div>
 
-      <div class="character cataclismoSeries">
+      <div class="character cataclyzmoSeries">
         <a href="characters/one-true-omni.html">
           <img src="images/onetrueomni-nobg.png" loading="lazy" alt="The One True Omni character"/>
         </a><hr/>
@@ -406,6 +416,17 @@
     <!-- script to display characters based on selected series -->
     <script src="js/dropdown-menu-selection.js"></script>
 
-  </body>
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="books.html">Comics</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
 
 </html>

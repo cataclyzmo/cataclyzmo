@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="demonic, fire-breathing villain">
 	<meta name="description" content="Learn more about Psytonic, a demonic, fire-breathing villain that guards the heart of an ancient labyrinth.">
-	<title>Villain - Psytonic Bio</title>
+	<title>Psytonic | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Psytonic</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1> Psytonic </h1>
+            <h2> Psytonic </h2>
 			<img src="../images/psytonic-bg.jpeg" id="characterImage">
 
 			<table class="stats">
@@ -147,7 +156,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -179,7 +188,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -217,24 +226,35 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				Psytonic is an evil, vile creature whose entire life amounted to one purpose—guard the center of the Labyrinth in the Land of Game. Within this center is a miraculous prize fit for no mere man or ordinary mortal but a king's stone. For what the stone grants for their user is one wish, one seemingly boundless eternal wish. An object that could turn a poor serf farmer into the ruler of the greatest empire that ever existed swiftly overnight.<br><br>
 
 				And unfortunately for all those that enter the labyrinth, they must go on with the knowledge that no one has ever exited alive.
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				Psytonic is affiliated with the Land of Game, a cursed region filled with dungeons, dragons, demons, monsters, valleys, labyrinths, and a ton more other mystical beings than any young adventurer could hope for. The rules are simple: the Land only appears to those that are worthy or to those that are chosen. <br><br>
 
 				Also, if a hero were to fail on his journey to capture the stone in the center of the labyrinth, then all the creatures he had slain in the prior levels are revived, seemingly reset and reamped up for their next challenger. The dark magic that binds this place is responsible for the force that gives the Land of Game's creatures mortality. 
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				Psytonic is a fire-breathing, palladium-armor-wearing demon who is equipped with long metal blades on the tips of his hands. His hide is thick, and his armor is thicker, considering it is made of one of the toughest materials in all the land. His blades are sharp and can cut through flesh, steel, or even diamond with relative ease. Even if those last feats don't scare their foe, Psytonic's near-atomic breath of pure plasma sure will. Overall, his immense strength, blinding speed, and pyrotechnics sure make him a daunting foe, especially since he only fights on his home turf, a twisting, turning, & shifting labyrinth.
 			</p>
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

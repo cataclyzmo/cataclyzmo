@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="powerful tournament-hosting villain">
 	<meta name="description" content="Learn more about the Grand Inquisitor, a conniving, deceptive villain that makes heroes battle to their deaths in the Inquisitor's tournament of champions.">
-	<title>Villain - The Grand Inquisitor Bio</title>
+	<title>The Grand Inquisitor | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>The Grand Inquisitor</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1> The Grand Inquisitor </h1>
+            <h2> The Grand Inquisitor </h2>
 			<img src="../images/grandinquisitor-bg.jpeg" id="characterImage">
 
 			<table class="stats">
@@ -147,7 +156,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -179,7 +188,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -217,7 +226,7 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				Before there were smartphones, the internet, airplanes, and cars, and even before the first human being walked the earth, there was Sha Sham Che, one man, or rather, one extraordinary someone. For Sha Sham was not human. He was merely an alien from another world who adopted the appearance of a human to blend in. And so, soon after his arrival on Earth, the most magnificent planet sourcing life in his eyes, Sha Sham decided to construct a world of his own, an Earth-esque planet. He would later name this world Battleworld Earth, a place that Sha Sham ruled, a location where his word was law and his wrath was justice. <br><br>
 
@@ -229,13 +238,13 @@
 
 				No big deal...
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				Sha Sham is affiliated with Battleworld Earth, in which he runs the planet on a tight shift. When Battleworld Earth isn't being used to force heroes from across the galaxy to fight to their death, it is being cleaned up and prepared for the next great tournament. <br><br>
 
 				See, Sha Sham's Battleworld Earth isn't just for hawkish brawls, as it also houses some of the deadliest and most notorious villains in the universe. In a way, the planet acts as a highly secure and seemingly impenetrable galactic prison. And thus, Sha Sham is also considered a galactic warden in that he forces his inmates to keep his planet nice and tidy.
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				When Sha Sham is hosting great battles between champions from across the galaxy, he takes on a more fun but yet much more ruthless alternate persona known as the Grand Inquisitor, supervisor and administrator of the Battle Games. Here, Sha Sham, now the Grand Inquisitor, dons his green ivory robes laced with a <i>tad</i> amount of gold. <br><br>
 
@@ -250,5 +259,16 @@
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

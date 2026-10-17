@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="supervillain dragon mask">
 	<meta name="description" content="Learn more about Red Dragon, a supervillain who has nothing on his mind but unbridled vengeance, and he won't stop until he gets his way.">
-	<title>Supervillain - Red Dragon Bio</title>
+	<title>Red Dragon | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Red Dragon</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1> Red Dragon </h1>
+            <h2> Red Dragon </h2>
 			<img src="../images/reddragon-bg.jpeg" id="characterImage">
 
 			<table class="stats">
@@ -147,7 +156,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -179,7 +188,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -217,7 +226,7 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				Guilty! Two life sentences without the possibility of parole a judge decreed on Nathan, who had just been convicted for a double murder, a heinous crime he did not commit. Nathan knew that, his lawyer knew that, and his wife and six-year-old son would have known that too if they were still alive.<br><br>
 
@@ -225,16 +234,27 @@
 
 				He decided that the new ways of society were broken, and the only thing he could do to restore the world was to bring back a little tradition and a little personality from his ancestors' history, an alter ego—the fury of a Red Dragon.
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				Nathan is affiliated with Livingston & Co., as its owner also had some problems with the justice system. The owner just needed someone with nothing to lose to enforce his bidding.
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				Nathan has no powers or supernatural abilities, although he does have strong engineering knowledge, advanced sword training, and has mastered many forms of martial arts. He also wears body armor, and he carries pistols with him just in case things get testy.
 			</p>
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

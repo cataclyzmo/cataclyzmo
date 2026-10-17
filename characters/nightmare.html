@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="one-armed telekinetic villain">
 	<meta name="description" content="Learn more about Nightmare, a villain capable of ripping you apart atom by atom, literally.">
-	<title>Supervillian - Nightmare Bio</title>
+	<title>Nightmare | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Nightmare</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1> Nightmare </h1>
+            <h2> Nightmare </h2>
 			<img src="../images/nightmare-bg.jpeg" id="characterImage">
 
 			<table class="stats">
@@ -147,7 +156,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -179,7 +188,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -217,7 +226,7 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				There was a shockwave, a flash of green, a large bang, and then nothing. That day the entire planet was struck by what many infamously named <i>The Storm of Light</i>, a catastrophic event that stripped the world of 90% of its inhabitants, leaving those who remained with nothing left to do but mourn. <br/><br/>
 
@@ -225,16 +234,27 @@
 
 				And that's where the story of the Nightmare begins. A horrific, telekinetic man, or, more accurately, creature, that spawned from the shadows and out of the Storm of Light, with the one purpose to haunt the living both during the day and at dusk. The Nightmare is the reason any habitable home has bars where windows should be. The oddest thing is some claim that the Nightmare existed even before the Storm of Light, but, thus far, there has not been any hard evidence to back that statement up.
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				The Nightmare's affiliations are still somewhat unknown, but many consider him to work somewhat adjacently with the anarchist group known as the Survivors. The Survivors are a post-apocalyptic tribe of metahumans seeking nothing but power and to keep things the way they are, despite how f@*ked up they may be for everyone else.
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				The Nightmare is a one-armed man, but that doesn't matter for any combat situations, as he relies almost solely on his telekinetic abilities. A power many believed he was <i>gifted</i> by the Storm of Light. With it, he can stop bullets midair or lift large semi-trucks off the ground. And when he is really angry (don't make him angry), his telekinetic powers are considered limitless (even if only temporarily), as is his will to survive.
 			</p>
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

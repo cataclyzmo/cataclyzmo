@@ -9,51 +9,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="strongest darkness sword">
     <meta name="description" content="Learn more about the Destiny Stalker Blade, the most powerful darkness-based weapon in all the land. One sweep of its blade will make all that see its slash disintegrate.">
-    <title>The Destiny Stalker - Super Item</title>
+    <title>The Destiny Stalker Blade | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../items.html">Items &amp; Technology</a></p>
+        <h1>The Destiny Stalker Blade</h1>
+    </header>
+
 
     <main>
     	<aside>
-    		<h1> The Destiny Stalker Blade </h1>
+            <h2> The Destiny Stalker Blade </h2>
     		<img src="../images/destinystalker-bg.jpeg" id="characterImage">
-            
-            <h1>Stats:</h1>
+
+            <h2>Stats:</h2>
             <table class="traits">
                 <tr>
                     <td>Ability</td>
@@ -81,7 +90,7 @@
                 </tr>
             </table>
 
-            <h1>Origins:</h1>
+            <h2>Origins:</h2>
             <table class="traits">
                 <tr>
                     <td>Inventor</td>
@@ -100,7 +109,7 @@
     	</aside>
 
         <article>
-            <h1>Origins</h1><hr/>
+            <h2>Origins</h2><hr/>
             <p>
                 Those that know of the Destiny Stalker's power are those that no longer exist, for the blade leaves no survivors. It's dark energy; its overwhelming force of destruction and reckless hate cannot be undone. For the blade was crafted in darkness, bred in the shadows, and nurtured in destruction. <br><br>
 
@@ -112,11 +121,11 @@
 
                 Note, not only is the Destiny Stalker the most powerful darkness weapon, it is the most powerful weapon (in general) in existence.
             </p>
-            <h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
             <p>
                 It would be far easier to talk about what the Destiny Stalker can't do than what it can.
             </p>
-            <h1>Limitations</h1><hr/>
+            <h2>Limitations</h2><hr/>
             <p>
                 The Destiny Stalker makes its wielder limitless, and since all users are all limitful, the blade must not be. This weapon is the strongest and most powerful item for this series and for all series to come. Like its cousin sword, the Dragon Slayer, the limits of the blade are derived from the wielder. <br><br>
 
@@ -125,5 +134,16 @@
         </article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

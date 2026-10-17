@@ -9,52 +9,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="hero planet map">
     <meta name="description" content="Learn more about the planet Earth, one of the many planets hosting life in this universe.">
-    <title>Planet Earth - Hero Universe</title>
+    <title>Earth | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
           <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html" aria-current="page">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
           <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html" aria-current="page">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
-    
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../geo.html">Worlds</a></p>
+        <h1>Earth</h1>
+    </header>
+
+
 
     <main>
     	<aside>
-    		<h1> Earth </h1>
+            <h2> Earth </h2>
     		<img src="../images/earth-bg.jpeg" id="characterImage">
-            
-        	<h1>Physical:</h1>
+
+            <h2>Physical:</h2>
         	<table class="traits">
         		<tr>
         			<td>Mass</td>
@@ -90,7 +99,7 @@
                 </tr>
         	</table>
 
-            <h1>Residents:</h1>
+            <h2>Residents:</h2>
         	<table class="traits">
         		<tr>
         			<td>Apex Population</td>
@@ -132,11 +141,11 @@
     	</aside>
 
         <article>
-            <h1>Physical</h1><hr/>
+            <h2>Physical</h2><hr/>
             <p>
                 Earth is nearly round in shape. It is almost a sphere; however, it is slightly flattened at the poles & bulging at the equator. It is composed of a solid inner core, a liquid outer core, a semi-solid mantle, and a solid crust. Its land consists of mountains, valleys, plains, & plateaus. Earth contains an atmosphere that consists mainly of nitrogen and oxygen. To its inhabitants, Earth is the only known planet with water on its surface.
             </p>
-            <h1>Residents</h1><hr/>
+            <h2>Residents</h2><hr/>
             <p>
                 Earth is vastly dominated by the apex species known as Homo sapiens (humans). Humans greatly exceed the secondary population (the group that was to become dominant if humans became extinct) by billions of individuals. Humans are also the only group capable of continuous innovations and technological advancements. With these advancements, humans greatly exceed any other species on the planet in military might.<br><br>
 
@@ -144,7 +153,7 @@
 
                 Apes, on the other hand, are limited to primitive tool use like using rocks as hammers, sticks as shovels, and leaves as <i>buckets</i> to gather water. Despite apes significantly less use of technology, they do outrun humans, reaching speeds of 34 mph as opposed to humans 28 mph. Gorillas (a species of ape) are also 4-10 times stronger than the average human, with the ability to lift over 1800 pounds.
             </p>
-            <h1>Location</h1><hr/>
+            <h2>Location</h2><hr/>
             <p>
                 Earth is located in the Milky Way Galaxy. There are at least 250 to 500 billion stars in the Milky Way galaxy. On average, every star is orbited by at least one planet. There are 700+ multiplanetary systems in the Milky Way galaxy.
             </p>
@@ -152,5 +161,16 @@
 
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

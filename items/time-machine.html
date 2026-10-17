@@ -9,51 +9,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="time machine hero universe">
     <meta name="description" content="Learn more about the Time Machine, a device capable of catapulting one to the exact time and location in which a photo was taken.">
-    <title>The Time Machine - Super Item</title>
+    <title>The Time Machine | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../items.html">Items &amp; Technology</a></p>
+        <h1>The Time Machine</h1>
+    </header>
+
 
     <main>
     	<aside>
-    		<h1> The Time Machine </h1>
+            <h2> The Time Machine </h2>
     		<img src="../images/timemachine-bg.jpeg" id="characterImage">
-            
-            <h1>Stats:</h1>
+
+            <h2>Stats:</h2>
             <table class="traits">
                 <tr>
                     <td>Ability</td>
@@ -81,7 +90,7 @@
                 </tr>
             </table>
 
-            <h1>Origins:</h1>
+            <h2>Origins:</h2>
             <table class="traits">
                 <tr>
                     <td>Inventor</td>
@@ -100,15 +109,15 @@
     	</aside>
 
         <article>
-            <h1>Origins</h1><hr/>
+            <h2>Origins</h2><hr/>
             <p>
                 This device was created by Michael Preston in his lab with the help of cutting-edge tech from New World Technologies. Michael stole most of the materials he needed to build the device, much like his other <i>inventions</i>. But who can blame him? One man having so many innovations in a world with hundreds of technological company giants is unrealistic. The time machine's exact origin is unknown because, although it was created by Michael, a lot of luck & coincidences got it to reach a working state. To use, a tester must insert an image from the time & location they want to travel to in the device and then turn the dial on the machine's front panel to the appropriate power level.
             </p>
-            <h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
             <p>
                 The device grants the user the capability to travel back to the time & place in which a photo was taken. The device is believed to be only a class IV item as opposed to the much more lethal class VII because little is known if the time machine actually gives anyone the ability to actually alter history.
             </p>
-            <h1>Limitations</h1><hr/>
+            <h2>Limitations</h2><hr/>
             <p>
                 The device is easily damaged even by normal use. It takes an absurd amount of power to be operational whatsoever, and it requires the most expensive element known to mankind to run: francium. Francium is an element that is estimated to cost in the millions & is only obtained by large technological super giants that not only can afford to obtain and store the material at near absolute zero but also must retain authorization by the U.S. government to use it at all.</br></br>
 
@@ -118,5 +127,16 @@
 
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

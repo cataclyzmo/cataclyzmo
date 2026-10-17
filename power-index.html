@@ -9,48 +9,58 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="hero power scaling">
     <meta name="description" content="Learn more about the power index, a scaling chart that classifies the various attributes of various heroes and villains.">
-	  <title>Character Power Scaling: The Power Index</title>
-  </head>
+	  <title>Power Index | Cataclyzmo</title>
+      <link href="css/interior.css" rel="stylesheet">
+</head>
 
-  <body>
+  <body class="interior-page reference-page">
 
      <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-     <div class="nav-sidescreen">
+     <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
            <ul>
              <li><a href="index.html">Home</a></li>
+             <li><a href="books.html">Comics</a></li>
              <li><a href="characters.html">Characters</a></li>
              <li><a href="items.html">Items</a></li>
-             <li><a href="geo.html">Geo</a></li>
-             <li><a href="power-index.html">Power Index</a></li>
+             <li><a href="geo.html">Worlds</a></li>
+             <li><a href="power-index.html" aria-current="page">Power Index</a></li>
              <li><a href="credits.html">Credits</a></li>
-             <li><a href="books.html">Books</a></li>
            </ul>
      </div>
-  
+
      <nav>
-       <a href="index.html"><img class="logo" src="images/logo.png"></a>
+       <a class="site-brand" href="index.html">
+           <img class="logo" src="images/logo.png" alt="">
+           <span>Cataclyzmo</span>
+       </a>
            <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
              <li><a href="index.html">Home</a></li>
+             <li><a href="books.html">Comics</a></li>
              <li><a href="characters.html">Characters</a></li>
              <li><a href="items.html">Items</a></li>
-             <li><a href="geo.html">Geo</a></li>
-             <li><a href="power-index.html">Power Index</a></li>
+             <li><a href="geo.html">Worlds</a></li>
+             <li><a href="power-index.html" aria-current="page">Power Index</a></li>
              <li><a href="credits.html">Credits</a></li>
-             <li><a href="books.html">Books</a></li>
        </ul>
        <!--used only on small screens-->
-          <div class="ham-menu">
+          <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
              <span></span>
              <span></span>
              <span></span>
-          </div>
+          </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow">Behind the universe</p>
+        <h1>Power Index</h1>
+        <p class="page-intro">Explore how power and threat levels are classified across the universe.</p>
+    </header>
 
 
-    <h1>Power Index</h1>
+
+
 
     <div class="figures">
       <figure>
@@ -215,6 +225,17 @@
       </ul>
     </article>
 
-  </body>
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="books.html">Comics</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
 
 </html>

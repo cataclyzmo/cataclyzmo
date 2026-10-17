@@ -9,51 +9,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="strongest fire-based sword">
     <meta name="description" content="Learn more about the Dragon Slayer, the most powerful fire-based weapon in all the land. One sweep of its blade can make nearby volcanoes spontaneously erupt.">
-    <title>The Dragon Slayer - Super Item</title>
+    <title>The Dragon Slayer Blade | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../items.html">Items &amp; Technology</a></p>
+        <h1>The Dragon Slayer Blade</h1>
+    </header>
+
 
     <main>
     	<aside>
-    		<h1> The Dragon Slayer Blade </h1>
+            <h2> The Dragon Slayer Blade </h2>
     		<img src="../images/dragonslayer-bg.jpeg" id="characterImage">
-            
-            <h1>Stats:</h1>
+
+            <h2>Stats:</h2>
             <table class="traits">
                 <tr>
                     <td>Ability</td>
@@ -81,7 +90,7 @@
                 </tr>
             </table>
 
-            <h1>Origins:</h1>
+            <h2>Origins:</h2>
             <table class="traits">
                 <tr>
                     <td>Inventor</td>
@@ -100,7 +109,7 @@
     	</aside>
 
         <article>
-            <h1>Origins</h1><hr/>
+            <h2>Origins</h2><hr/>
             <p>
                 This blade, this magnificent work of craftsmanship, this ancient weapon of power and pure devastation, was conceived some millennia ago, much before the age of man and even before the conception of a mortal being. For the Dragon Slayer has the strength, the veracity, and a bite known by few and feared by most.<br><br> 
 
@@ -112,13 +121,13 @@
 
                 Note, the current whereabouts of this item of power are unknown.
             </p>
-            <h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
             <p>
                 Some fools claim that the pen is mightier than the sword. Unfortunately, none of these men have ever heard of the power given off by the Dragon Slayer Blade before. <br><br>
 
                 With one fell swoop, the Dragon Slayer can melt an entire planet to ashes. It can slice mountains in half as if they were nothing more than a common man's loaf of bread. It is said that the heat given off from the Dragon Slayer Blade is so intense that it will turn the very core of a vibrant sun to dust. For he who wields the Dragon Slayer Blade, the most powerful fire-based weapon and one of the most powerful weapons ever conceived in history, will have to fear no man, no pen, no being of immense power, and especially not even a king.
             </p>
-            <h1>Limitations</h1><hr/>
+            <h2>Limitations</h2><hr/>
             <p>
                 The Dragon Slayer Blade has virtually no limitations; if any, the limitations come from the one who dares bear its power. Fortunately for the living, the Dragon Slayer Blade was broken into three pieces some millennia ago; the handle was scattered to one place, the blade to another, and the stone, the Artex Stone, giving the sword its might, was locked away some time even further into the past.
             </p>
@@ -126,5 +135,16 @@
 
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

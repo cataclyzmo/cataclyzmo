@@ -8,54 +8,59 @@
     <meta charset="utf-8">
     <!--Used to ctrl how a page scales on different devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Planets of this original Sci-Fi Universe</title>
+    <title>Worlds | Cataclyzmo</title>
 
     <!--Import Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-  </head>
+      <link href="css/interior.css" rel="stylesheet">
+</head>
 
-  <body>
+  <body class="interior-page catalog-page">
 
      <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-     <div class="nav-sidescreen">
+     <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
            <ul>
              <li><a href="index.html">Home</a></li>
+             <li><a href="books.html">Comics</a></li>
              <li><a href="characters.html">Characters</a></li>
              <li><a href="items.html">Items</a></li>
-             <li><a href="geo.html">Geo</a></li>
+             <li><a href="geo.html" aria-current="page">Worlds</a></li>
              <li><a href="power-index.html">Power Index</a></li>
              <li><a href="credits.html">Credits</a></li>
-             <li><a href="books.html">Books</a></li>
            </ul>
      </div>
-  
+
      <nav>
-       <a href="index.html"><img class="logo" src="images/logo.png"></a>
+       <a class="site-brand" href="index.html">
+           <img class="logo" src="images/logo.png" alt="">
+           <span>Cataclyzmo</span>
+       </a>
            <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
              <li><a href="index.html">Home</a></li>
+             <li><a href="books.html">Comics</a></li>
              <li><a href="characters.html">Characters</a></li>
              <li><a href="items.html">Items</a></li>
-             <li><a href="geo.html">Geo</a></li>
+             <li><a href="geo.html" aria-current="page">Worlds</a></li>
              <li><a href="power-index.html">Power Index</a></li>
              <li><a href="credits.html">Credits</a></li>
-             <li><a href="books.html">Books</a></li>
        </ul>
        <!--used only on small screens-->
-          <div class="ham-menu">
+          <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
              <span></span>
              <span></span>
              <span></span>
-          </div>
+          </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="js/sidescreen.js"></script>
-    
+    <header class="page-header">
+        <p class="page-eyebrow">Explore Cataclyzmo</p>
+        <h1>Worlds</h1>
+        <p class="page-intro">Explore the places and civilizations of the Cataclyzmo universe.</p>
+    </header>
 
-    <h1>Planets (1) </h1>
-
-    <p></p><!--added for vertical spacing only-->
 
     <main>
 
@@ -85,6 +90,17 @@
       <div class="hidden-flex-item"></div>
 
     </main>
-  </body>
+      <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="books.html">Comics</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
 
 </html>

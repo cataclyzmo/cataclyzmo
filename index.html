@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<!--Used to ctrl how a page scales on different devices-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<meta name="description" content="Explore original sci-fi comics set in a universe of time travelers, sentient machines, astronauts, and interstellar adventures.">
+	<meta name="description" content="Enter Cataclyzmo, an original sci-fi comic universe. Start with The Yesterday Man, Issue #1, and explore time travelers, sentient machines, and distant worlds.">
 	<meta name="robots" content="index, follow">
 	<!--useful if you have multiple domains, this tag says this is the main domain-->
 	<link rel="canonical" href="https://cataclyzmo.com/">
@@ -16,108 +16,131 @@
 
 	<!-- Effects how content is shared on social media-->
 	<!-- Open Graph -->
-    <meta property="og:title" content="Original Sci-Fi Universe">
-    <meta property="og:description" content="A universe of time travel, AI, and space exploration told through original comics.">
+    <meta property="og:site_name" content="Cataclyzmo">
+    <meta property="og:title" content="Cataclyzmo | Original Sci-Fi Comics">
+    <meta property="og:description" content="A photograph can take Michael Preston back in time. Discover The Yesterday Man, Issue #1, and explore the Cataclyzmo universe.">
     <meta property="og:image" content="https://cataclyzmo.com/images/banner.png">
+    <meta property="og:image:alt" content="The Yesterday Man, half exposed and half masked, between an American soldier surrounded by Nazi soldiers and an alternate-history cemetery.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cataclyzmo.com/">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cataclyzmo | Original Sci-Fi Comics">
+    <meta name="twitter:description" content="A photograph can take Michael Preston back in time. Discover The Yesterday Man, Issue #1, and explore the Cataclyzmo universe.">
+    <meta name="twitter:image" content="https://cataclyzmo.com/images/banner.png">
+    <meta name="twitter:image:alt" content="The Yesterday Man, half exposed and half masked, between an American soldier surrounded by Nazi soldiers and an alternate-history cemetery.">
 
-    <title>Original Sci-Fi Novels | Time Travel, AI, and Space Adventures</title>
+    <title>Cataclyzmo | Original Sci-Fi Comics</title>
 </head>
 
 <body>
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
-      	  <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="books.html">Comics</a></li>
       	  <li><a href="characters.html">Characters</a></li>
       	  <li><a href="items.html">Items</a></li>
-      	  <li><a href="geo.html">Geo</a></li>
+          <li><a href="geo.html">Worlds</a></li>
       	  <li><a href="power-index.html">Power Index</a></li>
       	  <li><a href="credits.html">Credits</a></li>
-      	  <li><a href="books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="index.html"><img class="logo" src="images/logo.png"></a>
+        <a class="site-brand" href="index.html">
+            <img class="logo" src="images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
-      	  <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="books.html">Comics</a></li>
       	  <li><a href="characters.html">Characters</a></li>
       	  <li><a href="items.html">Items</a></li>
-      	  <li><a href="geo.html">Geo</a></li>
+          <li><a href="geo.html">Worlds</a></li>
        	  <li><a href="power-index.html">Power Index</a></li>
       	  <li><a href="credits.html">Credits</a></li>
-      	  <li><a href="books.html">Books</a></li>
 		</ul>
 
         <!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="js/sidescreen.js"></script>
-	 
-	<img class="banner" src="images/banner.png" alt="Sci-fi universe banner depicting a man from the future and the past"/>
 
-	<article>
-		<h1> Welcome to Cataclyzmo...</h1>
-		<p>
-			In a world of the extraordinary and the bizarre, normality seems to morph and trickle into the real obscurity. For in this world, in this universe, more accurately, there are categories from every walk of life that most could not imagine. 
-        </p>
+	<img class="banner" src="images/banner.png" alt="The Yesterday Man with half his face exposed and half masked, between a war-torn street and a cemetery"/>
 
-		<p>
-			On one planet, time travelers exist that are capable of changing the past, altering the future, and intervening with the timeline to such an extent that a person looking back on the warm, once vibrant original world could not see the similarities to the current. 
-		</p>
+	<main>
+        <section class="featured-comic" aria-labelledby="featured-title">
+            <div class="featured-comic-inner">
+                <div class="featured-comic-copy">
+                    <p class="featured-eyebrow">Original sci-fi comics</p>
+                    <h1 id="featured-title">The Yesterday Man</h1>
+                    <p class="featured-synopsis">A photograph can take Michael Preston back in time. But he isn’t the only one traveling through history.</p>
+                    <div class="featured-actions">
+                        <a class="comic-button" href="https://marcusavery.gumroad.com/l/gyzvtc" target="_blank" rel="noopener">Get Issue #1</a>
+                        <a class="universe-link" href="#universe">Explore the universe <span aria-hidden="true">&#8595;</span></a>
+                    </div>
+                    <p class="featured-note">Issue #1 available on Gumroad</p>
+                </div>
+                <figure class="featured-cover">
+                    <a href="https://marcusavery.gumroad.com/l/gyzvtc" target="_blank" rel="noopener" aria-label="Get The Yesterday Man, Issue #1 on Gumroad">
+                        <img src="images/theYesterdayManBookCover.png" alt="The Yesterday Man comic book cover" width="359" height="495">
+                    </a>
+                </figure>
+            </div>
+        </section>
 
-		<p>
-			On other planets, you may find societies dominated by machines—artificial minds dictating the fate of not only humankind but also every species aside from silicon-based lifeforms. In this place, decency and civility have been chopped, cut, and pulverized by war, violence, and endless conflict.
-		</p>
+        <section class="universe-section" id="universe" aria-labelledby="universe-title">
+            <div class="universe-inner">
+                <h2 id="universe-title">Explore the Cataclyzmo universe</h2>
+                <p class="universe-intro">Go beyond the comics. Discover the people, worlds, and inventions behind the stories.</p>
+                <div class="universe-grid">
+                    <a class="universe-card" href="characters.html">
+                        <img class="character-card-art" src="images/future-bg.jpeg" alt="" loading="lazy" width="466" height="700">
+                        <div class="universe-card-copy">
+                            <h3>Characters</h3>
+                            <p>Meet the time travelers, machines, heroes, and threats shaping these stories.</p>
+                            <span class="universe-card-action">Meet the characters <span aria-hidden="true">&#8594;</span></span>
+                        </div>
+                    </a>
+                    <a class="universe-card" href="geo.html">
+                        <img src="images/earth-bg.jpeg" alt="" loading="lazy" width="700" height="700">
+                        <div class="universe-card-copy">
+                            <h3>Worlds</h3>
+                            <p>Explore civilizations transformed by war, technology, and unexplained destruction.</p>
+                            <span class="universe-card-action">Explore the worlds <span aria-hidden="true">&#8594;</span></span>
+                        </div>
+                    </a>
+                    <a class="universe-card" href="items.html">
+                        <img src="images/timemachine-bg.jpeg" alt="" loading="lazy" width="700" height="700">
+                        <div class="universe-card-copy">
+                            <h3>Items &amp; Technology</h3>
+                            <p>Discover the devices and weapons that can change a life—or a timeline.</p>
+                            <span class="universe-card-action">Discover the technology <span aria-hidden="true">&#8594;</span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-		<p>
-			Exploring deeper into the mystery of the unknown, into the shadows of the abyss, one may discover barren civilizations, scavenged of their resources and stricken down to nothing but ash. And for that, only those of monsters and metas remain. The only thing that is known in this strange place is that some seemingly harmless flashes of light from up in the sky had rained down on the planet, leaving only the chosen to survive. 
-		</p>
+    </main>
 
-		<p>
-			Across the galaxy a little further just beyond the prior planet's reaches, wormholes open gateways to other worlds, other forgotten paradises. For one step into these vortexes of the unknown leads one free-falling down in the middle of nowhere, on a barren planet, out in some distant place at one corner of the universe. And of these, the Eye of Darkness is the most deceptive path of all, granting the user everything they thought they ever wanted but at the same time leaving them with nothing. 
-		</p>
-
-		<p>
-			These few tales are a mere taste of the adventures to come in this sci-fi universe of heroes, villains, metas, monsters, and dark creatures alike. For there is one who threatens them all, a being capable of obliterating an entire star system with nothing more than thought. This man, or creature, rather, is referred to as none other than the End. As when he comes to pass on this galaxy, one only hopes that the likes of Cataclysmo will be enough to stop him.
-		</p>
-		<p>
-			Finally, the main intent of this site is to share stories and accounts of the various sci-fi warriors and heroes from throughout the universe (as described mainly in the various character pages). These stories will be transcribed and depicted in a set of original comics.
-
-			See below for a summary about the first of these spectacles, the long and thrilling tale of Michael Preston, hero of the past, preserver of the future, and protector of yesteryear—the Yesterday Man:
-		</p>
-		<blockquote> <!-- Inline-like quoting text tag-->
-			"What if you could rewrite history and save the beaten, the broken, and those unjustly slain?"<br><br>
-
-			"At what cost?"<br><br>
-
-			These were the quintessential questions on MICHAEL PRESTON's mind when he invented a machine capable of sending a person back to the exact time and location in which a photo was taken.
-			At first, Michael's motives were sweet and warm, desperate to find out the origin of his parents, who left him on those cold, cruel orphanage steps some thirty years ago. But now, with the moment having finally arrived, Michael seeks to attain fame and a fortune instead with his future knowledge.
-			However, there is one major problem: a man in a mask seems to be following Michael throughout time and stalking him at every turn.
-		</blockquote>
-		<p>
-			<!--"target="_blank"" causes links to open in a new tab. "noopener" prevents a future tab from modifying the previous link, meaning when a user hits
-			    back they can be redirected somewhere else--> 
-			If you are interested in reading onward, click the book cover or manual link to learn <a href="https://www.royalroad.com/fiction/133469/the-yesterday-man" target="_blank" rel="noopener">more</a>.
-	    </p>
-	</article>
-
-	<figure>
-	    <a href="https://marcusavery.gumroad.com/l/gyzvtc" target="_blank" rel="noopener">
-		    <img class="bookCover" src="images/theYesterdayManBookCover.png" alt="The Yesterday Man sci-fi comic book cover">
-		</a>
-	</figure>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 

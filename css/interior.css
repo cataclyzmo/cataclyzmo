@@ -1,0 +1,390 @@
+/* Shared interior-page design: Cataclyzmo's ivory, charcoal, and gold. */
+html {
+    background: #f5f1e8;
+}
+
+body.interior-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f5f1e8;
+    color: #181b20;
+    font-family: "Roboto", sans-serif;
+    --main-content-width: 1152px;
+    --aside-color-left: #e8e3d7;
+    --aside-color-right: #fffdf8;
+    --aside-border-size: 1px;
+}
+
+.interior-page h1,
+.interior-page h2,
+.interior-page h3 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.25;
+}
+
+.page-header {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 48px max(24px, calc((100% - 1104px) / 2));
+    background: #181b20;
+    color: #f5f1e8;
+    border-bottom: 1px solid #353940;
+}
+
+.page-header .page-eyebrow {
+    margin: 0 0 14px;
+    color: #f6cb06;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.interior-page .page-header h1 {
+    width: auto;
+    max-width: none;
+    margin: 0;
+    font-size: clamp(32px, 4vw, 48px);
+    letter-spacing: -0.03em;
+}
+
+.page-header .page-intro {
+    max-width: 62ch;
+    margin: 16px 0 0;
+    color: #d4d1ca;
+    font-size: 18px;
+    line-height: 1.65;
+}
+
+.page-header a {
+    color: #f6cb06;
+    text-underline-offset: 4px;
+}
+
+.interior-page :where(main, article) a {
+    color: #695100;
+    text-underline-offset: 4px;
+}
+
+.interior-page a:focus-visible,
+.interior-page button:focus-visible {
+    outline: 3px solid #b38b00;
+    outline-offset: 4px;
+}
+
+/* Catalogs retain the existing series filtering and team controls. */
+.catalog-page .characterMenus {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1152px;
+    padding: 24px 24px 0;
+}
+
+.catalog-page #characterDropdownMenu {
+    margin: 0;
+    width: auto;
+}
+
+.catalog-page .dropdown-button {
+    background: #181b20;
+    color: #f5f1e8;
+    padding: 14px 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.catalog-page .dropdown-content {
+    right: 0;
+    left: auto;
+    width: min(280px, calc(100vw - 48px));
+    max-height: 60vh;
+    overflow-y: auto;
+    background: #fffdf8;
+    border: 1px solid #d8d4ca;
+}
+
+.catalog-page .dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.catalog-page .dropdown-content .option:hover {
+    background: #eee9dc;
+}
+
+.catalog-page main {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+}
+
+.catalog-page .character {
+    display: block;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid #d8d4ca;
+    border-radius: 8px;
+    background: #fffdf8;
+    box-shadow: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.catalog-page .character:hover {
+    background: #fffdf8;
+    border-color: #8b7330;
+    box-shadow: 0 8px 24px rgb(24 27 32 / 12%);
+}
+
+.catalog-page .character a {
+    display: block;
+}
+
+.catalog-page .character img,
+.catalog-page .team-div .team-img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    border-radius: 0;
+    object-fit: contain;
+    background: #22262c;
+}
+
+.catalog-page .character hr {
+    display: none;
+}
+
+.catalog-page .character h2 {
+    margin: 0;
+    padding: 20px 16px;
+    color: #181b20;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+.catalog-page .hidden-flex-item {
+    display: none;
+}
+
+/* Profile artwork and facts alongside a comfortable reading column. */
+.profile-page main {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: minmax(0, 330px) minmax(0, 1fr);
+    align-items: start;
+    gap: 32px;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 40px 24px 64px;
+}
+
+.profile-page aside {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #fffdf8;
+    border: 1px solid #d8d4ca;
+    border-radius: 8px;
+}
+
+.profile-page aside :is(h1, h2) {
+    padding: 12px 16px;
+    background: #181b20;
+    color: #f5f1e8;
+    font-size: 15px;
+}
+
+.profile-page #characterImage {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    background: #22262c;
+}
+
+.profile-page .stats,
+.profile-page .traits {
+    width: 100%;
+    border: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.profile-page :is(.stats, .traits) :is(td, th) {
+    padding: 8px;
+    overflow-wrap: anywhere;
+    border-bottom: 1px solid #d8d4ca;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.profile-page .stats th:nth-child(1),
+.profile-page .stats td:nth-child(1) {
+    width: 35%;
+}
+
+.profile-page article,
+.reference-page article {
+    box-sizing: border-box;
+    min-width: 0;
+    background: #fffdf8;
+    border: 1px solid #d8d4ca;
+    border-radius: 8px;
+    padding: clamp(20px, 3vw, 36px);
+    font-family: "Roboto", sans-serif;
+    line-height: 1.75;
+}
+
+.profile-page article :is(h1, h2),
+.reference-page article :is(h1, h2) {
+    padding: 0;
+    margin: 28px 0 12px;
+    font-size: 23px;
+    color: #181b20;
+}
+
+.profile-page article > :first-child,
+.reference-page article > :first-child {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.profile-page article p,
+.reference-page article p {
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.profile-page article :is(ol, ul),
+.reference-page article :is(ol, ul) {
+    padding-left: 24px;
+    font-size: 17px;
+}
+
+.interior-page article hr {
+    width: 100%;
+    margin: 20px 0;
+    border: 0;
+    border-top: 1px solid #d8d4ca;
+}
+
+.reference-page article {
+    width: calc(100% - 48px);
+    max-width: 1104px;
+    margin: 40px auto 64px;
+}
+
+.reference-page article li {
+    margin: 0 0 12px;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.reference-page .figures {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 40px 24px 0;
+    gap: 24px;
+}
+
+.reference-page .figures figure {
+    box-sizing: border-box;
+    width: min(100%, 340px);
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #d8d4ca;
+    border-radius: 8px;
+    background: #fffdf8;
+}
+
+.reference-page {
+    --graph-width: 100%;
+}
+
+.reference-page .legend {
+    line-height: 1.8;
+    margin-top: 20px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* A consistent ending on every interior page. */
+.interior-page .site-footer {
+    margin-top: auto;
+    background: #181b20;
+    color: #f5f1e8;
+    border-top: 1px solid #353940;
+}
+
+.interior-page .site-footer-inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 32px 24px;
+}
+
+.interior-page .footer-brand {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.interior-page .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.interior-page .footer-links a {
+    display: inline-block;
+    padding: 8px 0;
+    color: #f5f1e8;
+    text-underline-offset: 4px;
+}
+
+.interior-page .footer-links a:hover {
+    color: #f6cb06;
+}
+
+@media screen and (max-width: 900px) {
+    .catalog-page main { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .profile-page main { grid-template-columns: minmax(0, 1fr); }
+    .profile-page aside { max-width: 400px; margin: 0 auto; }
+}
+
+@media screen and (max-width: 520px) {
+    .catalog-page main { grid-template-columns: minmax(0, 1fr); }
+    .page-header { padding-top: 32px; padding-bottom: 32px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .catalog-page .character { transition: none; }
+}
+
+.catalog-page .comic-availability { margin: 0; padding: 0 20px 24px; line-height: 1.6; }
+.catalog-page .comic-availability a { display: inline; font-weight: 700; }

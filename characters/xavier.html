@@ -8,51 +8,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="scientist hero universe">
     <meta name="description" content="Learn more about the Xavier, a brilliant scientist at New World Technologies.">
-	<title>Character Profile - Xavier Emeka</title>
+	<title>Xavier Emecka | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
           <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
           <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Xavier Emecka</h1>
+    </header>
+
 
     <main>
         <aside>
-            <h1> Xavier Emecka </h1>
+            <h2> Xavier Emecka </h2>
             <img src="../images/xavier-bg.jpeg" id="characterImage">
 
-            <h1>Physical:</h1>
+            <h2>Physical:</h2>
             <table class="traits">
                 <tr>
                     <td>Race</td>
@@ -66,7 +75,7 @@
                     <td>Weight</td>
                     <td>190lb</td>
                 </tr>
-                
+
                 <tr>
                     <td>Gender</td>
                     <td>Male</td>
@@ -85,7 +94,7 @@
                 </tr>
             </table>
 
-            <h1>Personal:</h1>
+            <h2>Personal:</h2>
             <table class="traits">
                 <tr>
                     <td>Secret Identity</td>
@@ -120,7 +129,7 @@
         </aside>
 
     	<article>
-    		<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
     		<p>
                 Xavier was born and raised in an orphanage, not because he had no parents but because his mother was the primary caretaker at one (Mary Emeka). She brought him up and taught him lessons that he would not understand the full gravity of until much later. Unfortunately, she passed when Xavier was only fifteen years old. <br><br>
 
@@ -128,14 +137,25 @@
 
                 After graduating from Harvard with a Ph.D., Xavier took a prestigious role as an optical engineer at New World Technologies. A few years later, he got his bright but somewhat insane friend, Michael Preston, a job there.
     		</p>
-    		<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
     		<p>
     			Xavier is a staff member at New World Technologies in a leading role, mentoring a team of 20-25 young physicists. He is also a member of <i>Read for the Stars</i>, an organization that helps young kids struggling in school to read and write.
     		</p>
-    		<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
     		<p>Xavier has a super intellect, although he is not classified as a threat.</p>
     	</article>
     </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

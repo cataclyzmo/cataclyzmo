@@ -8,51 +8,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="mother caregiver janitor">
     <meta name="description" content="Learn more about Claire, a kind and loving church-going phenom.">
-    <title>Character Profile - Claire Preston</title>
+    <title>Claire Preston | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
           <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
           <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Claire Preston</h1>
+    </header>
+
 
     <main>
     	<aside>
-    		<h1> Claire Preston </h1>
+            <h2> Claire Preston </h2>
     		<img src="../images/claire-bg.jpeg" id="characterImage">
 
-        	<h1>Physical:</h1>
+            <h2>Physical:</h2>
         	<table class="traits">
         		<tr>
         			<td>Race</td>
@@ -84,7 +93,7 @@
                 </tr>
         	</table>
 
-            <h1>Personal:</h1>
+            <h2>Personal:</h2>
         	<table class="traits">
         		<tr>
         			<td>Secret Identity</td>
@@ -123,7 +132,7 @@
     	</aside>
 
         <article>
-            <h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
             <p>
                 Claire was born and grew up in a middle-class family a few miles from Berlin, Germany. When she was in her mid-twenties, she fell in love with an American soldier by the name of Patrick Preston. Despite her parents’ best wishes, she sought to start her life with him in America. <br><br>
 
@@ -131,15 +140,26 @@
 
                 As the years went on, however, Patrick got in deep with the sharks as his gambling addiction began to consume both his mind and body. Upon his passing, Claire was left alone with no job and a son who was very dependent and unusually hungry for someone so small.
             </p>
-            <h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
             <p>
                 Claire is a member of the custodial team located in Springfield High School. She also has an independent business cleaning homes of wealthy people on the weekends. She is an avid Christian attending Mass every Sunday and a church book club with her prayer group every other Saturday.<br><br>
 
                 When it comes to family, she and her adopted son Michael are the last two belonging to the Preston family lineage. 
             </p>
-            <h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
             <p>Not Applicable.</p>
         </article>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

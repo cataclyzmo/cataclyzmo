@@ -1,6 +1,6 @@
 /*Import Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 
 /****************************************************/
 /********************  1 - NAV   ********************/
@@ -23,7 +23,7 @@ nav{
     --menu-exterior-padding: 2vw;
 
     /*space between on the x-axis*/
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 900px) {
     	justify-content: space-between;
     }
 }
@@ -31,11 +31,23 @@ nav{
 /****************************************************/
 /******************** 1.1 - Logo   ******************/
 /****************************************************/
+.site-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: var(--menu-exterior-padding);
+    color: black;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 .logo{
 	/*Turns  cursor into a pointer when hovered over*/
 	cursor: pointer; 
 	width: 50px; 
-	padding-left: var(--menu-exterior-padding);
 }
 
 
@@ -44,7 +56,7 @@ nav{
 /****************************************************/
 
 /*Removes full screen nav-options on small screen devices*/
-@media screen and (max-width: 650px){
+@media screen and (max-width: 900px){
 	.nav-options-fullscreen{
 		display: none;
 	}
@@ -82,14 +94,14 @@ nav ul li a:hover{
 	display:none;
     
     /*ham-menu is enabled on small screen devices*/
-    @media only screen and (max-width: 650px) {
+    @media only screen and (max-width: 900px) {
     	display: flex;
     	width: 50px;
     	z-index: 1; /*makes nav-sidescreen appear in front of all non z-indexed items*/
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
 	.ham-menu:hover{
 		cursor: pointer;
 	}
@@ -146,7 +158,7 @@ nav ul li a:hover{
 .nav-sidescreen{
 	display: none;
 
-	@media only screen and (max-width: 650px) {
+	@media only screen and (max-width: 900px) {
 		height: 100vh; /*screen will take up viewport height equal to 100%*/
 		width: 280px;
 		display: flex;
@@ -174,7 +186,7 @@ nav ul li a:hover{
 }
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 900px) {
 	.nav-sidescreen ul{
 		 /*makes list be not bulleted & not numbered*/
 		 list-style: none; 
@@ -200,3 +212,235 @@ nav ul li a:hover{
 	}
 }
 
+
+
+/* Keep the current page or section visible, including on hover. */
+nav ul li a[aria-current="page"],
+.nav-sidescreen a[aria-current="page"] {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+}
+
+
+/* Desktop navbar visual refresh. */
+@media screen and (min-width: 901px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+        height: 76px;
+        padding: 0 max(24px, calc((100% - 1280px) / 2));
+        background-color: #181b20;
+        border-bottom: 1px solid #353940;
+        font-size: 14px;
+    }
+
+    .site-brand {
+        flex-shrink: 0;
+        gap: 12px;
+        padding-left: 0;
+        color: #f5f1e8;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .logo {
+        display: block;
+        width: 48px;
+        height: auto;
+    }
+
+    .nav-options-fullscreen {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li {
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 12px 10px;
+        border-radius: 4px;
+        color: #f5f1e8;
+        transition: color 0.2s ease, background-color 0.2s ease;
+    }
+
+    nav ul li a:hover {
+        color: #f6cb06;
+        background-color: #252a32;
+        text-decoration: none;
+    }
+
+    nav ul li a[aria-current="page"] {
+        color: #f6cb06;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: #f6cb06;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 8px;
+    }
+}
+
+/* Mobile navigation shares the desktop palette. */
+.menu-backdrop {
+    display: none;
+}
+
+html.menu-open,
+html.menu-open body {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        justify-content: space-between;
+        gap: 12px;
+        width: 100%;
+        height: 76px;
+        padding: 0 20px;
+        background: #181b20;
+        border-bottom: 1px solid #353940;
+    }
+
+    .site-brand {
+        gap: 10px;
+        padding-left: 0;
+        color: #f5f1e8;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .logo {
+        display: block;
+        width: 48px;
+        height: auto;
+    }
+
+    .ham-menu {
+        display: flex;
+        position: relative;
+        flex-shrink: 0;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 0;
+        border-radius: 4px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 1002;
+    }
+
+    .ham-menu:focus-visible {
+        outline: 3px solid #f6cb06;
+        outline-offset: 4px;
+    }
+
+    .ham-menu span,
+    .ham-menu.active span {
+        position: absolute;
+        left: 7px;
+        width: 30px;
+        height: 3px;
+        background: #f5f1e8;
+        transform: none;
+    }
+
+    .ham-menu span:nth-child(1) { top: 12px; }
+    .ham-menu span:nth-child(2) { top: 21px; }
+    .ham-menu span:nth-child(3) { top: 30px; }
+
+    .ham-menu.active {
+        position: fixed;
+        top: 16px;
+        right: 20px;
+    }
+
+    .ham-menu.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .ham-menu.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .menu-backdrop:not([hidden]) {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgb(0 0 0 / 60%);
+        z-index: 1000;
+    }
+
+    .nav-sidescreen {
+        box-sizing: border-box;
+        width: min(320px, 100vw);
+        height: 100vh;
+        height: 100dvh;
+        right: -100vw;
+        padding: 88px 24px 24px;
+        background: #181b20;
+        border-left: 1px solid #353940;
+        align-items: flex-start;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        visibility: hidden;
+        font-size: 20px;
+        transition: right 0.3s ease, visibility 0.3s;
+        z-index: 1001;
+    }
+
+    .nav-sidescreen.active {
+        right: 0;
+        visibility: visible;
+    }
+
+    .nav-sidescreen ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-sidescreen ul li a {
+        display: block;
+        padding: 14px 12px;
+        border-radius: 4px;
+        color: #f5f1e8;
+        font-family: "Montserrat", sans-serif;
+        line-height: 1.5;
+    }
+
+    .nav-sidescreen ul li a:hover {
+        color: #f6cb06;
+        background: #252a32;
+    }
+
+    .nav-sidescreen ul li a[aria-current="page"] {
+        color: #f6cb06;
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        text-underline-offset: 6px;
+    }
+
+    .nav-sidescreen a:focus-visible {
+        outline: 3px solid #f6cb06;
+        outline-offset: 2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .nav-sidescreen,
+    .ham-menu span {
+        transition: none;
+    }
+}

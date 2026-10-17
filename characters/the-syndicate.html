@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="deadly villain team">
 	<meta name="description" content="Learn more about the villain team known as the Syndicate, a group of formerly disenfranchised criminals seeking to join forces to make a permanent mark on the world.">
-	<title>Villain Team - The Syndicate Bio</title>
+	<title>The Syndicate | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>The Syndicate</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1 id="characterName"> Syndicate - Nemesis </h1>
+            <h2 id="characterName"> Syndicate - Nemesis </h2>
 			<img src="../images/nemesis-bg.jpeg" class="teamImage" id="characterImage">
 			<script id="syndicate-teamscript" src="../js/team-swap.js"></script>
 
@@ -148,7 +157,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -180,7 +189,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -218,17 +227,17 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				The Syndicate has five founding members. The leader of this group is Nemesis, a half-alien, half-machine, domination-seeking maniac. His right-hand man is Quick Draw, the former right-hand man of Bandit from the Society of Rogues. After the Society had a falling out, Quick Draw took his place among his fellow Syndicate members. Vex Krueger from the planet Merth and Tiger Hide from the planet Genova also joined the Syndicate soon after. As a side note, Nemesis was generous enough to enhance each of the various other members with tech upgrades, including but not limited to giving Tiger Hide his mechanical side. <br><br>
 
 				Lastly, there is one final member of the Syndicate known exclusively as Pyro II. His true identity is unknown, but let's just say his look was inspired by the good-doer known as Pyro Guy (aka Pyromaniac).
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				The Syndicate is affiliated with no other outside organizations aside from their own internal group. Note, the team formed on Battleworld-Earth after the completion of the great 76th annual Tournament of Champions.
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				To inquire about the powers and abilities of the team, one can view the power and abilities sections of individual members. The team consists of all members at their peak with some slight to moderate enhancements depending on the individual, which were fulfilled by some of Nemesis' mad science experiments. <br><br>
 
@@ -237,5 +246,16 @@
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

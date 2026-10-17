@@ -8,49 +8,58 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="hero no superpowers">
 	<meta name="description" content="Learn more about Vigilante-X, a hero who does not have any superpowers, assuming a tremendous will doesn't count as one.">
-	<title>Hero - Vigilante-X Bio</title>
+	<title>Vigilante-X | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Vigilante-X</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1> Vigilante-X </h1>
+            <h2> Vigilante-X </h2>
 			<img src="../images/vigilantex-bg.jpeg" id="characterImage">
 
 			<table class="stats">
@@ -147,7 +156,7 @@
 				</tr>
 	    	</table>
 
-	    	<h1>Physical:</h1>
+            <h2>Physical:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
@@ -179,7 +188,7 @@
 	    		</tr>
 	    	</table>
 
-	        <h1>Personal:</h1>
+            <h2>Personal:</h2>
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
@@ -217,7 +226,7 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				When Kyle was eight years old, the worst thing that could happen to a boy occurred. On his former favorite holiday, Halloween, a stranger came to visit. This stranger was referred to infamously by the name of Reaper Sly, a serial killer who was known to knock on people's doors imitating delivery drivers, construction workers, and sometimes trick-or-treaters. On this one fateful night, Reaper Sly came to Kyle's door and knocked three times, bangs that will be forever solidified in Kyle's head. Soon after, Kyle's mother answered the door, and that was the last Kyle ever saw of her. <br><br>
 
@@ -225,18 +234,29 @@
 
 				With nothing but time and nothing to do but train, Kyle sought not only to walk again but also to become a street-level crime-fighting <i>hero</i>. And despite his progress, Kyle kept his wheelchair in his personal life, throwing off any suspecting cop or criminal that was on to unraveling his secret identity.
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
 				Kyle is affiliated with the <i>hero</i> group known as H.E.R.O., which stands for Help Everyone Respect Oneself. This group is led by Super Seven, a neurotic and overly cautious man who seeks to keep the team from doing anything "that actually matters" (Kyle's words). H.E.R.O. members participate in food drives, volunteer for soup kitchens, spend time looking for lost pets, go grocery shopping for the elderly, and participate in walkathons, but they do no actual crime fighting, as Super Seven deems it stupid and unproductive. In fact, any engagement in that kind of behavior would get a member of H.E.R.O. permanently banned. <br> <br>
 
 				Unfortunately for Super Seven, all that was about to change with the induction of one somewhat hotheaded member.
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<p>
 				This section will probably be the easiest ever written for a character, as Vigilante-X has no powers. He is not even that strong, fast, or smart either; however, what he lacks in those things (aka everything else) he makes up in pure willpower. That and his dual-action pistols, bulletproof vests, and other technical gear give him a slight edge. Vigilante-X's yellow stat durability booster is derived from his strongest armor (which unfortunately also makes him quite sluggish). 
 			</p>
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

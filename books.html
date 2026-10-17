@@ -6,76 +6,94 @@
   <link rel="icon" type="image/png" href="images/logo.png">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Original Sci-fi Universe: Books</title>
+	<title>Comics | Cataclyzmo</title>
 
   <!--Import Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page catalog-page">
 
   <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-  <div class="nav-sidescreen">
+  <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="books.html" aria-current="page">Comics</a></li>
           <li><a href="characters.html">Characters</a></li>
           <li><a href="items.html">Items</a></li>
-          <li><a href="geo.html">Geo</a></li>
+          <li><a href="geo.html">Worlds</a></li>
           <li><a href="power-index.html">Power Index</a></li>
           <li><a href="credits.html">Credits</a></li>
-          <li><a href="books.html">Books</a></li>
         </ul>
   </div>
 
   <nav>
-    <a href="index.html"><img class="logo" src="images/logo.png"></a>
+    <a class="site-brand" href="index.html">
+        <img class="logo" src="images/logo.png" alt="">
+        <span>Cataclyzmo</span>
+    </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="index.html">Home</a></li>
+          <li><a href="books.html" aria-current="page">Comics</a></li>
           <li><a href="characters.html">Characters</a></li>
           <li><a href="items.html">Items</a></li>
-          <li><a href="geo.html">Geo</a></li>
+          <li><a href="geo.html">Worlds</a></li>
           <li><a href="power-index.html">Power Index</a></li>
           <li><a href="credits.html">Credits</a></li>
-          <li><a href="books.html">Books</a></li>
     </ul>
     <!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
   </nav>
   <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
   <!--This allows the toggling of the hamburger menu-->
   <script src="js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow">Explore Cataclyzmo</p>
+        <h1>Comics</h1>
+        <p class="page-intro">Start with The Yesterday Man, Issue #1, and discover more stories from Cataclyzmo.</p>
+    </header>
 
-  <h1>Novels (3) </h1>
-
-  <p></p><!--added for vertical spacing only-->
 
   <main>
       <div class="character">
         <a href="https://marcusavery.gumroad.com/l/gyzvtc">
-          <img src="images/theYesterdayManBookCover.png"/>
+          <img src="images/theYesterdayManBookCover.png" alt="The Yesterday Man cover">
         </a> <hr/>
-        <h2>YESTERDAY MAN</h2>
+        <h2>The Yesterday Man</h2>
+        <p class="comic-availability"><a href="https://marcusavery.gumroad.com/l/gyzvtc">Get Issue #1 on Gumroad &#8594;</a></p>
       </div>
 
       <div class="character">
-          <img src="images/worldWarRoboticaBookCover.png"/>
-        </a> <hr/>
+          <img src="images/worldWarRoboticaBookCover.png" alt="World War Robotica cover">
+        <hr/>
         <h2>W.W. ROBOTICA</h2>
       </div>
 
       <div class="character">
-          <img src="images/ofMetasAndMonstersBookCover.png"/>
-        </a> <hr/>
+          <img src="images/ofMetasAndMonstersBookCover.png" alt="Of Metas and Monsters cover">
+        <hr/>
         <h2>METAS & MONSTERS</h2>
       </div>
 
   </main>
 
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="books.html">Comics</a></li>
+                <li><a href="credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>

@@ -9,52 +9,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="shapeshifting device hero">
     <meta name="description" content="Learn more about L.I.A.R., a device capable of altering the physical appearance of anyone, turning them into a shapeshifter.">
-    <title>The L.I.A.R. Device - Super Item</title>
+    <title>The L.I.A.R. Device | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
-    
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../items.html">Items &amp; Technology</a></p>
+        <h1>The L.I.A.R. Device</h1>
+    </header>
+
+
 
     <main>
     	<aside>
-    		<h1> The L.I.A.R. Device </h1>
+            <h2> The L.I.A.R. Device </h2>
     		<img src="../images/liardevice-bg.jpeg" id="characterImage">
 
-            <h1>Stats:</h1>
+            <h2>Stats:</h2>
             <table class="traits">
                 <tr>
                     <td>Ability</td>
@@ -82,7 +91,7 @@
                 </tr>
             </table>
 
-            <h1>Origins:</h1>
+            <h2>Origins:</h2>
             <table class="traits">
                 <tr>
                     <td>Inventor</td>
@@ -101,15 +110,15 @@
     	</aside>
 
         <article>
-            <h1>Origins</h1><hr/>
+            <h2>Origins</h2><hr/>
             <p>
                 The device was created by a team of scientists led by Xavier Emeka. It has gone through a number of iterations and prototypes. It was intended to be used for military personnel to camouflage themselves among foreign adversaries. In summary, the L.I.A.R. device has applications in the fields of spying and espionage. It also was intended as a form of imitation to mimic world leaders & install puppet governments into foreign target nations.
             </p>
-            <h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
             <p>
                 The device grants the user the capability to morph into any target they have selected, whether it be an electrician, plumber, construction worker, mailman, doctor, Asian, American, European, African, Australian, etc. The device works by obscuring & refracting arrays of light beams, interpolating/estimating gaps between rays in order to generate nearly any image. This is where the device gets its name, but also for the dual purpose of allowing anyone to <i>lie</i> to another about who they really are.
             </p>
-            <h1>Limitations</h1><hr/>
+            <h2>Limitations</h2><hr/>
             <p>
                 The device cannot transform anyone into something unless it has a prescanned copy of the target's physical structure. It also does not do anything to change an individual's composition or size, only how they appear to the outside world. For instance, if a 5-foot-tall person projects themselves as a 6-foot-tall person, the additional foot above their head is nothing but <i>smoke & mirrors</i>. The device is sensitive to temperature constraints above 150°F and below -10°F. It also cannot withstand pressures of above 3000 psi. Early models also required the wearer to aid the illusion as much as possible by wearing clothes or fashioning their hair in a similar style to the subject that they were attempting to impersonate.
             </p>
@@ -117,5 +126,16 @@
 
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

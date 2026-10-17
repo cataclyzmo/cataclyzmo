@@ -9,51 +9,60 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="a king's sword hero universe">
     <meta name="description" content="Learn more about the great sword, a king's weapon forged by the kingdom's finest blacksmith and purified by its highest priest.">
-    <title>A Great Sword - Super Item</title>
+    <title>A Great Sword | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
     <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-    <div class="nav-sidescreen">
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul>
     </div>
 
     <nav>
-        <a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
           <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
           <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../items.html" aria-current="page">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
           <li><a href="../power-index.html">Power Index</a></li>
           <li><a href="../credits.html">Credits</a></li>
-          <li><a href="../books.html">Books</a></li>
         </ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
     </nav>
     <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
     <!--This allows the toggling of the hamburger menu-->
     <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../items.html">Items &amp; Technology</a></p>
+        <h1>A Great Sword</h1>
+    </header>
+
 
     <main>
     	<aside>
-    		<h1> A Great Sword </h1>
+            <h2> A Great Sword </h2>
     		<img src="../images/greatsword-bg.jpeg" id="characterImage">
-            
-            <h1>Stats:</h1>
+
+            <h2>Stats:</h2>
             <table class="traits">
                 <tr>
                     <td>Ability</td>
@@ -81,7 +90,7 @@
                 </tr>
             </table>
 
-            <h1>Origins:</h1>
+            <h2>Origins:</h2>
             <table class="traits">
                 <tr>
                     <td>Inventor</td>
@@ -100,15 +109,15 @@
     	</aside>
 
         <article>
-            <h1>Origins</h1><hr/>
+            <h2>Origins</h2><hr/>
             <p>
                 This weapon was crafted during the third age by Bartholomew the Strong, the Kingdom of Ali's finest blacksmith. It took almost 6 months to gather the materials for this fine weapon and another 6 months just to finish its construction. This weapon was meant to be ten times stronger than a cavalryman's longsword and five times as light. The highest priest of Ali also had a stake in the game, purifying this sword on the top of Mount Sudak, making this weapon super effective against demonic foes.
             </p>
-            <h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
             <p>
                 This sword is not only the fastest and strongest in all the kingdom of Ali. It also is the only weapon that can deal damage to demonic or undead foes. This capability makes this item class II since it bestows upon its wielder abilities beyond the metaphysical.
             </p>
-            <h1>Limitations</h1><hr/>
+            <h2>Limitations</h2><hr/>
             <p>
                 This sword has few limitations other than its enormous length, which may make it difficult for shorter users to wield.<br><br>
 
@@ -118,5 +127,16 @@
 
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>

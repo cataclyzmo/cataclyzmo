@@ -60,9 +60,9 @@ h1{
 	  the same color as the background & the middle circle
 	  set to transparent (this allows the background 
 	  'conic-gradient to show through).*/
-	background-image: radial-gradient(lightgoldenrodyellow 0 40%, 
+	background-image: radial-gradient(#fffdf8 0 40%,
 		                              transparent 40% 70%, 
-		                              lightgoldenrodyellow 70%), 
+		                              #fffdf8 70%),
 	                  /*Conic gradient varies as you go 360 
 	                    degrees around a center point*/
 	                  conic-gradient(from 30deg, 
@@ -83,9 +83,9 @@ h1{
 	max-width: var(--graph-width);
 	aspect-ratio: 1;
 	border-radius: 50%;
-	background-image: radial-gradient(lightgoldenrodyellow 0 40%, 
+	background-image: radial-gradient(#fffdf8 0 40%,
 		                              transparent 40% 70%, 
-		                              lightgoldenrodyellow 70%), 
+		                              #fffdf8 70%),
 	                  conic-gradient(from 30deg, 
 	                  	             var(--c1) 0% 37%, 
 	                  	             var(--c2) 37% 88%, 
@@ -97,9 +97,9 @@ h1{
 	max-width: var(--graph-width);
 	aspect-ratio: 1;
 	border-radius: 50%;
-	background-image: radial-gradient(lightgoldenrodyellow 0 40%, 
+	background-image: radial-gradient(#fffdf8 0 40%,
 		                              transparent 40% 70%, 
-		                              lightgoldenrodyellow 70%), 
+		                              #fffdf8 70%),
 	                  conic-gradient(from 30deg, 
 	                  	             var(--c1) 0% 25%, 
 	                  	             var(--c2) 25% 50%, 

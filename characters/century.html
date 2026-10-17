@@ -9,49 +9,58 @@
 	<meta name="keywords" content="time traveling hero">
 	<meta name="description" content="Learn more about the Century, a time-traveling hero who is more than meets the eye.">
 	<meta name="robots" content="index, follow">
-	<title>Hero - The Century Bio</title>
+	<title>The Century | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="interior-page profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen">
+	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
       	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
         </ul>
 	</div>
 
 	<nav>
-		<a href="../index.html"><img class="logo" src="../images/logo.png"></a>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
         <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
       	  <li><a href="../index.html">Home</a></li>
-      	  <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
       	  <li><a href="../items.html">Items</a></li>
-      	  <li><a href="../geo.html">Geo</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
        	  <li><a href="../power-index.html">Power Index</a></li>
       	  <li><a href="../credits.html">Credits</a></li>
-      	  <li><a href="../books.html">Books</a></li>
 		</ul><!--used only on small screens-->
-        <div class="ham-menu">
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
            <span></span>
            <span></span>
            <span></span>
-        </div>
+        </button>
 	</nav>
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>The Century</h1>
+    </header>
+
 
 	<main>
 
 		<aside>
-			<h1 id="characterName"> The Century </h1>
+            <h2 id="characterName"> The Century </h2>
 			<img src="../images/century-bg.jpeg" class="teamImage" id="characterImage">
 			<script id="century-teamscript" src="../js/team-swap.js"></script>
 
@@ -149,7 +158,7 @@
 			    </tr>
 	    	</table>
 
-    		<h1>Physical:</h1>
+            <h2>Physical:</h2>
     		<table class="traits">
     			<tr>
     				<td>Race</td>
@@ -181,7 +190,7 @@
     			</tr>
     		</table>
 
-    	    <h1>Personal:</h1>
+            <h2>Personal:</h2>
     		<table class="traits">
     			<tr>
     				<td>Secret Identity</td>
@@ -219,7 +228,7 @@
 		</aside>
 
 		<article>
-			<h1>BackStory</h1><hr/>
+            <h2>BackStory</h2><hr/>
 			<p>
 				The year was 1982, and a boy was left alone on the steps of an old, rundown orphanage, ignorant of the cruel, cold twists and turns of the world. That boy was Michael Preston, and he spent so many years of his life hoping and plotting to meet them just to ask them one simple question—why. Why did they leave him to rot alone in a bad neighborhood in the middle of the night long before his first birthday? Michael had spent so many sleepless nights staring at photos of the past, imagining himself standing right along with them. <br> <br>
 
@@ -228,17 +237,17 @@
 
 				After receiving a Ph.D. in the field, Michael still struggled to find work. This predicament was mainly because his thesis was in an area most would label as pure science fiction—time travel. It wasn’t until a few years later that his best pal from the old orphanage days, Xavier Emeka, landed him a nice shiny desk job at New World Technologies.
 			</p>
-			<h1>Affiliations</h1><hr/>
+            <h2>Affiliations</h2><hr/>
 			<p>
                 Michael is a member of the Preston family, consisting of himself and his adopted mother, Claire Preston. Former member Pat Preston is deceased as of early 1997. <br> <br>
 
                 Michael is employed by New World Technologies along with his best friend since before he even knew what a friend was—Xavier Emeka, his arch-nemesis—Klaus Petrov, and Sarah Goldstein. He also is part of the Martial Arts Group with a primary focus on Brazilian Jiu-Jitsu and Krav Maga.
 
 			</p>
-			<h1>Powers & Abilities</h1><hr/>
+            <h2>Powers & Abilities</h2><hr/>
 			<ol>
-				<li><b><a href="timemachine.html">Time Machine</a>:</b> This allows an individual to return to the exact time and location in which a picture was taken.</li>
-				<li><b><a href="bffdevice.html">BFF</a>:</b>  The Big F@#cking Freeze freezes time temporarily for everyone within 100 yards except the wielder. This device is what gives Michael a speed manipulation boost of 8 points (see yellow stats).</li>
+				<li><b><a href="../items/time-machine.html">Time Machine</a>:</b> This allows an individual to return to the exact time and location in which a picture was taken.</li>
+				<li><b><a href="../items/bff-device.html">BFF</a>:</b>  The Big F@#cking Freeze freezes time temporarily for everyone within 100 yards except the wielder. This device is what gives Michael a speed manipulation boost of 8 points (see yellow stats).</li>
 				<li><b>Homing Beacon:</b>  When activated, this contraption returns a time traveler to his home time.</li>
 				<li>
 					<b>Plasma Cannon:</b>  This weapon is a high-energy arm cannon capable of shooting off high concentrations of gamma Radiation. The blast has a green hue. Due to its reload time, this item's energy manipulation boost is a temporary two.
@@ -252,7 +261,7 @@
 					</ul>
 				</li>
 				<li><b>9mm Pistols:</b>  These are Michael’s backup weapons of choice, although, to most, they would be more than primary.</li>
-				<li><b><a href="liardevice.html">LIAR</a>:</b>  The Light Intensive Array Refraction device allows one to change their appearance, greatly enhancing the effect of ordinary cosmetics. </li>
+				<li><b><a href="../items/liar-device.html">LIAR</a>:</b>  The Light Intensive Array Refraction device allows one to change their appearance, greatly enhancing the effect of ordinary cosmetics. </li>
 				<li><b>White Lightning:</b>  Kevlar/Nano Fiber Biweave Class 1 bulletproof, knife-proof, high-maneuverability armor.</li>
 				<li><b>The Gravity Hook:</b> This little number is what gives Michael his psionic abilities, pulling in foes with a gravitational thrust.
 			</ol>
@@ -260,14 +269,25 @@
 				<b><u>Legacy Technology</u>:</b> Dual Shot Smith & Wessons are high-caliber 13mm double-action pistols. These are Michael’s main weapons of choice with the Proto-Armor; however, they do have a hell of a lot of blowback. The Proto-Armor is a Kevlar-based Class 2 bulletproof and knife-proof armor. This suit clocks in at about $100,000 per soldier.
 			</p>
 
-			<h1>Quotes</h1><hr/>
+            <h2>Quotes</h2><hr/>
 			<p>
 			   "I invented time travel to save the innocent, to right the supposed wrongs of history, and to become famous & wealthy beyond reason. However, instead, because of my arrogance and my pride, the only person I ever truely cared about, the only one I ever sought to protect is dead. I made a promise the day she died to never time travel again, except to stop myself from doing it in the first place." -Michael Preston </br></br>
-               
+
 			   "I am the only one who can." -Michael Preston </br>
 			</p>
 		</article>
 
     </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
 </html>
