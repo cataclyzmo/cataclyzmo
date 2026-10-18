@@ -1,0 +1,7 @@
+Asset: `images/flamedragon-epic.png`
+
+Generated with the built-in image generation tool, transparent_background=true. PNG alpha verified. Original assets preserved.
+
+Final prompt:
+
+Use case: style-transfer. Asset: Flame Emperor Dragon epic comic character cutout for Cataclyzmo website. Image 1 is character design reference; image 2 is inked comic rendering style only. Reimagine the reference dragon as an immense intimidating fire emperor in polished detailed comic illustration: crisp black contours, intricate crosshatching, dimensional cel shading, rich deep crimson scales and black armor-like ridges. Preserve its long red serpentine dragon body, elongated angular snout, glowing golden-yellow eyes, curved black horns, black dorsal spikes, four clawed legs, enormous bat wings with black membranes and red structural ribs, long pointed tail. Dynamic three-quarter flying pose, wings spread, fierce intelligent expression, small controlled lick of fire at mouth. Entire dragon including BOTH wing tips, horns, all feet and tail fully inside frame with comfortable margins. Wide landscape composition appropriate for a dragon silhouette. TRANSPARENT BACKGROUND, isolated character cutout with genuine alpha. No scenery, smoke clouds, halo, ground, backdrop or cast shadow. No text or logos. Exclude the small toy/human figures in reference. Exactly one dragon. Match the epic inked finish of the style reference, not the reference's toy-like 3D material.

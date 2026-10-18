@@ -1,0 +1,7 @@
+Asset: `images/goblinking-epic.png`
+
+Generated with the built-in image generation tool, transparent_background=true. PNG alpha verified. Original assets preserved.
+
+Final prompt:
+
+Use case: style-transfer. Asset: Goblin King character portrait cutout for Cataclyzmo comic website. Image 1 exact character identity and throne reference; image 2 epic inked comic rendering style reference only. Regenerate the Goblin King as an imposing ancient cunning green goblin monarch seated on his ornate black iron throne with deep red upholstered back. Preserve long pointed ears, severe angular green face, narrowed golden eyes, long flowing white beard, tall jagged gold crown, white fur shoulder mantle over dark armor, heavy gray royal robes, bronze bracers, long clawed fingers, bare green feet. His contemptuous expression and slouched regal pose convey a greedy intelligent tyrant. Throne has elaborate carved iron scrollwork and spikes. Upgrade to polished detailed inked comic illustration matching Darconica, confident crisp black contours, fine crosshatching, dimensional cel shading, rich controlled colors, dramatic highlights. Centered front three-quarter seated full figure composition: entire crown, throne top, throne sides, both hands and feet fully inside frame with comfortable breathing room. Genuine transparent alpha background. Isolate ONLY goblin and throne; no floor, scenery, smoke, halo, candles, architecture, cast shadow, backdrop, text, logo or extra characters. Retain recognizable identity rather than a generic goblin. Portrait format.

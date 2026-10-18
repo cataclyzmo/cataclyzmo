@@ -128,6 +128,11 @@ body.interior-page {
     background: transparent;
 }
 
+.catalog-page .character img.flame-dragon-image {
+    object-position: center;
+    padding: 12px 8px;
+}
+
 .catalog-page .character h2 {
     margin: 0;
     position: relative;
