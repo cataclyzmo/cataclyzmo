@@ -73,44 +73,6 @@ body.interior-page {
     outline-offset: 4px;
 }
 
-/* Catalogs retain the existing series filtering and team controls. */
-.catalog-page .characterMenus {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1152px;
-    padding: 24px 24px 0;
-}
-
-.catalog-page #characterDropdownMenu {
-    margin: 0;
-    width: auto;
-}
-
-.catalog-page .dropdown-button {
-    background: #181b20;
-    color: #f5f1e8;
-    padding: 14px 24px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.catalog-page .dropdown-content {
-    right: 0;
-    left: auto;
-    width: min(280px, calc(100vw - 48px));
-    max-height: 60vh;
-    overflow-y: auto;
-    background: #fffdf8;
-    border: 1px solid #d8d4ca;
-}
-
-.catalog-page .dropdown:focus-within .dropdown-content {
-    display: block;
-}
-
-.catalog-page .dropdown-content .option:hover {
-    background: #eee9dc;
-}
-
 .catalog-page main {
     box-sizing: border-box;
     display: grid;
@@ -258,7 +220,41 @@ body.interior-page {
     background: #22262c;
 }
 
-.profile-page .stats,
+.profile-page .character-forms {
+    margin: 0;
+    padding: 12px;
+    border: 0;
+}
+
+.profile-page .character-forms legend {
+    padding: 8px 0 0;
+    font: 600 12px "Poppins", sans-serif;
+}
+
+.profile-page .character-forms label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-height: 44px;
+    cursor: pointer;
+    font: 12px "Poppins", sans-serif;
+}
+
+.profile-page .character-forms input {
+    accent-color: #bd2838;
+}
+
+.profile-page .character-forms input:checked + span {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.profile-page .character-forms input:focus-visible {
+    outline: 2px solid #bd2838;
+    outline-offset: 3px;
+}
+
 .profile-page .traits {
     width: 100%;
     border: 0;
@@ -268,7 +264,7 @@ body.interior-page {
     line-height: 1.5;
 }
 
-.profile-page :is(.stats, .traits) :is(td, th) {
+.profile-page .traits :is(td, th) {
     padding: 8px;
     overflow-wrap: anywhere;
     border-bottom: 1px solid #d8d4ca;

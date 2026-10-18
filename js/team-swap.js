@@ -12,12 +12,6 @@ const tigerArr = [
   { name: "Tiger Hide - Enhanced", img: "../images/tigerhideenhanced-bg.jpeg"}
 ];
 
-const centuryArr = [
-  { name: "The Century", img: "../images/century-design.png" },
-  { name: "Proto-Armor", img: "../images/protoarmor-bg.jpeg" },
-  { name: "Michael Preston", img: "../images/michael-bg.jpeg" }
-];
-
 const syndicateArr = [
   { name: "Syndicate - Nemesis", img: "../images/nemesis-design.png" },
   { name: "Syndicate - Quick Draw", img: "../images/quickdraw-design.png" },
@@ -38,12 +32,6 @@ script = document.getElementById("tiger-teamscript");
 if(script != null)
 {
 	content = tigerArr;
-}
-
-script = document.getElementById("century-teamscript");
-if(script != null)
-{
-  content = centuryArr;
 }
 
 script = document.getElementById("syndicate-teamscript");

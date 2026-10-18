@@ -38,105 +38,6 @@ h1{
 
 
 /****************************************************/
-/***************  2 - Character Menus  **************/
-/****************************************************/
-
-.characterMenus{
-  /*applies to text, pictures, & pretty much any child*/
-  text-align: right;
-
-  /*This margin property allows children to have equal margins 
-    on the left & right sides*/
-  margin: auto;
-
-  /*establishes the width of this div*/
-  width: 96%;
-
-  /*puts upper limit on the width*/
-  max-width: var(--main-content-width); 
-}
-
-#characterDropdownMenu{
-  /*top right bottom left*/
-  margin:15px 10px 10px 0;
-  width: 150px;
-}
-
-/* Dropdown container */
-.dropdown {
-  /*default is 'static'. Need to set because 'dropdown' is 
-    the nearest positioned ancestor of 'dropdown-content'. 
-    'dropdown-content' is 'abosolute' & absolute content is 
-    positioned relative to its nearest positioned (relative | absolute | fixed)
-    ancestor */
-  position: relative;
-  /* default is 'block' for a 'div'; however, block doesn't respond to 
-    'text-align' of the parent element ('characterMenus' in this case). Make
-    'inline-block' so that it does respond & thus align properly.*/
-  display: inline-block;
-}
-
-/* Button styling */
-.dropdown-button {
-  background-color: black;
-  color: white; /*button text*/
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  /*use absolute positioning as not to shove the content
-    below it down.*/
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 180px;
-  /*h-offset v-offset blur-radius color*/
-  /*gives box shadow effect around the content menu*/
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-  left: -30px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content .option {
-  padding: 12px 16px;
-  text-decoration: none;
-  /*width pattern color*/
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
-
-/* Hover effects for dropdown menu items aka 'options' */
-.dropdown-content .option:hover {
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-
-/************dropdown menu hovers**********/
-
-/* When you hover over 'dropdown' (which includes the dropdown menu button), 
-   show the dropdown menu by converting its display to 'block' (from
-   'none). This is a little confusing because the trigger is hovering over
-   the 'dropdown' class even though the eventual target is the 'dropdown-content' 
-   class.*/
-.dropdown:hover .dropdown-content {
-  display: block;
-  cursor: pointer;
-}
-
-/* Button hover effect */
-.dropdown:hover .dropdown-button {
-  background-color: gray;
-}
-
-
-/****************************************************/
 /*****************  3 - CHARACTERS  *****************/
 /****************************************************/
 
@@ -155,7 +56,6 @@ main {
 }
 
 .character {
-  display: hidden; /*default the display to hidden, it will be updated by javascript*/
 
   /*h-offset, v-offset, blur, spread, color*/
   /*'blur' ctrls the blur of the shadow line*/

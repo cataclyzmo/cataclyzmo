@@ -87,50 +87,6 @@ aside h1{
 }
 
 /****************************************************/
-/******************  2.1.1 - Stats  *****************/
-/****************************************************/
-.stats{
-	border: var(--aside-border-size) solid white;
-	/*collapses borders of adjacent table cells into
-	  single unified borders*/
-	border-collapse: collapse;
-	background-color: var(--aside-color-right);
-	text-align: center;
-	width: 330px;
-	font-size: var(--aside-stats-and-traits-font-sz);
-	table-layout: fixed;
-}
-
-/*nth-child is a pseudo class*/
-/*This block is targeting the first cell of 
-  the table header & the first cell of each 
-  row*/
-.stats th:nth-child(1), .stats td:nth-child(1){
-	width: 110px;
-	font-family: Garamond;
-	background: var(--aside-color-left);
-	font-size: var(--aside-stats-and-traits-font-sz);
-}
-
-.stats td:nth-child(1){
-	font-family: Roboto, Garamond;
-}
-
-.one{
-	border-left: solid var(--aside-color-right);
-}
-
-.filled-in{
-	background: red; 
-	border: 2px solid var(--aside-color-right);
-}
-
-.filled-in-yellow{
-	background: yellow; 
-	border: 2px solid var(--aside-color-right);
-}
-
-/****************************************************/
 /******************  2.1.2 - Traits  ****************/
 /****************************************************/
 .traits{
