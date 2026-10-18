@@ -1,5 +1,15 @@
 # Character portrait generation
 
+## Proto Armor
+
+Asset: `images/protoarmor-design.png`
+
+Generated with the built-in image generation tool. References: original `images/protoarmor-bg.jpeg` for armor identity, `images/the-yesterday-man-design.png` and `images/michael-design.png` for comic rendering style.
+
+Final prompt:
+
+Use case: style-transfer. Asset type: updated Proto Armor character portrait for comic website. Image 1 is the exact armor design reference: preserve its recognizable early prototype suit, gray/silver segmented chest plates, black flexible undersuit at joints and waist, rounded shoulder guards, broad black horizontal wraparound visor with angular V-shaped silver brow, closed silver mouth/chin plate, vertical three-pair rectangular abdominal plates and simple armored gloves. Image 2 is a rendering style reference only (The Yesterday Man's later armor); image 3 is another rendering style and portrait framing reference (Michael). Redraw the Image 1 Proto Armor in the polished detailed inked comic illustration style of images 2 and 3: crisp confident black contours, intricate crosshatching, cel-shaded metal, subtle scratches and restrained gray/silver colors. Keep the prototype's simpler design, no green lights, no advanced Y-shaped visor, no chest emblem, no tubes. Single character, front-facing relaxed standing pose, helmet through mid-thigh framing like Michael's portrait, both arms and hands fully inside frame with breathing room above helmet. Dark charcoal studio background with soft neutral halo matching Michael. The face is fully concealed by its opaque black visor. No text, no captions, no panels, no extra people or weapons. Preserve original armor identity while upgrading illustration quality.
+
 ## Michael Preston
 
 Asset: `images/michael-design.png`

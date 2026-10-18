@@ -3,8 +3,8 @@ const characterPortrait = document.getElementById('characterImage');
 const characterHeading = document.getElementById('characterName');
 const appearances = {
     michael: { name: 'Michael Preston', image: '../images/michael-design.png', alt: 'Michael Preston in his New World Technologies lab coat' },
-    proto: { name: 'Proto Armor', image: '../images/protoarmor-bg.jpeg', alt: 'Michael Preston wearing Proto Armor' },
-    century: { name: 'Century', image: '../images/century-design.png', alt: 'Michael Preston wearing Century’s white armor with glowing green accents' }
+    proto: { name: 'Proto Armor', image: '../images/protoarmor-design.png', alt: 'Michael Preston wearing silver Proto Armor with a black visor, illustrated in detailed comic style' },
+    yesterdayMan: { name: 'The Yesterday Man', image: '../images/the-yesterday-man-design.png', alt: 'Michael Preston wearing The Yesterday Man’s white armor with glowing green accents' }
 };
 
 formSelector.hidden = false;
