@@ -84,6 +84,47 @@ body.interior-page {
     padding: 32px 24px 64px;
 }
 
+.catalog-page .character-search {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 32px 24px 0;
+}
+
+.catalog-page .character-search label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.catalog-page .character-search input {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 480px;
+    padding: 12px 14px;
+    border: 1px solid #8b7330;
+    border-radius: 3px;
+    background: #fffdf8;
+    color: #181b20;
+    font: inherit;
+}
+
+.catalog-page .character-search input:focus-visible {
+    outline: 3px solid #b38b00;
+    outline-offset: 3px;
+}
+
+.catalog-page .character-no-results {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 18px;
+}
+
+.catalog-page .character-no-results[hidden] {
+    display: none;
+}
+
 /* Shared catalog artwork and comic nameplates. */
 .catalog-page .character {
     border: 1px solid #353941;

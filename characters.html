@@ -61,6 +61,11 @@
         <p class="page-intro">Meet the time travelers, machines, heroes, and threats shaping the Cataclyzmo universe.</p>
     </header>
 
+    <form class="character-search" role="search" action="characters.html" method="get">
+      <label for="character-search-input">Search characters by name</label>
+      <input id="character-search-input" name="q" type="search" placeholder="Enter a character name" autocomplete="off">
+    </form>
+
     <main>
 
       <div class="character theYesterdayMan">
@@ -734,6 +739,8 @@
         </a><hr/>
         <h2>ZEZAMA</h2>
       </div>
+
+      <p class="character-no-results" role="status" hidden>No characters found. Try another name.</p>
 
     </main>
 
