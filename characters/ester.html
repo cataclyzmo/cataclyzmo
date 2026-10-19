@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/characterProfile.css" rel="stylesheet">
+    <link href="../css/menu.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Ester | Cataclyzmo</title>
+    <link href="../css/interior.css" rel="stylesheet">
+</head>
+
+<body class="interior-page profile-page">
+
+    <!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
+    <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
+            <li><a href="../items.html">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
+            <li><a href="../power-index.html">Power Index</a></li>
+            <li><a href="../credits.html">Credits</a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <a class="site-brand" href="../index.html">
+            <img class="logo" src="../images/logo.png" alt="">
+            <span>Cataclyzmo</span>
+        </a>
+        <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
+            <li><a href="../index.html">Home</a></li>
+          <li><a href="../books.html">Comics</a></li>
+          <li><a href="../characters.html" aria-current="page">Characters</a></li>
+            <li><a href="../items.html">Items</a></li>
+          <li><a href="../geo.html">Worlds</a></li>
+             <li><a href="../power-index.html">Power Index</a></li>
+            <li><a href="../credits.html">Credits</a></li>
+        </ul><!--used only on small screens-->
+        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+           <span></span>
+           <span></span>
+           <span></span>
+        </button>
+    </nav>
+    <!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
+    <!--This allows the toggling of the hamburger menu-->
+    <script src="../js/sidescreen.js"></script>
+    <header class="page-header">
+        <p class="page-eyebrow"><a href="../characters.html">Characters</a></p>
+        <h1>Ester</h1>
+    </header>
+    <main>
+        <aside>
+            <h2>Ester</h2>
+            <img src="../images/ester-design.png" id="characterImage" alt="Ester character portrait">
+            <section class="power-scanner" aria-label="Power dossier">
+                <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
+                <div class="scanner-readings">
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#durability">Durability</a><span class="stat-rating">0/10</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Durability" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" data-base="0" data-equipped="0" style="--base: 0%; --equipped: 0%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#energy">Energy</a><span class="stat-rating">0/10</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Energy" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" data-base="0" data-equipped="0" style="--base: 0%; --equipped: 0%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#intelligence">Intelligence</a><span class="stat-rating">0/10</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Intelligence" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" data-base="0" data-equipped="0" style="--base: 0%; --equipped: 0%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#psionics">Psionics</a><span class="stat-rating">0/10</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Psionics" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" data-base="0" data-equipped="0" style="--base: 0%; --equipped: 0%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#speed">Speed</a><span class="stat-rating">0/10</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Speed" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" data-base="0" data-equipped="0" style="--base: 0%; --equipped: 0%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="scanner-stat">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#strength">Strength</a><span class="stat-rating">0/10</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Strength" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" data-base="0" data-equipped="0" style="--base: 0%; --equipped: 0%">
+                            <span class="scanner-fill" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-legend">
+                    <span><i class="stat-key stat-key-base" aria-hidden="true"></i> Base rating</span>
+                    <span><i class="stat-key stat-key-boost" aria-hidden="true"></i> Equipment boost</span>
+                    <p>Ratings out of 10. Select a stat for its definition.</p>
+                </div>
+            </section>
+            <h2>Physical:</h2>
+            <table class="traits">
+                    <tr><td>Race</td><td></td></tr>
+                    <tr><td>Height</td><td></td></tr>
+                    <tr><td>Weight</td><td></td></tr>
+                    <tr><td>Gender</td><td></td></tr>
+                    <tr><td>Hair</td><td></td></tr>
+                    <tr><td>Eyes</td><td></td></tr>
+                    <tr><td>Age</td><td></td></tr>
+            </table>
+            <h2>Personal:</h2>
+            <table class="traits">
+                    <tr><td>Secret Identity</td><td></td></tr>
+                    <tr><td>Power Class</td><td></td></tr>
+                    <tr><td>Threat Level</td><td></td></tr>
+                    <tr><td>Aliases</td><td></td></tr>
+                    <tr><td>Affiliations</td><td></td></tr>
+                    <tr><td>Education</td><td></td></tr>
+                    <tr><td>Employment</td><td></td></tr>
+                    <tr><td>Planet</td><td></td></tr>
+            </table>
+        </aside>
+        <article>
+            <h2>BackStory</h2><hr/>
+            <p></p>
+            <h2>Affiliations</h2><hr/>
+            <p></p>
+            <h2>Powers &amp; Abilities</h2><hr/>
+            <p></p>
+        </article>
+    </main>
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <p class="footer-brand">Cataclyzmo</p>
+            <ul class="footer-links" aria-label="Footer links">
+                <li><a href="../books.html">Comics</a></li>
+                <li><a href="../credits.html">Credits</a></li>
+                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../js/character-stats.js" defer></script>
+</body>
+</html>
