@@ -7,11 +7,6 @@ const sorArr = [
   { name: "SoR - Red Back", img: "../images/redback-bg.jpeg"}
 ];
 
-const tigerArr = [
-  { name: "Tiger Hide", img: "../images/tigerhide-design.png"},
-  { name: "Tiger Hide - Enhanced", img: "../images/tigerhideenhanced-bg.jpeg"}
-];
-
 const syndicateArr = [
   { name: "Syndicate - Nemesis", img: "../images/nemesis-design.png" },
   { name: "Syndicate - Quick Draw", img: "../images/quickdraw-design.png" },
@@ -26,12 +21,6 @@ let script = document.getElementById("sor-teamscript");
 if(script != null)
 {
 	content = sorArr;
-}
-
-script = document.getElementById("tiger-teamscript");
-if(script != null)
-{
-	content = tigerArr;
 }
 
 script = document.getElementById("syndicate-teamscript");
