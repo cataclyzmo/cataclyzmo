@@ -4,7 +4,7 @@
 
 Asset: `images/protoarmor-design.png`
 
-Generated with the built-in image generation tool. References: original `images/protoarmor-bg.jpeg` for armor identity, `images/the-yesterday-man-design.png` and `images/michael-design.png` for comic rendering style.
+Generated with the built-in image generation tool. References: an original Proto Armor image for armor identity, plus `images/the-yesterday-man-design.png` and `images/michael-design.png` for comic rendering style. The original reference image is no longer included in the live site.
 
 Final prompt:
 

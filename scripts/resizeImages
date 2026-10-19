@@ -1,3 +1,0 @@
-for img in *bg.jpg; do
- sips -Z 700 "$img" --out "$img"
-done

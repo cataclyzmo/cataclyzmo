@@ -66,13 +66,6 @@ figure{
 }
 
 
-.bookCover{
-	height: auto;
-	width: 35vw;
-	cursor: pointer;
-}
-
-
 /* Featured comic beneath the banner. */
 .featured-comic {
     background: #181b20;
