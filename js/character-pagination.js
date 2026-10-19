@@ -13,7 +13,7 @@
     const query = search.value.trim().toLocaleLowerCase();
     const matches = cards.filter(card => {
       const name = card.querySelector('h2').textContent;
-      const fullName = card.querySelector('img').alt;
+      const fullName = card.querySelector('img')?.alt || card.querySelector('a')?.getAttribute('aria-label') || '';
       return `${name} ${fullName}`.toLocaleLowerCase().includes(query);
     });
     const pageCount = Math.ceil(matches.length / pageSize);
