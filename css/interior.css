@@ -224,32 +224,6 @@ body.interior-page {
     padding: 12px 8px;
 }
 
-/* Each Humanoid uses a different view of the existing team illustration. */
-.catalog-page .humanoid-portrait,
-.profile-page .humanoid-portrait {
-    display: block;
-    width: 100%;
-    background-image: url('../images/humanoids-design.png');
-    background-repeat: no-repeat;
-    background-size: 460% auto;
-    background-position: var(--portrait-position) top;
-    background-color: #22262c;
-}
-
-.catalog-page .humanoid-portrait {
-    height: clamp(360px, 38vw, 440px);
-}
-
-.profile-page .humanoid-portrait {
-    height: 440px;
-}
-
-.humanoid-barracuda { --portrait-position: 4%; }
-.humanoid-night-howl { --portrait-position: 30%; }
-.humanoid-queen-bee { --portrait-position: 47%; }
-.humanoid-man-tiger { --portrait-position: 70%; }
-.humanoid-komodo { --portrait-position: 96%; }
-
 /* Frame each Force Five member from the existing team illustration. */
 .catalog-page .force-five-portrait,
 .profile-page .force-five-portrait {
@@ -335,7 +309,6 @@ body.interior-page {
 @media screen and (max-width: 520px) {
     .catalog-page .character img,
     .catalog-page .team-div .team-img,
-    .catalog-page .humanoid-portrait,
     .catalog-page .force-five-portrait,
     .catalog-page .romans-ally-portrait {
         height: clamp(340px, 110vw, 460px);
