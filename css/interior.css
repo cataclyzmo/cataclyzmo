@@ -105,6 +105,56 @@ body.interior-page {
     box-shadow: 0 8px 24px rgb(24 27 32 / 12%);
 }
 
+.catalog-page .character[hidden],
+.catalog-page .character-pagination[hidden] {
+    display: none;
+}
+
+.catalog-page .character-pagination {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1152px;
+    margin: -24px auto 64px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.catalog-page .pagination-status {
+    margin: 0 0 16px;
+    color: #51504c;
+    font-size: 14px;
+}
+
+.catalog-page .pagination-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.catalog-page .pagination-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border: 1px solid #8b7330;
+    border-radius: 3px;
+    background: #fffdf8;
+    color: #181b20;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.catalog-page a.pagination-link:hover,
+.catalog-page .pagination-link[aria-current="page"] {
+    border-color: #181b20;
+    background: #181b20;
+    color: #fff8e9;
+}
+
 .catalog-page .character > a {
     display: block;
     position: relative;
