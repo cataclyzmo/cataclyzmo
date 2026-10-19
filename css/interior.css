@@ -224,30 +224,6 @@ body.interior-page {
     padding: 12px 8px;
 }
 
-/* Frame Roman’s three allies from their shared illustration. */
-.catalog-page .romans-ally-portrait,
-.profile-page .romans-ally-portrait {
-    display: block;
-    width: 100%;
-    background-image: url('../images/romans-allies-design.png');
-    background-repeat: no-repeat;
-    background-size: 400% auto;
-    background-position: var(--portrait-position) top;
-    background-color: #171b22;
-}
-
-.catalog-page .romans-ally-portrait {
-    height: clamp(360px, 38vw, 440px);
-}
-
-.profile-page .romans-ally-portrait {
-    height: 440px;
-}
-
-.romans-ally-sage { --portrait-position: 18%; }
-.romans-ally-merdolf { --portrait-position: 53%; }
-.romans-ally-kid-icarus { --portrait-position: 92%; }
-
 .catalog-page .character h2 {
     margin: 0;
     position: relative;
@@ -283,9 +259,6 @@ body.interior-page {
 @media screen and (max-width: 520px) {
     .catalog-page .character img,
     .catalog-page .team-div .team-img,
-    .catalog-page .romans-ally-portrait {
-        height: clamp(340px, 110vw, 460px);
-    }
 }
 
 .catalog-page .character hr { display: none; }
