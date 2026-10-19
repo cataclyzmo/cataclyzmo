@@ -589,6 +589,15 @@ body.interior-page {
     line-height: 1.75;
 }
 
+.profile-page .team-overview-image {
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    margin: 0 auto 24px;
+    background: #181b20;
+}
+
 .profile-page article :is(ol, ul),
 .reference-page article :is(ol, ul) {
     padding-left: 24px;
