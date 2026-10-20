@@ -463,6 +463,8 @@ body.interior-page {
 .profile-page .stat-key-boost { background: var(--stat-boost-color); }
 .profile-page .stats-toggle { display: flex; align-items: center; gap: 8px; width: 100%; min-height: 44px; cursor: pointer; font-size: 12px; color: #202126; }
 .profile-page .stats-toggle input { width: 18px; height: 18px; margin: 0; accent-color: #bd2838; }
+.profile-page .power-scanner[hidden],
+.profile-page .stats-legend [hidden] { display: none; }
 
 @media screen and (max-width: 380px) {
     .profile-page main { padding-right: 12px; padding-left: 12px; }

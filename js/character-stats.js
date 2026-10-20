@@ -14,9 +14,9 @@ document.querySelectorAll('.power-scanner').forEach((scanner) => {
         const boostKey = document.createElement('i');
         boostKey.className = 'stat-key stat-key-boost';
         boostKey.setAttribute('aria-hidden', 'true');
-        label.append(checkbox, boostKey, 'Equipment boost');
+        label.append(checkbox, boostKey, 'Max Potential');
     } else {
-        label.append(checkbox, ' Include equipment boosts');
+        label.append(checkbox, ' Max Potential');
     }
     scanner.querySelector('.stats-legend').prepend(label);
 
