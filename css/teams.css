@@ -92,6 +92,25 @@
     object-position: center bottom;
 }
 
+/* Scene artwork fills its own frame; the original group portraits keep their padding. */
+.teams-page .team-visual--scene {
+    height: auto;
+    aspect-ratio: 1672 / 941;
+    background: #181b20;
+}
+
+.team-visual--scene::before { display: none; }
+
+.team-visual--scene img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
 .team-visual--member img { object-fit: cover; object-position: center 22%; }
 
 .team-image-label {

@@ -2,9 +2,7 @@
 const sorArr = [
   { name: "SoR - Bandit", img: "../images/bandit-design.png"},
   { name: "SoR - Quick Draw", img: "../images/quickdraw-design.png"},
-  { name: "SoR - Gunslinger", img: "../images/gunslinger-design.png"},
-  { name: "SoR - Viper", img: "../images/viper-bg.jpeg"},
-  { name: "SoR - Red Back", img: "../images/redback-bg.jpeg"}
+  { name: "SoR - Gunslinger", img: "../images/gunslinger-design.png"}
 ];
 
 const syndicateArr = [
