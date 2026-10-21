@@ -260,6 +260,10 @@ figure{
     background: #181b20;
 }
 
+.universe-card > img.universe-card-item-art {
+    object-fit: contain;
+}
+
 .universe-card > .character-card-art {
     object-position: center 20%;
 }
