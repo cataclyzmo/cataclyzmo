@@ -166,6 +166,7 @@ figure{
 
 .featured-cover a {
     display: inline-block;
+    width: 300px;
     max-width: 100%;
 }
 
@@ -186,8 +187,8 @@ figure{
         gap: 36px;
     }
 
-    .featured-cover img {
-        max-width: 240px;
+    .featured-cover a {
+        width: 240px;
     }
 }
 
