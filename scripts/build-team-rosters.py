@@ -13,17 +13,14 @@ ROOT = Path(__file__).resolve().parents[1]
 ROSTERS = {
     "cataclyzmo": [("Century", "the-yesterday-man"), ("A.I.", "ai"), ("Nightmare", "nightmare"), ("Dark Matter", "dark-matter"), ("Metamorphosis", "metamorphosis")],
     "scavengers": [("Commander Rex", "commandrex"), ("Element-9", "element-9"), ("Unity", "unity"), ("11:05", "11-05"), ("Teller", "teller"), ("Demon", "demon")],
-    "society": [("Bandit", "bandit"), ("Quick Draw", "quickdraw"), ("Gunslinger", "gunslinger"), ("Viper", None), ("Redback", "tallahassee-redback")],
+    "society": [("Bandit", "bandit"), ("Quick Draw", "quickdraw"), ("Gunslinger", "gunslinger"), ("Tallahassee & Redback", "tallahassee-redback")],
     "humanoids": [("Queen Bee", "queen-bee"), ("Night Howl", "night-howl"), ("Man Tiger", "man-tiger"), ("Barracuda", "barracuda"), ("Komodo", "komodo")],
     "force-five": [("Shadow Drone", "shadow-drone"), ("The Ultimatum", "the-ultimatum"), ("Kid Quickster", "kid-quickster"), ("Invisible Mistress", "invisible-mistress"), ("Phase-Out", "phase-out")],
     "hero": [("Super Seven", "super-seven"), ("All-American", None), ("Kid Justice", None), ("The Shadower", None), ("Night-Hawk", None), ("Valkyrie", None), ("Vigilante-X", "vigilante-x")],
     "iga": [("The Other", "other"), ("Deathmonger", "deathmonger"), ("Cold Fusion", "cold-fusion"), ("Black Matter", "black-matter"), ("Meta", "meta")],
 }
 
-GROUP_IMAGES = {
-    "society": "../images/society-of-rogue-team.png",
-    "hero": "../images/hero-team.png",
-}
+GROUP_IMAGES = {"hero": "../images/hero-team.png"}
 
 
 def clean(value):
