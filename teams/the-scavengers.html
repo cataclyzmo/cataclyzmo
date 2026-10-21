@@ -50,10 +50,31 @@
         <p class="page-intro">Commander Rex and the Scavengers work to restore society after a devastating catastrophe.</p>
     </header>
     <main>
-        <figure class="team-profile-art">
-            <img src="../images/scavengers-team.png" alt="Scavengers team portrait: Element-9, Unity, Commander Rex, 11:05, Teller, and Demon, left to right">
-        </figure>
+        <aside class="team-member-card" data-team-roster="scavengers" data-team-name="The Scavengers">
+            <h2 id="characterName" aria-live="polite">The Scavengers - Commander Rex</h2>
+            <img id="characterImage" class="teamImage" src="../images/commandrex-design.png" alt="Commander Rex character portrait">
+            <nav class="team-carousel-controls" aria-label="The Scavengers members">
+                <button type="button" id="previousCharacter" aria-label="Previous character">← Previous</button>
+                <span id="characterPosition" aria-live="polite">1 / 6</span>
+                <button type="button" id="nextCharacter" aria-label="Next character">Next →</button>
+            </nav>
+            <a class="team-member-profile" href="../characters/commandrex.html">View character page ↗</a>
+            <section class="power-scanner" aria-label="Power dossier">
+                <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
+                <div class="scanner-readings"></div>
+                <div class="stats-legend"></div>
+            </section>
+            <h2>Physical:</h2>
+            <table class="traits" data-traits="physical"></table>
+            <h2>Personal:</h2>
+            <table class="traits" data-traits="personal"></table>
+            <div class="team-member-details" hidden>
+                <h2>Known details:</h2>
+                <table class="traits" data-traits="details"></table>
+            </div>
+        </aside>
         <article>
+            <img class="team-overview-image" src="../images/scavengers-team.png" alt="Element-9, Unity, Commander Rex, 11:05, Teller, and Demon together">
             <h2>Overview</h2>
             <p>After a catastrophe devastated their world, the Scavengers set out to counter the groups spreading chaos and reach a refugee colony where they hope to help rebuild civilization.</p>
             <h2>Known members</h2>
@@ -77,5 +98,7 @@
             </ul>
         </div>
     </footer>
+    <script src="../js/team-rosters.js" defer></script>
+    <script src="../js/team-carousel.js" defer></script>
 </body>
 </html>

@@ -50,10 +50,31 @@
         <p class="page-intro">Century leads A.I., Nightmare, Dark Matter, and Metamorphosis.</p>
     </header>
     <main>
-        <figure class="team-profile-art">
-            <img src="../images/cataclyzmo-team-close.png" alt="Close Cataclyzmo team portrait: A.I., Nightmare, Century, Dark Matter, and Metamorphosis, left to right">
-        </figure>
+        <aside class="team-member-card" data-team-roster="cataclyzmo" data-team-name="Cataclyzmo">
+            <h2 id="characterName" aria-live="polite">Cataclyzmo - Century</h2>
+            <img id="characterImage" class="teamImage" src="../images/the-yesterday-man-design.png" alt="Century character portrait">
+            <nav class="team-carousel-controls" aria-label="Cataclyzmo members">
+                <button type="button" id="previousCharacter" aria-label="Previous character">← Previous</button>
+                <span id="characterPosition" aria-live="polite">1 / 5</span>
+                <button type="button" id="nextCharacter" aria-label="Next character">Next →</button>
+            </nav>
+            <a class="team-member-profile" href="../characters/the-yesterday-man.html">View character page ↗</a>
+            <section class="power-scanner" aria-label="Power dossier">
+                <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
+                <div class="scanner-readings"></div>
+                <div class="stats-legend"></div>
+            </section>
+            <h2>Physical:</h2>
+            <table class="traits" data-traits="physical"></table>
+            <h2>Personal:</h2>
+            <table class="traits" data-traits="personal"></table>
+            <div class="team-member-details" hidden>
+                <h2>Known details:</h2>
+                <table class="traits" data-traits="details"></table>
+            </div>
+        </aside>
         <article>
+            <img class="team-overview-image" src="../images/cataclyzmo-team-close.png" alt="A.I., Nightmare, Century, Dark Matter, and Metamorphosis together">
             <h2>Members</h2>
             <ul>
                 <li><a href="../characters/the-yesterday-man.html">Century</a> — leader</li>
@@ -74,5 +95,7 @@
             </ul>
         </div>
     </footer>
+    <script src="../js/team-rosters.js" defer></script>
+    <script src="../js/team-carousel.js" defer></script>
 </body>
 </html>

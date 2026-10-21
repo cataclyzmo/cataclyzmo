@@ -319,6 +319,9 @@ body.interior-page {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
+    width: 100%;
+    height: auto;
+    min-height: 64px;
     padding: 10px 12px;
     background: #202126;
     color: #fff8e9;
@@ -345,6 +348,20 @@ body.interior-page {
     outline: 2px solid #fff8e9;
     outline-offset: 2px;
 }
+
+.profile-page .team-member-card #characterImage { cursor: pointer; }
+
+.profile-page .team-member-profile {
+    display: block;
+    padding: 12px 16px;
+    color: #8f2230;
+    font: 700 13px "Roboto", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.profile-page .team-member-profile[hidden],
+.profile-page .team-member-details[hidden] { display: none; }
 
 .profile-page .character-forms {
     margin: 0;

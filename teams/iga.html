@@ -12,7 +12,7 @@
     <link href="../css/teams.css" rel="stylesheet">
     <title>IGA (Inter Galactic Alliance) | Cataclyzmo</title>
 </head>
-<body class="interior-page profile-page">
+<body class="interior-page profile-page team-profile-page">
     <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -48,7 +48,42 @@
         <p class="page-eyebrow"><a href="../teams.html">Teams</a></p>
         <h1>IGA (Inter Galactic Alliance)</h1>
     </header>
-    <main></main>
+    <main>
+        <aside class="team-member-card" data-team-roster="iga" data-team-name="Inter Galactic Alliance">
+            <h2 id="characterName" aria-live="polite">Inter Galactic Alliance - The Other</h2>
+            <img id="characterImage" class="teamImage" src="../images/other-design.png" alt="The Other character portrait">
+            <nav class="team-carousel-controls" aria-label="Inter Galactic Alliance members">
+                <button type="button" id="previousCharacter" aria-label="Previous character">← Previous</button>
+                <span id="characterPosition" aria-live="polite">1 / 5</span>
+                <button type="button" id="nextCharacter" aria-label="Next character">Next →</button>
+            </nav>
+            <a class="team-member-profile" href="../characters/other.html">View character page ↗</a>
+            <section class="power-scanner" aria-label="Power dossier">
+                <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
+                <div class="scanner-readings"></div>
+                <div class="stats-legend"></div>
+            </section>
+            <h2>Physical:</h2>
+            <table class="traits" data-traits="physical"></table>
+            <h2>Personal:</h2>
+            <table class="traits" data-traits="personal"></table>
+            <div class="team-member-details" hidden>
+                <h2>Known details:</h2>
+                <table class="traits" data-traits="details"></table>
+            </div>
+        </aside>
+        <article>
+            <img class="team-overview-image" src="../images/iga-team.png" alt="The Other, Deathmonger, Cold Fusion, Black Matter, and Meta together">
+            <h2>Members</h2><hr>
+            <ul>
+                <li><a href="../characters/other.html">The Other</a> — leader</li>
+                <li><a href="../characters/deathmonger.html">Deathmonger</a></li>
+                <li><a href="../characters/cold-fusion.html">Cold Fusion</a></li>
+                <li><a href="../characters/black-matter.html">Black Matter</a></li>
+                <li><a href="../characters/meta.html">Meta</a></li>
+            </ul>
+        </article>
+    </main>
     <footer class="site-footer">
         <div class="site-footer-inner">
             <p class="footer-brand">Cataclyzmo</p>
@@ -59,5 +94,7 @@
             </ul>
         </div>
     </footer>
+    <script src="../js/team-rosters.js" defer></script>
+    <script src="../js/team-carousel.js" defer></script>
 </body>
 </html>
