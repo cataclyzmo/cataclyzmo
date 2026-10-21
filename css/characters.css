@@ -122,16 +122,3 @@ h2 {
 .team-div .team-img{
    width: calc( var(--character-img-width) * 1.3 );
 }
-
-/*flew-grow forces items to strecth to the full width of a row
-  even if the row only contains 1 item. To combat this, the 
-  'dropdown-menu-selection'js script dynamically adds blank dummy
-  items of class 'hidden-flex-item' so that the last row is full & thus
-  flew-grow won't super stretch any items*/
-.hidden-flex-item {
-    content: "";
-    flex: 1 0 var(--character-img-width);
-     /*'hidden' means nothing shows but the corresponding item's spacing 
-       still applies unlike 'none'*/
-    visibility: hidden;
-}

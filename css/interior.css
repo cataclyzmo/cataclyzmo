@@ -276,10 +276,6 @@ body.interior-page {
 
 .catalog-page .comic-availability a { color: #f6cb06; }
 
-.catalog-page .hidden-flex-item {
-    display: none;
-}
-
 /* Profile artwork and facts alongside a comfortable reading column. */
 .profile-page main {
     box-sizing: border-box;
