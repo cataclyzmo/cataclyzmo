@@ -260,7 +260,8 @@ figure{
     background: #181b20;
 }
 
-.universe-card > img.universe-card-item-art {
+.universe-card > img.universe-card-item-art,
+.universe-card > img.universe-card-world-art {
     object-fit: contain;
 }
 

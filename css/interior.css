@@ -6,6 +6,7 @@ html {
 body.interior-page {
     display: flex;
     flex-direction: column;
+    margin: 0;
     min-height: 100vh;
     background: #f5f1e8;
     color: #181b20;
