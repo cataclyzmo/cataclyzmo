@@ -4,5 +4,8 @@
 #ignore zip files
 *.zip
 
+# Python bytecode
+__pycache__/
+
 #token
 misc.

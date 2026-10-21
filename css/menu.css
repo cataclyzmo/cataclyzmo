@@ -444,3 +444,8 @@ html.menu-open body {
         transition: none;
     }
 }
+
+@media (min-width: 901px) and (max-width: 1050px) {
+    .site-brand { gap: 5px; font-size: 17px; }
+    nav ul li { padding: 0 .4vw; font-size: 13px; }
+}
