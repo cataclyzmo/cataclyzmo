@@ -69,9 +69,7 @@ document.querySelectorAll('[data-team-roster]').forEach((card) => {
     const portraitImage = showPotential && member.equipmentImage || member.image;
     nameElement.textContent = `${card.dataset.teamName} - ${member.name}`;
     portrait.src = portraitImage;
-    portrait.alt = member.groupPortrait
-      ? `${card.dataset.teamName} group portrait shown for ${member.name}; no individual artwork is available`
-      : `${member.name} character portrait`;
+    portrait.alt = `${member.name} character portrait`;
     position.textContent = `${currentIndex + 1} / ${members.length}`;
     profileLink.hidden = !member.profile;
     if (member.profile) profileLink.href = member.profile;

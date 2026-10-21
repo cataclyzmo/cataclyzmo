@@ -224,6 +224,12 @@ body.interior-page {
     padding: 12px 8px;
 }
 
+.catalog-page .character img.item-device-image,
+.catalog-page .character img.world-image {
+    object-position: center;
+    padding: 12px 8px;
+}
+
 .catalog-page .character h2 {
     margin: 0;
     position: relative;
