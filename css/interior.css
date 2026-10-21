@@ -314,6 +314,38 @@ body.interior-page {
     background: #22262c;
 }
 
+.profile-page .team-carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 12px;
+    background: #202126;
+    color: #fff8e9;
+    font: 700 12px "Roboto", sans-serif;
+}
+
+.profile-page .team-carousel-controls button {
+    min-height: 44px;
+    padding: 8px 10px;
+    border: 1px solid #eab733;
+    border-radius: 3px;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+}
+
+.profile-page .team-carousel-controls button:hover {
+    background: #eab733;
+    color: #202126;
+}
+
+.profile-page .team-carousel-controls button:focus-visible {
+    outline: 2px solid #fff8e9;
+    outline-offset: 2px;
+}
+
 .profile-page .character-forms {
     margin: 0;
     padding: 12px;

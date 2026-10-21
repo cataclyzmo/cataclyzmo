@@ -60,22 +60,26 @@
 	<main>
 
 		<aside>
-            <h2 id="characterName"> Syndicate - Nemesis </h2>
-			<img src="../images/nemesis-design.png" class="teamImage" id="characterImage">
-			<script id="syndicate-teamscript" src="../js/team-swap.js"></script>
+            <h2 id="characterName" aria-live="polite">Syndicate - Nemesis</h2>
+			<img src="../images/nemesis-design.png" class="teamImage" id="characterImage" alt="Nemesis character portrait">
+            <nav class="team-carousel-controls" aria-label="Syndicate members">
+                <button type="button" id="previousCharacter" aria-label="Previous character">← Previous</button>
+                <span id="characterPosition" aria-live="polite">1 / 5</span>
+                <button type="button" id="nextCharacter" aria-label="Next character">Next →</button>
+            </nav>
 
 			<section class="power-scanner" aria-label="Power dossier">
                 <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
                 <div class="scanner-readings">
                     <div class="scanner-stat">
-                        <div class="scanner-stat-heading"><a href="../power-index.html#durability">Durability</a><span class="stat-rating">7/10 · Nuclear</span></div>
-                        <div class="scanner-meter" role="meter" aria-label="Durability" aria-valuemin="0" aria-valuemax="10" aria-valuenow="7" data-base="7" data-equipped="7" style="--base: 70%; --equipped: 70%">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#durability">Durability</a><span class="stat-rating stat-equipped">6 → 7/10 · Nuclear<span class="stat-boost-note">Max Potential</span></span><span class="stat-rating stat-base">6/10 · Enhanced</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Durability" aria-valuemin="0" aria-valuemax="10" aria-valuenow="7" data-base="6" data-equipped="7" style="--base: 60%; --equipped: 70%">
                             <span class="scanner-fill" aria-hidden="true"></span>
                         </div>
                     </div>
                     <div class="scanner-stat">
-                        <div class="scanner-stat-heading"><a href="../power-index.html#energy">Energy</a><span class="stat-rating">7/10 · Nuclear</span></div>
-                        <div class="scanner-meter" role="meter" aria-label="Energy" aria-valuemin="0" aria-valuemax="10" aria-valuenow="7" data-base="7" data-equipped="7" style="--base: 70%; --equipped: 70%">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#energy">Energy</a><span class="stat-rating stat-equipped">6 → 7/10 · Nuclear<span class="stat-boost-note">Max Potential</span></span><span class="stat-rating stat-base">6/10 · Dynamo</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Energy" aria-valuemin="0" aria-valuemax="10" aria-valuenow="7" data-base="6" data-equipped="7" style="--base: 60%; --equipped: 70%">
                             <span class="scanner-fill" aria-hidden="true"></span>
                         </div>
                     </div>
@@ -86,14 +90,14 @@
                         </div>
                     </div>
                     <div class="scanner-stat">
-                        <div class="scanner-stat-heading"><a href="../power-index.html#psionics">Psionics</a><span class="stat-rating">6/10 · Titanic</span></div>
-                        <div class="scanner-meter" role="meter" aria-label="Psionics" aria-valuemin="0" aria-valuemax="10" aria-valuenow="6" data-base="6" data-equipped="6" style="--base: 60%; --equipped: 60%">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#psionics">Psionics</a><span class="stat-rating stat-equipped">5 → 6/10 · Titanic<span class="stat-boost-note">Max Potential</span></span><span class="stat-rating stat-base">5/10 · Vehicular</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Psionics" aria-valuemin="0" aria-valuemax="10" aria-valuenow="6" data-base="5" data-equipped="6" style="--base: 50%; --equipped: 60%">
                             <span class="scanner-fill" aria-hidden="true"></span>
                         </div>
                     </div>
                     <div class="scanner-stat">
-                        <div class="scanner-stat-heading"><a href="../power-index.html#speed">Speed</a><span class="stat-rating stat-equipped">5 → 10/10 · Lightspeed+<span class="stat-boost-note">Max Potential</span></span><span class="stat-rating stat-base">5/10 · Subsonic</span></div>
-                        <div class="scanner-meter" role="meter" aria-label="Speed" aria-valuemin="0" aria-valuemax="10" aria-valuenow="10" data-base="5" data-equipped="10" style="--base: 50%; --equipped: 100%">
+                        <div class="scanner-stat-heading"><a href="../power-index.html#speed">Speed</a><span class="stat-rating">5/10 · Subsonic</span></div>
+                        <div class="scanner-meter" role="meter" aria-label="Speed" aria-valuemin="0" aria-valuemax="10" aria-valuenow="5" data-base="5" data-equipped="5" style="--base: 50%; --equipped: 50%">
                             <span class="scanner-fill" aria-hidden="true"></span>
                         </div>
                     </div>
@@ -115,31 +119,31 @@
 	    	<table class="traits">
 	    	    <tr>
 	    		    <td>Race</td>
-	    			<td>Multiple</td>
+                    <td>Centurion</td>
 	    		</tr>
 	    		<tr>
 	   				<td>Height</td>
-	   				<td>Various</td>
+                       <td>6'</td>
 	   			</tr>
 	   			<tr>
 	    			<td>Weight</td>
-	    			<td>Various</td>
+                    <td>250lbs</td>
 	    		</tr>
 	   			<tr>
 	    		    <td>Gender</td>
-	    			<td>5 Males</td>
+                    <td>Male</td>
 	    		</tr>
 	    		<tr>
 	    			<td>Hair</td>
-	    			<td>Various</td>
+                    <td>Black</td>
 	    		</tr>
 	    		<tr>
 	    			<td>Eyes</td>
-	    			<td>Various</td>
+                    <td>Yellow</td>
 	    		</tr>
 	    		<tr>
 	    			<td>Age</td>
-	    			<td>Multiple</td>
+                    <td>Unknown</td>
 	    		</tr>
 	    	</table>
 
@@ -147,19 +151,19 @@
 	    	<table class="traits">
 	    	    <tr>
 	    	        <td>Secret Identity</td>
-	    		    <td>The Syndicate</td>
+                    <td>Unknown</td>
 	    	    </tr>
 	    	    <tr>
 	    	        <td>Power Class</td>
-	    		    <td>Magic, Tech, & Meta</td>
+                    <td>Tech & Meta</td>
 	   		    </tr>
 	    	    <tr>
 	    	        <td>Threat Level</td>
-	    		    <td>8.7</td>
+                    <td>7.5</td>
 	    	    </tr>
 	    	    <tr>
 	    	        <td>Aliases</td>
-	    		    <td>The Dark Alliance</td>
+                    <td>The Evolutionary</td>
 	    	    </tr>
 	    	     <tr>
 	    	        <td>Affiliations</td>
@@ -167,15 +171,15 @@
 	    	    </tr>
 	    	    <tr>
 	    	        <td>Education</td>
-	    		    <td>Mixed</td>
+                    <td>Multiple STEM PhDs</td>
 	    	    </tr>
 	    	    <tr>
 	    	        <td>Employment</td>
-	    		    <td>League of villains</td>
+                    <td>Terraformer</td>
 	    	    </tr>
 	    	    <tr>
 	    	        <td>Planet</td>
-	    		    <td>Battleworld-Earth</td>
+                    <td>Namako</td>
 	    	    </tr>
 	    	</table>
 		</aside>
@@ -220,6 +224,6 @@
         </div>
     </footer>
 
-    <script src="../js/character-stats.js" defer></script>
+    <script src="../js/syndicate-carousel.js" defer></script>
 </body>
 </html>

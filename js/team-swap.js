@@ -10,7 +10,7 @@ const syndicateArr = [
   { name: "Syndicate - Quick Draw", img: "../images/quickdraw-design.png" },
   { name: "Syndicate - Vex Krueger", img: "../images/vexkrueger-design.png" },
   { name: "Syndicate - Pyro II", img: "../images/pyromaniac-design.png" },
-  { name: "Syndicate - Tiger Hide", img: "../images/tigerhideenhanced-bg.jpeg" },
+  { name: "Syndicate - Tiger Hide", img: "../images/tigerhide-design.png" },
 ];
 
 /*Retrieve correct array based on script id*/
