@@ -10,10 +10,12 @@
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
     gap: 20px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .fighter {
+    display: flex;
+    flex-direction: column;
     min-width: 0;
 }
 
@@ -40,6 +42,9 @@
 }
 
 .fighter-display {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     min-height: 370px;
     margin-top: 16px;
     border: 1px solid #353941;
@@ -51,6 +56,7 @@
 
 .fighter-display > img {
     display: block;
+    flex: none;
     width: 100%;
     height: 260px;
     object-fit: contain;
@@ -101,6 +107,7 @@
 
 .fighter-placeholder {
     display: grid;
+    flex: 1;
     min-height: 370px;
     place-items: center;
     margin: 0;
@@ -163,7 +170,10 @@
 .sim-method p { margin: 0 0 12px; }
 
 @media (max-width: 720px) {
-    .arena { grid-template-columns: 1fr; }
+    .arena {
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
+    }
     .versus { justify-self: center; }
     .fighter-display { min-height: 0; }
     .fighter-placeholder { min-height: 260px; }
