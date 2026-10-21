@@ -2,7 +2,6 @@
 
 <html>
   <head>
-    <link href="css/powerIndex.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png">
     <meta charset="utf-8">
@@ -10,7 +9,8 @@
     <meta name="keywords" content="hero power scaling">
     <meta name="description" content="Learn more about the power index, a scaling chart that classifies the various attributes of various heroes and villains.">
 	  <title>Power Index | Cataclyzmo</title>
-      <link href="css/interior.css" rel="stylesheet">
+    <link href="css/interior.css" rel="stylesheet">
+    <link href="css/powerIndex.css" rel="stylesheet">
 </head>
 
   <body class="interior-page reference-page">
@@ -63,45 +63,62 @@
 
 
 
-    <div class="figures">
-      <figure>
-      	<div id="graph1"></div>
-        <figcaption class="legend">
-          <span>Avg 30%</span>
-          <span>District 25%</span>
-          <span>City 15%<br></span>
-          <span>State 20%</span>
-          <span>Nation 10%</span>
-          <span>Cont. 0%</span>
-          <span>Planet 0%</span>
-          <span>S.S. 0%</span>
-          <span>Galaxy 0%<br></span>
-          <span>Universe 0%</span>
+    <section class="figures" aria-label="Power index distributions">
+      <figure class="data-card threat-card">
+        <figcaption class="data-card-heading">
+          <span class="chart-kicker">01 / Threat assessment</span>
+          <span class="chart-title">Threat level distribution</span>
+          <span class="chart-description">Most subjects remain below city scale.</span>
         </figcaption>
+        <div class="threat-chart" role="img" aria-label="Threat levels: Average 30%, District 25%, City 15%, State 20%, Nation 10%; Continental, Planetary, Star System, Galaxy, and Universe 0%.">
+          <div class="threat-row" style="--bar-size: 100%; --bar-color: #f0bd58"><span>Average</span><span class="bar-track"><span class="bar-fill"></span></span><strong>30%</strong></div>
+          <div class="threat-row" style="--bar-size: 83.33%; --bar-color: #e99354"><span>District</span><span class="bar-track"><span class="bar-fill"></span></span><strong>25%</strong></div>
+          <div class="threat-row" style="--bar-size: 50%; --bar-color: #df6d55"><span>City</span><span class="bar-track"><span class="bar-fill"></span></span><strong>15%</strong></div>
+          <div class="threat-row" style="--bar-size: 66.67%; --bar-color: #d95059"><span>State</span><span class="bar-track"><span class="bar-fill"></span></span><strong>20%</strong></div>
+          <div class="threat-row" style="--bar-size: 33.33%; --bar-color: #bd536e"><span>Nation</span><span class="bar-track"><span class="bar-fill"></span></span><strong>10%</strong></div>
+          <div class="threat-row is-zero" style="--bar-size: 0%"><span>Continental</span><span class="bar-track"><span class="bar-fill"></span></span><strong>0%</strong></div>
+          <div class="threat-row is-zero" style="--bar-size: 0%"><span>Planetary</span><span class="bar-track"><span class="bar-fill"></span></span><strong>0%</strong></div>
+          <div class="threat-row is-zero" style="--bar-size: 0%"><span>Star system</span><span class="bar-track"><span class="bar-fill"></span></span><strong>0%</strong></div>
+          <div class="threat-row is-zero" style="--bar-size: 0%"><span>Galaxy</span><span class="bar-track"><span class="bar-fill"></span></span><strong>0%</strong></div>
+          <div class="threat-row is-zero" style="--bar-size: 0%"><span>Universe</span><span class="bar-track"><span class="bar-fill"></span></span><strong>0%</strong></div>
+        </div>
+        <p class="chart-footnote">Share of classified subjects · 0–10 threat scale</p>
       </figure>
 
-      <figure>
-      	<div id="graph2"></div>
-        <figcaption class="legend">
-          <span>Meta 37%</span>
-          <span>Tech 50%</span>
-          <span>Magic 13%</span>
+      <figure class="data-card source-card">
+        <figcaption class="data-card-heading">
+          <span class="chart-kicker">02 / Origin profile</span>
+          <span class="chart-title">Power source</span>
+          <span class="chart-description">Where abilities come from.</span>
         </figcaption>
+        <div class="source-chart" role="img" aria-label="Power sources: Tech 50%, Meta 37%, Magic 13%.">
+          <div class="source-ring"><div class="source-ring-center"><strong>50<span>%</span></strong><span>TECH</span></div></div>
+        </div>
+        <div class="source-legend" aria-hidden="true">
+          <div><span class="legend-name"><i class="legend-dot tech-dot"></i>Tech</span><strong>50%</strong></div>
+          <div><span class="legend-name"><i class="legend-dot meta-dot"></i>Meta</span><strong>37%</strong></div>
+          <div><span class="legend-name"><i class="legend-dot magic-dot"></i>Magic</span><strong>13%</strong></div>
+        </div>
       </figure>
 
-      <figure>
-        <div id="graph3"></div>
-        <figcaption class="legend">
-          <span>Cls-I 25%</span>
-          <span>Cls-II 25%</span>
-          <span>Cls-III 25%<br></span>
-          <span>Cls-IV 20%</span>
-          <span>Cls-V 5%</span>
-          <span>Cls-VI 0%<br></span>
-          <span>Cls-VII 0%</span>
+      <figure class="data-card item-card">
+        <figcaption class="data-card-heading">
+          <span class="chart-kicker">03 / Equipment registry</span>
+          <span class="chart-title">Item class</span>
+          <span class="chart-description">Distribution across the seven item classes.</span>
         </figcaption>
+        <div class="item-chart" role="img" aria-label="Item classes: Class I 25%, Class II 25%, Class III 25%, Class IV 20%, Class V 5%, Class VI 0%, Class VII 0%.">
+          <div class="item-column" style="--bar-size: 100%; --column-color: #f0bd58"><strong>25%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class I</span></div>
+          <div class="item-column" style="--bar-size: 100%; --column-color: #e99354"><strong>25%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class II</span></div>
+          <div class="item-column" style="--bar-size: 100%; --column-color: #df6d55"><strong>25%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class III</span></div>
+          <div class="item-column" style="--bar-size: 80%; --column-color: #d95059"><strong>20%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class IV</span></div>
+          <div class="item-column" style="--bar-size: 20%; --column-color: #bd536e"><strong>5%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class V</span></div>
+          <div class="item-column is-zero" style="--bar-size: 0%"><strong>0%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class VI</span></div>
+          <div class="item-column is-zero" style="--bar-size: 0%"><strong>0%</strong><span class="column-track"><span class="column-fill"></span></span><span>Class VII</span></div>
+        </div>
+        <p class="chart-footnote">Share of catalogued items · Classes I–VII</p>
       </figure>
-    </div>
+    </section>
 
     <article>
 
@@ -119,7 +136,7 @@
       <p>
         Item class is used to categorize the deadliness and effectiveness of various types items. The scale ranges from class one items, which fit items like human-made firearms, pistols, or longswords. Class II items tend to be much more deadly, including tanks, fighter jets, bazookas, drones, etc. Class III items are beyond the capabilities of current human knowledge e.g. shape-shifting devices or time-augmenting ones. One exception is human devices that bring about a sh*t load of devastation, such as atomic or biological weapons. Class IV items have the potential to give the user the ability to affect reality, alter the spacetime continuum, or give someone an unreasonable amount of control over a civilization that they normally would have no business doing. Class V items pose mass extinction-level threats. Class VI items put the safety of planets at risk. Finally, Class VII items are the most dangerous of all and are effectively limitless. Anyone using a Class VII item without a permit is committing a major felony. Note, most of the class positionings are relative as this item class scale is relative itself since most of its kinks are still being worked out.<br><br>
 
-        See the pie chart (above) for a visual depiction of item class data.
+        See the chart above for a visual depiction of item class data.
       </p>
 
       <br><h2 id="durability">Durability</h2><hr/>

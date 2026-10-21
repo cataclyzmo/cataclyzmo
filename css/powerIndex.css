@@ -1,232 +1,78 @@
-/*Import Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
-
-html{
-	/*global variables*/
-	--c1: #6b6bd6;
-	--c2: #e74f4f;
-	--c3: #fc921f;
-	--c4: #149ece;
-	--c5: #50ff00;
-	--c6: yellow;
-	--c7: black;
-	--c8: white;
-	--c9: silver;
-	--c10: gold;
-	/*Per each figure, not all "figures"*/
-	--graph-width: 325px;
+/* Distribution charts for the Power Index reference page. */
+.reference-page .figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1152px;
+  padding: 40px 24px 0;
 }
-
-/****************************************************/
-/***********************  BODY  *********************/
-/****************************************************/
-body{
-	display:grid;
-	grid-template-columns: auto;
-	background: lightgoldenrodyellow;
-	margin: 0;
+.reference-page .figures .data-card {
+  position: relative;
+  width: auto;
+  min-width: 0;
+  margin: 0;
+  padding: 28px;
+  overflow: hidden;
+  border: 1px solid #3e434b;
+  border-radius: 8px;
+  background: radial-gradient(circle at 90% 0%, rgb(240 189 88 / 10%), transparent 35%), linear-gradient(145deg, #252a32, #171b21 75%);
+  color: #f8f3e9;
+  box-shadow: 0 12px 28px rgb(24 27 32 / 10%);
 }
-
-
-/**********************************************/
-/****************  2 - Figures  ***************/
-/**********************************************/
-h1{
-	margin: 20px auto;
-	font-family: system-ui, sans-serif;
+.reference-page .figures .data-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  opacity: .32;
+  background: radial-gradient(circle, #d7dbe01f 1px, transparent 1.2px) 0 0 / 12px 12px;
+  mask-image: linear-gradient(to bottom, #000, transparent 55%);
 }
-
-.figures{
-	display: flex;
-	justify-content: center;
-	flex-flow: wrap;
-	gap: 2rem;
-	max-width: max(350px, 100vw);
+.data-card > * { position: relative; }
+.threat-card { grid-column: 1 / -1; }
+.data-card-heading { display: flex; flex-direction: column; align-items: flex-start; }
+.chart-kicker { color: #f0bd58; font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+.chart-title { margin-top: 9px; font-family: "Montserrat", sans-serif; font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; letter-spacing: -.03em; line-height: 1.2; }
+.chart-description { margin-top: 8px; color: #bfc4c9; font-size: 14px; line-height: 1.5; }
+.chart-footnote { margin: 22px 0 0; color: #aeb5bc; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.threat-chart { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(5, auto); grid-auto-flow: column; column-gap: 48px; row-gap: 17px; margin-top: 30px; }
+.threat-row { display: grid; grid-template-columns: 94px minmax(0, 1fr) 37px; align-items: center; gap: 12px; color: #e8e8e7; font-size: 13px; font-variant-numeric: tabular-nums; }
+.threat-row > strong { color: #fff7e7; font-size: 13px; text-align: right; }
+.bar-track { display: block; height: 8px; overflow: hidden; border-radius: 99px; background: #404751; box-shadow: inset 0 1px 2px rgb(0 0 0 / 22%); }
+.bar-fill { display: block; width: var(--bar-size); height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--bar-color), #ffe2a0); box-shadow: 0 0 14px var(--bar-color); }
+.threat-row.is-zero, .threat-row.is-zero > strong { color: #939ba5; }
+.source-card, .item-card { display: flex; flex-direction: column; }
+.source-chart { display: grid; place-items: center; flex: 1; min-height: 280px; padding: 22px 0 14px; }
+.source-ring { display: grid; place-items: center; width: min(235px, 100%); aspect-ratio: 1; border-radius: 50%; background: conic-gradient(from -90deg, #f0bd58 0 50%, #d95059 50% 87%, #78aeb9 87% 100%); box-shadow: 0 0 0 8px rgb(255 255 255 / 4%), 0 14px 35px rgb(0 0 0 / 30%); }
+.source-ring-center { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 66%; aspect-ratio: 1; border-radius: 50%; background: #1c2128; box-shadow: inset 0 0 0 1px #414852, 0 0 0 5px rgb(28 33 40 / 24%); }
+.source-ring-center strong { color: #fff7e7; font-family: "Montserrat", sans-serif; font-size: clamp(40px, 5vw, 55px); font-variant-numeric: tabular-nums; letter-spacing: -.07em; line-height: 1; }
+.source-ring-center strong span { color: #f0bd58; font-size: .46em; letter-spacing: 0; }
+.source-ring-center > span { margin-top: 9px; color: #f0bd58; font-size: 11px; font-weight: 700; letter-spacing: .2em; }
+.source-legend { display: grid; margin-top: 10px; }
+.source-legend > div { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-top: 1px solid #3c434d; font-size: 14px; font-variant-numeric: tabular-nums; }
+.source-legend strong { color: #fff7e7; }
+.legend-name { display: inline-flex; align-items: center; gap: 11px; }
+.legend-dot { width: 9px; height: 9px; border-radius: 2px; transform: rotate(45deg); }
+.tech-dot { background: #f0bd58; }
+.meta-dot { background: #d95059; }
+.magic-dot { background: #78aeb9; }
+.item-chart { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); flex: 1; gap: clamp(6px, 1.4vw, 18px); min-height: 325px; margin-top: 30px; padding-top: 10px; background: repeating-linear-gradient(to top, transparent 0, transparent calc(25% - 1px), #ffffff13 25%); }
+.item-column { display: grid; grid-template-rows: 24px minmax(0, 1fr) 34px; align-items: end; justify-items: center; min-width: 0; color: #dce0e3; font-size: 11px; font-variant-numeric: tabular-nums; text-align: center; }
+.item-column strong { color: #fff7e7; font-size: 13px; }
+.column-track { display: flex; align-items: end; width: min(100%, 42px); height: 100%; }
+.column-fill { width: 100%; height: var(--bar-size); border-radius: 4px 4px 0 0; background: linear-gradient(to top, var(--column-color), #ffe0a0); box-shadow: 0 0 20px rgb(240 189 88 / 14%); }
+.item-column.is-zero, .item-column.is-zero strong { color: #939ba5; }
+.item-column.is-zero .column-track { border-bottom: 2px solid #606773; }
+@media (max-width: 760px) {
+  .reference-page .figures { grid-template-columns: minmax(0, 1fr); }
+  .threat-card { grid-column: auto; }
+  .threat-chart { column-gap: 25px; }
 }
-
-/**********************************************/
-/****************  2.1 - Graphs  **************/
-/**********************************************/
-#graph1{
-	width: var(--graph-width);
-	max-width: var(--graph-width);
-	/*makes a square as a opposed to a rectangle*/
-	aspect-ratio: 1;
-	border-radius: 50%;
-	/*Radial gradient generates concentric circles.
-	  Three are done here w/ the outer & inner circles
-	  the same color as the background & the middle circle
-	  set to transparent (this allows the background 
-	  'conic-gradient to show through).*/
-	background-image: radial-gradient(#fffdf8 0 40%,
-		                              transparent 40% 70%, 
-		                              #fffdf8 70%),
-	                  /*Conic gradient varies as you go 360 
-	                    degrees around a center point*/
-	                  conic-gradient(from 30deg, 
-	                  	             var(--c1) 0% 30%, 
-	                  	             var(--c2) 30% 55%, 
-	                  	             var(--c3) 55% 70%, 
-	                  	             var(--c4) 70% 90%,
-	                  	             var(--c5) 90% 100%,
-	                  	             var(--c6) 100% 100%,
-	                  	             var(--c7) 100% 100%,
-	                  	             var(--c8) 100% 100%,
-	                  	             var(--c9) 100% 100%,
-	                  	             var(--c10) 100% 100%);
-}
-
-#graph2{
-	width: var(--graph-width);
-	max-width: var(--graph-width);
-	aspect-ratio: 1;
-	border-radius: 50%;
-	background-image: radial-gradient(#fffdf8 0 40%,
-		                              transparent 40% 70%, 
-		                              #fffdf8 70%),
-	                  conic-gradient(from 30deg, 
-	                  	             var(--c1) 0% 37%, 
-	                  	             var(--c2) 37% 88%, 
-	                  	             var(--c3) 88% 100%);
-}
-
-#graph3{
-	width: var(--graph-width);
-	max-width: var(--graph-width);
-	aspect-ratio: 1;
-	border-radius: 50%;
-	background-image: radial-gradient(#fffdf8 0 40%,
-		                              transparent 40% 70%, 
-		                              #fffdf8 70%),
-	                  conic-gradient(from 30deg, 
-	                  	             var(--c1) 0% 25%, 
-	                  	             var(--c2) 25% 50%, 
-	                  	             var(--c3) 50% 75%,
-	                  	             var(--c4) 75% 95%,
-	                  	             var(--c5) 95% 100%,
-	                  	             var(--c6) 100% 100%,
-	                  	             var(--c7) 100% 100%);
-}
-
-/**********************************************/
-/****************  2.2 - Legend  **************/
-/**********************************************/
-.legend{
-	max-width: 300px;
-	font-size: 0.9rem;
-	gap: 1rem;
-	font-family: system-ui, sans-serif;
-	font-size: 1rem;
-	margin-top: 1rem;
-}
-
-/**********************************************/
-/************  2.2.1 - Legend Word  ***********/
-/**********************************************/
-.legend span{
-	position: relative;
-	/*padding to the left of the span
-	  which in this case is a word/key*/
-	padding-inline-start: 1.25rem;
-
-}
-
-
-/**********************************************/
-/***********  2.2.2 - Legend Circle  **********/
-/**********************************************/
-
-/*"before" pseudo element (notice the circles appear
-  right before the legend text.*/
-.legend span::before{
-	/*absolute is relative to its parent*/
-	position: absolute;
-	top: 0.2rem;
-	left: 0;
-	/*adds content*/
-	content: '';
-	width: 0.8rem;
-	aspect-ratio: 1;
-	border-radius: 50%;
-}
-
-.legend span:nth-child(1)::before{
-	background-color: var(--c1);
-}
-
-.legend span:nth-child(2)::before{
-	background-color: var(--c2);
-}
-
-.legend span:nth-child(3)::before{
-	background-color: var(--c3);
-}
-
-.legend span:nth-child(4)::before{
-	background-color: var(--c4);
-}
-
-.legend span:nth-child(5)::before{
-	background-color: var(--c5);
-}
-
-.legend span:nth-child(6)::before{
-	background-color: var(--c6);
-}
-
-.legend span:nth-child(7)::before{
-	background-color: var(--c7);
-}
-
-.legend span:nth-child(8)::before{
-	background-color: var(--c8);
-}
-
-.legend span:nth-child(9)::before{
-	background-color: var(--c9);
-}
-
-.legend span:nth-child(10)::before{
-	background-color: var(--c10);
-}
-
-/**********************************************/
-/****************  3 - Article  ***************/
-/**********************************************/
-
-article{
-  background-color: white;
-  border-radius: 10px;
-  width: max(96%, 340px);
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-article h2, p{
-  margin-left: 20px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-article p{
-  font-size: 18px;
-  margin-right: 10px;
-  margin-bottom: 12px;
-}
-
-article ul{
-	margin-top: 0px;
-}
-
-article ul li{
-	margin-left: 10px;
-	margin-bottom: 4px;
-}
-
-hr{
-	margin-left: 10px;
-	margin-right: 10px;
+@media (max-width: 580px) {
+  .reference-page .figures { padding: 24px 16px 0; gap: 16px; }
+  .reference-page .figures .data-card { padding: 22px 18px; }
+  .threat-chart { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; grid-auto-flow: row; row-gap: 14px; }
+  .threat-row { grid-template-columns: 92px minmax(0, 1fr) 35px; }
+  .item-chart { min-height: 265px; gap: 5px; }
+  .item-column { font-size: 10px; }
 }
