@@ -180,6 +180,22 @@
     background: #22262c;
 }
 
+.team-profile-page main { display: block; }
+
+.team-profile-art {
+    margin: 0 0 24px;
+    overflow: hidden;
+    border: 1px solid #353941;
+    border-radius: 8px;
+    background: #181b20;
+}
+
+.team-profile-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 700px) {
     .team-grid { grid-template-columns: minmax(0, 1fr); }
     .team-visual { height: clamp(230px, 55vw, 330px); }
