@@ -6,13 +6,12 @@
     <meta name="description" content="Explore the teams and alliances of the Cataclyzmo universe.">
     <link rel="canonical" href="https://cataclyzmo.com/teams">
     <link rel="icon" type="image/png" href="images/logo.png">
-    <link href="css/characters.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/interior.css" rel="stylesheet">
     <link href="css/teams.css" rel="stylesheet">
     <title>Teams | Cataclyzmo</title>
 </head>
-<body class="interior-page catalog-page">
+<body class="interior-page teams-page">
     <div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -49,30 +48,63 @@
         <h1>Teams</h1>
         <p class="page-intro">Meet the alliances, rivals, and crews shaping the Cataclyzmo universe.</p>
     </header>
-    <main>
-        <div class="character">
-            <a href="characters/force-five.html"><img src="images/force-five-design.png" alt="The five members of Force Five" loading="lazy"><h2>Force Five</h2></a>
+    <main class="team-directory">
+        <div class="directory-heading">
+            <div>
+                <p class="directory-eyebrow">The roster</p>
+                <h2>All teams</h2>
+            </div>
+            <span class="directory-count">08 groups</span>
         </div>
-        <div class="character">
-            <a href="characters/humanoids.html"><img src="images/humanoids-design.png" alt="The Humanoids royal family" loading="lazy"><h2>The Humanoids</h2></a>
-        </div>
-        <div class="character">
-            <a href="characters/the-syndicate.html"><img src="images/syndicate-nobg.png" alt="Members of the Syndicate" loading="lazy"><h2>The Syndicate</h2></a>
-        </div>
-        <div class="character">
-            <a href="teams/the-scavengers.html"><img src="images/unity-design.png" alt="Unity, a member of the Scavengers" loading="lazy"><h2>The Scavengers</h2></a>
-        </div>
-        <div class="character">
-            <a href="characters/bandit.html"><img src="images/bandit-design.png" alt="Bandit, leader of the Society of Rogue" loading="lazy"><h2>The Society of Rogue</h2></a>
-        </div>
-        <div class="character">
-            <a href="teams/hero.html"><img src="images/super-seven-design.png" alt="Super Seven, leader of H.E.R.O." loading="lazy"><h2>H.E.R.O.</h2></a>
-        </div>
-        <div class="character">
-            <a href="teams/iga.html"><div class="team-art" aria-hidden="true">IGA</div><h2>Inter Galactic Alliance</h2></a>
-        </div>
-        <div class="character">
-            <a href="teams/cataclyzmo.html"><div class="team-art" aria-hidden="true">C</div><h2>Cataclyzmo</h2></a>
+        <div class="team-grid">
+            <article class="team-card">
+                <a href="characters/force-five.html" aria-labelledby="team-force-five">
+                    <div class="team-visual team-visual--group"><img src="images/force-five-design.png" alt="The five members of Force Five" loading="lazy"><span class="team-image-label">Team portrait</span></div>
+                    <div class="team-copy"><span class="team-number">01 / Team</span><h3 id="team-force-five">Force Five</h3><p>Five heroes standing together: Shadow Drone, The Ultimatum, Kid Quickster, Invisible Mistress, and Phase-Out.</p><span class="team-link">Meet the team <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="characters/humanoids.html" aria-labelledby="team-humanoids">
+                    <div class="team-visual team-visual--group"><img src="images/humanoids-design.png" alt="The five Humanoids royals together" loading="lazy"><span class="team-image-label">Team portrait</span></div>
+                    <div class="team-copy"><span class="team-number">02 / Team</span><h3 id="team-humanoids">The Humanoids</h3><p>The five royals of Animaliax rule a society of human-like animal creatures.</p><span class="team-link">Meet the team <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="characters/the-syndicate.html" aria-labelledby="team-syndicate">
+                    <div class="team-visual team-visual--group"><img src="images/syndicate-nobg.png" alt="The five founding members of the Syndicate" loading="lazy"><span class="team-image-label">Team portrait</span></div>
+                    <div class="team-copy"><span class="team-number">03 / Team</span><h3 id="team-syndicate">The Syndicate</h3><p>Five criminals join forces under Nemesis to make their mark on the world.</p><span class="team-link">Meet the team <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="teams/the-scavengers.html" aria-labelledby="team-scavengers">
+                    <div class="team-visual team-visual--member"><img src="images/unity-design.png" alt="Unity, a member of the Scavengers" loading="lazy"><span class="team-image-label">Featured member · Unity</span></div>
+                    <div class="team-copy"><span class="team-number">04 / Team</span><h3 id="team-scavengers">The Scavengers</h3><p>Metahumans working to restore society after a devastating catastrophe.</p><span class="team-link">Meet the team <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="characters/bandit.html" aria-labelledby="team-society">
+                    <div class="team-visual team-visual--member"><img src="images/bandit-design.png" alt="Bandit, leader of the Society of Rogue" loading="lazy"><span class="team-image-label">Featured leader · Bandit</span></div>
+                    <div class="team-copy"><span class="team-number">05 / Team</span><h3 id="team-society">The Society of Rogue</h3><p>Bandit leads a group of time travelers determined to reshape history.</p><span class="team-link">Meet the team <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="teams/hero.html" aria-labelledby="team-hero">
+                    <div class="team-visual team-visual--member"><img src="images/super-seven-design.png" alt="Super Seven, leader of H.E.R.O." loading="lazy"><span class="team-image-label">Featured leader · Super Seven</span></div>
+                    <div class="team-copy"><span class="team-number">06 / Team</span><h3 id="team-hero">H.E.R.O.</h3><p>A volunteer group led by Super Seven, helping people in their community.</p><span class="team-link">Meet the team <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="teams/iga.html" aria-labelledby="team-iga">
+                    <div class="team-visual team-visual--symbol"><span class="team-symbol" aria-hidden="true">IGA</span><span class="team-image-label">Alliance</span></div>
+                    <div class="team-copy"><span class="team-number">07 / Alliance</span><h3 id="team-iga">Inter Galactic Alliance</h3><p>Explore the Inter Galactic Alliance in the Cataclyzmo universe.</p><span class="team-link">View profile <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
+            <article class="team-card">
+                <a href="teams/cataclyzmo.html" aria-labelledby="team-cataclyzmo">
+                    <div class="team-visual team-visual--symbol"><span class="team-symbol" aria-hidden="true">C</span><span class="team-image-label">Team</span></div>
+                    <div class="team-copy"><span class="team-number">08 / Team</span><h3 id="team-cataclyzmo">Cataclyzmo</h3><p>Explore the Cataclyzmo team and its place in the universe.</p><span class="team-link">View profile <span aria-hidden="true">↗</span></span></div>
+                </a>
+            </article>
         </div>
     </main>
     <footer class="site-footer">
