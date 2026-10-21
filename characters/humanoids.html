@@ -15,37 +15,38 @@
 <body class="interior-page profile-page team-profile-page">
 
 	<!--used only on small screens, this sidescreen appears when clicking the hamburger menu-->
-	<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
-        <ul>
-      	  <li><a href="../index.html">Home</a></li>
-          <li><a href="../books.html">Comics</a></li>
-          <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../teams.html" aria-current="page">Teams</a></li>
-      	  <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Worlds</a></li>
-      	  <li><a href="../power-index.html">Power Index</a></li>
-        </ul>
-	</div>
-
-	<nav>
-        <a class="site-brand" href="../index.html">
-            <img class="logo" src="../images/logo.png" alt="">
-            <span>Cataclyzmo</span>
-        </a>
-        <ul class= "nav-options-fullscreen"> <!--used on regular sized screens only-->
-          <li><a href="../books.html">Comics</a></li>
-          <li><a href="../characters.html">Characters</a></li>
-          <li><a href="../teams.html" aria-current="page">Teams</a></li>
-      	  <li><a href="../items.html">Items</a></li>
-          <li><a href="../geo.html">Worlds</a></li>
-       	  <li><a href="../power-index.html">Power Index</a></li>
-		</ul><!--used only on small screens-->
-        <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-           <span></span>
-           <span></span>
-           <span></span>
-        </button>
-	</nav>
+<!-- BEGIN SHARED NAV -->
+<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../books.html">Comics</a></li>
+        <li><a href="../characters.html" aria-current="page">Characters</a></li>
+        <li><a href="../teams.html">Teams</a></li>
+        <li><a href="../items.html">Items</a></li>
+        <li><a href="../geo.html">Worlds</a></li>
+        <li><a href="../power-index.html">Power Index</a></li>
+    </ul>
+</div>
+<nav>
+    <a class="site-brand" href="../index.html">
+        <img class="logo" src="../images/logo.png" alt="">
+        <span>Cataclyzmo</span>
+    </a>
+    <ul class="nav-options-fullscreen">
+        <li><a href="../books.html">Comics</a></li>
+        <li><a href="../characters.html" aria-current="page">Characters</a></li>
+        <li><a href="../teams.html">Teams</a></li>
+        <li><a href="../items.html">Items</a></li>
+        <li><a href="../geo.html">Worlds</a></li>
+        <li><a href="../power-index.html">Power Index</a></li>
+    </ul>
+    <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
+<!-- END SHARED NAV -->
 	<!--Used for hamburger menu & side screen. This is only used on small screen devices.-->
 	<!--This allows the toggling of the hamburger menu-->
 	<script src="../js/sidescreen.js"></script>
@@ -108,16 +109,18 @@
 		</article>
 
     </main>
-    <footer class="site-footer">
-        <div class="site-footer-inner">
-            <p class="footer-brand">Cataclyzmo</p>
-            <ul class="footer-links" aria-label="Footer links">
-                <li><a href="../books.html">Comics</a></li>
-                <li><a href="../credits.html">About</a></li>
-                <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
-            </ul>
-        </div>
-    </footer>
+<!-- BEGIN SHARED FOOTER -->
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <p class="footer-brand">Cataclyzmo</p>
+        <ul class="footer-links" aria-label="Footer links">
+            <li><a href="../books.html">Comics</a></li>
+            <li><a href="../credits.html">About</a></li>
+            <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- END SHARED FOOTER -->
 
     <script src="../js/team-rosters.js" defer></script>
     <script src="../js/team-carousel.js" defer></script>

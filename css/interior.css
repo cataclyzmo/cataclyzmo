@@ -263,11 +263,6 @@ body.interior-page {
     transform: skewX(-25deg);
 }
 
-@media screen and (max-width: 520px) {
-    .catalog-page .character img,
-    .catalog-page .team-div .team-img,
-}
-
 .catalog-page .character hr { display: none; }
 
 .catalog-page .comic-availability {
