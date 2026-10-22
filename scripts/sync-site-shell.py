@@ -27,7 +27,7 @@ def section_for(path: Path) -> str | None:
         "items.html": "items",
         "geo.html": "worlds",
         "power-index.html": "power_index",
-        "sim.html": "sim",
+        "cmp.html": "cmp",
     }.get(parts[0])
 
 
@@ -36,7 +36,7 @@ def render(template: str, path: Path) -> str:
     current = section_for(path)
     values = {"root": "../" * depth}
     values.update({f"{section}_current": ' aria-current="page"' if current == section else ""
-                   for section in ("home", "comics", "characters", "teams", "items", "worlds", "power_index", "sim")})
+                   for section in ("home", "comics", "characters", "teams", "items", "worlds", "power_index", "cmp")})
     return TOKEN.sub(lambda match: values[match.group(1)], template)
 
 

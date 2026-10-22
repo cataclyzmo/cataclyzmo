@@ -1,4 +1,4 @@
-/* Distribution charts for the Power Index reference page. */
+/* Distribution charts for the Scaling reference page. */
 .reference-page .figures {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

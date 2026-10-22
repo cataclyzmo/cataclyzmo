@@ -18,12 +18,12 @@ python3 scripts/sync-site-shell.py --check
 
 The script sets relative links and the current navigation item based on each page's location.
 
-## Battle simulator data
+## Character comparison data
 
-The Sim dropdowns and base power ratings are generated from `characters.html` and the character dossiers. After changing the catalog or a dossier's ratings, regenerate the static bundle:
+The Compare dropdowns, power ratings, and facts are generated from `characters.html` and the character dossiers. After changing the catalog or a dossier, regenerate the static bundle:
 
 ```sh
-python3 scripts/build-sim-data.py
+python3 scripts/build-compare-data.py
 ```
 
-Characters without documented ratings remain selectable and fight with even odds.
+Characters without documented ratings remain selectable, with missing details labeled on their cards.

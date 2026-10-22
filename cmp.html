@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Compare two Cataclyzmo characters side by side, including power ratings and character details.">
+    <link rel="canonical" href="https://cataclyzmo.com/cmp.html">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/interior.css" rel="stylesheet">
+    <link href="css/compare.css" rel="stylesheet">
+    <title>Character Comparison | Cataclyzmo</title>
+</head>
+<body class="interior-page compare-page">
+<!-- BEGIN SHARED NAV -->
+<div class="nav-sidescreen" id="mobile-menu" role="navigation" aria-label="Mobile navigation" inert>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Comics</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="items.html">Items</a></li>
+        <li><a href="geo.html">Worlds</a></li>
+        <li><a href="power-index.html">Scaling</a></li>
+        <li><a href="cmp.html" aria-current="page">Compare</a></li>
+    </ul>
+</div>
+<nav>
+    <a class="site-brand" href="index.html">
+        <img class="logo" src="images/logo.png" alt="">
+        <span>Cataclyzmo</span>
+    </a>
+    <ul class="nav-options-fullscreen">
+        <li><a href="books.html">Comics</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="items.html">Items</a></li>
+        <li><a href="geo.html">Worlds</a></li>
+        <li><a href="power-index.html">Scaling</a></li>
+        <li><a href="cmp.html" aria-current="page">Compare</a></li>
+    </ul>
+    <button class="ham-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</nav>
+<!-- END SHARED NAV -->
+<script src="js/sidescreen.js"></script>
+<header class="page-header">
+    <p class="page-eyebrow">Explore Cataclyzmo</p>
+    <h1>Character Comparison</h1>
+    <p class="page-intro">Choose two characters to view their complete dossiers side by side.</p>
+</header>
+<main class="compare-main">
+    <div class="compare-grid">
+        <section class="compare-column" aria-label="First character">
+            <label for="select-one">First character</label>
+            <select id="select-one"><option value="">Choose a character</option></select>
+            <div class="compare-card" id="display-one"><p class="compare-placeholder">Choose a character to view their dossier.</p></div>
+        </section>
+        <section class="compare-column" aria-label="Second character">
+            <label for="select-two">Second character</label>
+            <select id="select-two"><option value="">Choose a character</option></select>
+            <div class="compare-card" id="display-two"><p class="compare-placeholder">Choose a character to view their dossier.</p></div>
+        </section>
+    </div>
+    <p class="compare-note">Power ratings show current strength and documented max potential. Missing details have not been published in the character dossier.</p>
+</main>
+<!-- BEGIN SHARED FOOTER -->
+<footer class="site-footer">
+    <div class="site-footer-inner">
+        <p class="footer-brand">Cataclyzmo</p>
+        <ul class="footer-links" aria-label="Footer links">
+            <li><a href="books.html">Comics</a></li>
+            <li><a href="credits.html">About</a></li>
+            <li><a href="https://x.com/thecataclyzmo" target="_blank" rel="noopener">Contact on X</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- END SHARED FOOTER -->
+<script src="js/compare-data.js" defer></script>
+<script src="js/compare.js" defer></script>
+</body>
+</html>
