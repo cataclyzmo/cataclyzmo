@@ -62,7 +62,12 @@
 
 		<aside>
             <h2> Roman the Conqueror </h2>
-			<img src="../images/roman-design.png" id="characterImage">
+			<fieldset class="character-forms" id="roman-forms" hidden>
+				<legend>Character appearance</legend>
+				<label><input type="radio" name="roman-form" value="roman" checked> <span>Roman</span></label>
+				<label><input type="radio" name="roman-form" value="blueBuster"> <span>Blue Buster Mode</span></label>
+			</fieldset>
+			<img src="../images/roman-design.png" id="characterImage" alt="Roman the Conqueror character portrait">
 
 			<section class="power-scanner" aria-label="Power dossier">
                 <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
@@ -218,5 +223,6 @@
 <!-- END SHARED FOOTER -->
 
     <script src="../js/character-stats.js" defer></script>
+    <script src="../js/roman-forms.js" defer></script>
 </body>
 </html>
