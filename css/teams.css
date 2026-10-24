@@ -111,8 +111,6 @@
     object-position: center;
 }
 
-.team-visual--member img { object-fit: cover; object-position: center 22%; }
-
 .team-image-label {
     position: absolute;
     right: 16px;
@@ -125,30 +123,6 @@
     background: #181b20e8;
     color: #f6cb06;
     line-height: 1.4;
-}
-
-.team-visual--symbol {
-    isolation: isolate;
-    background:
-        radial-gradient(circle at 50% 50%, transparent 0 74px, #eab73338 75px 76px, transparent 77px 111px, #eab73322 112px 113px, transparent 114px),
-        radial-gradient(circle at 50% 50%, #393f49, #171b22 72%);
-}
-
-.team-visual--symbol::after {
-    content: "";
-    position: absolute;
-    width: 220px;
-    height: 220px;
-    border: 1px solid #eab73333;
-    transform: rotate(45deg);
-    pointer-events: none;
-}
-
-.team-symbol {
-    color: #f6cb06;
-    font: 700 clamp(76px, 10vw, 124px)/1 "Montserrat", sans-serif;
-    letter-spacing: -.08em;
-    text-shadow: 0 5px 24px #0007;
 }
 
 .team-copy {
@@ -190,28 +164,6 @@
 }
 
 .team-card:hover .team-link, .team-card:focus-within .team-link { color: #9b2934; }
-
-.profile-page .team-portrait {
-    display: block;
-    width: 100%;
-    max-height: 440px;
-    object-fit: contain;
-    background: #22262c;
-}
-
-.team-profile-art {
-    margin: 0 0 24px;
-    overflow: hidden;
-    border: 1px solid #353941;
-    border-radius: 8px;
-    background: #181b20;
-}
-
-.team-profile-art img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
 @media screen and (max-width: 700px) {
     .team-grid { grid-template-columns: minmax(0, 1fr); }
