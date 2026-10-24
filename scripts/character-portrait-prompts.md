@@ -2,9 +2,9 @@
 
 ## Proto Armor
 
-Asset: `images/protoarmor-design.png`
+Asset: `images/protoarmor-design.webp`
 
-Generated with the built-in image generation tool. References: an original Proto Armor image for armor identity, plus `images/the-yesterday-man-design.png` and `images/michael-design.png` for comic rendering style. The original reference image is no longer included in the live site.
+Generated with the built-in image generation tool. References: an original Proto Armor image for armor identity, plus `images/the-yesterday-man-design.webp` and `images/michael-design.webp` for comic rendering style. The original reference image is no longer included in the live site.
 
 Final prompt:
 
@@ -12,7 +12,7 @@ Use case: style-transfer. Asset type: updated Proto Armor character portrait for
 
 ## Michael Preston
 
-Asset: `images/michael-design.png`
+Asset: `images/michael-design.webp`
 
 Generated with the built-in image generation tool using `Michael.png` from the character reference folder.
 
@@ -22,31 +22,31 @@ Generated with the built-in image generation tool from the reference sheets in `
 
 ## xavier
 
-Asset: `images/xavier-design.png`
+Asset: `images/xavier-design.webp`
 
 Use case: identity-preserve. Asset type: individual comic character profile portrait for a website directory and biography. Input image: character design reference sheet, use its FRONT VIEW as the identity and costume reference. Generate exactly ONE isolated character: Xavier, the bald Black scientist with round eyeglasses, clean-shaven, white lab coat over white shirt and dark necktie. Preserve the exact face, glasses and clothing of the front view. Composition: centered standing front-facing portrait from head to mid-thigh, both shoulders and arms comfortably inside frame, modest breathing room above the hair, calm natural pose, looking toward viewer. Style: faithfully match the reference's detailed inked comic illustration, crosshatched shadows, restrained natural colors. Transparent background, no scenery, no sheet, no border, no panels, no labels, no lettering, no additional people. Keep the person's established face, ethnicity, age, hairstyle and outfit; do not redesign them.
 
 ## klaus
 
-Asset: `images/klaus-design.png`
+Asset: `images/klaus-design.webp`
 
 Use case: identity-preserve. Asset type: individual comic character profile portrait for a website directory and biography. Input image: character design reference sheet, use its FRONT VIEW as the identity and costume reference. Generate exactly ONE isolated character: Klaus Petrov, the very tall thin pale scientist with short untidy brown hair, angular gaunt face, prominent cheekbones, subtle knowing expression, white lab coat over dark gray-green T-shirt and brown trousers. Preserve his reference identity. Composition: centered standing front-facing portrait from head to mid-thigh, both shoulders and arms comfortably inside frame, modest breathing room above the hair, calm natural pose, looking toward viewer. Style: faithfully match the reference's detailed inked comic illustration, crosshatched shadows, restrained natural colors. Transparent background, no scenery, no sheet, no border, no panels, no labels, no lettering, no additional people. Keep the person's established face, ethnicity, age, hairstyle and outfit; do not redesign them.
 
 ## sarah
 
-Asset: `images/sarah-design.png`
+Asset: `images/sarah-design.webp`
 
 Use case: identity-preserve. Asset type: individual comic character profile portrait for a website directory and biography. Input image: character design reference sheet, use its FRONT VIEW as the identity and costume reference. Generate exactly ONE isolated character: Sarah Goldstein, the fair-skinned redheaded scientist with shoulder-length wavy copper-red hair, green eyes, subtle freckles, white lab coat over black blouse, gold Star of David necklace. Preserve her face and clothing. Composition: centered standing front-facing portrait from head to mid-thigh, both shoulders and arms comfortably inside frame, modest breathing room above the hair, calm natural pose, looking toward viewer. Style: faithfully match the reference's detailed inked comic illustration, crosshatched shadows, restrained natural colors. Transparent background, no scenery, no sheet, no border, no panels, no labels, no lettering, no additional people. Keep the person's established face, ethnicity, age, hairstyle and outfit; do not redesign them.
 
 ## claire
 
-Asset: `images/claire-design.png`
+Asset: `images/claire-design.webp`
 
 Use case: identity-preserve. Asset type: individual comic character profile portrait for a website directory and biography. Input image: character design reference sheet, use its FRONT VIEW as the identity and costume reference. Generate exactly ONE isolated character: Claire, the older woman with shoulder-length wavy gray hair, kind lined face and green eyes, wearing practical dark teal janitor work shirt and matching trousers, a cleaning rag tucked at her waist. Preserve her age and reference identity. Composition: centered standing front-facing portrait from head to mid-thigh, both shoulders and arms comfortably inside frame, modest breathing room above the hair, calm natural pose, looking toward viewer. Style: faithfully match the reference's detailed inked comic illustration, crosshatched shadows, restrained natural colors. Transparent background, no scenery, no sheet, no border, no panels, no labels, no lettering, no additional people. Keep the person's established face, ethnicity, age, hairstyle and outfit; do not redesign them.
 
 
 ## Michael background correction
 
-Asset: `images/michael-design.png`
+Asset: `images/michael-design.webp`
 
 Built-in image generation edit: remove only the brown backdrop and halo; preserve Michael’s identity, outfit, pose, framing, and comic illustration. Output a transparent PNG cutout with clean hair and coat edges. Verified an alpha channel containing fully transparent pixels.

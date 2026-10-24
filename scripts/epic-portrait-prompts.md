@@ -2,13 +2,13 @@
 
 Generated with the built-in image generation tool. Original assets preserved; new portraits used in the character directory and biography pages.
 
-Asset: `images/nightmare-epic.png`
+Asset: `images/nightmare-epic.webp`
 
 Final prompt:
 
 Use case: style-transfer. Asset: Nightmare epic comic character portrait for Cataclyzmo website. Image 1 is identity reference, image 2 rendering style reference only. Reimagine Nightmare with cinematic epic intensity in polished detailed inked comic art, confident black contours, intricate crosshatching, dimensional cel shading matching Proto Armor. Preserve gray pallid muscular bare torso, sinister skeletal grin, glowing pale eyes under ragged black hood and torn black cloak, ragged blue trousers. Crucial: he has ONLY ONE ARM: his right arm (viewer left), left arm absent above elbow as reference. Powerful telekinetic stance with his single hand extended slightly, small stones suspended near it. Head to knees portrait, entire hood and hand inside frame, low angle commanding composition. Dark charcoal smoky backdrop, cold spectral rim light and subtle halo, readable silhouette. No additional characters, no lettering, no logos, no gore. Maintain recognizable costume and anatomy.
 
-Asset: `images/darconica-epic.png`
+Asset: `images/darconica-epic.webp`
 
 Final prompt:
 

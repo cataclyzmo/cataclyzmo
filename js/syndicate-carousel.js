@@ -2,25 +2,25 @@
 // are approximate, as described in the team's Powers & Abilities section.
 const members = [
   {
-    name: 'Nemesis', image: '../images/nemesis-design.png',
+    name: 'Nemesis', image: '../images/nemesis-design.webp',
     stats: [[6, 7, 'Enhanced', 'Nuclear'], [6, 7, 'Dynamo', 'Nuclear'], [8, 8, 'Super Genius'], [5, 6, 'Vehicular', 'Titanic'], [5, 5, 'Subsonic'], [6, 6, 'Enhanced']],
     physical: ['Centurion', "6'", '250lbs', 'Male', 'Black', 'Yellow', 'Unknown'],
     personal: ['Unknown', 'Tech & Meta', '7.5', 'The Evolutionary', 'The Syndicate', 'Multiple STEM PhDs', 'Terraformer', 'Namako']
   },
   {
-    name: 'Quick Draw', image: '../images/quickdraw-design.png',
+    name: 'Quick Draw', image: '../images/quickdraw-design.webp',
     stats: null, note: "Quick Draw's power ratings have not been documented yet.",
     physical: Array(7).fill('Unknown'),
     personal: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'The Syndicate', 'Unknown', 'Unknown', 'Unknown']
   },
   {
-    name: 'Vex Krueger', image: '../images/vexkrueger-design.png',
+    name: 'Vex Krueger', image: '../images/vexkrueger-design.webp',
     stats: [[4, 4, 'Apex'], [3, 3, 'Gunslinger'], [3, 3, 'Smart'], [1, 1, 'Enabled'], [4, 10, 'Apex', 'Lightspeed+'], [4, 4, 'Strongman']],
     physical: ['Human', "5'11''", '180lbs', 'Male', 'Black', 'Red', '28'],
     personal: ['Vex Krueger', 'Meta', '5.1', 'The Living Shadow', 'The Survivors / The Syndicate', 'High School', 'Mechanic', 'Merth']
   },
   {
-    name: 'Pyro II', image: '../images/pyromaniac-design.png',
+    name: 'Pyro II', image: '../images/pyromaniac-design.webp',
     alt: 'Pyromaniac illustration used as a visual reference for Pyro II',
     stats: [[6, 6, 'Enhanced'], [6, 6, 'Dynamo'], [4, 4, 'Exceptional'], [1, 1, 'Enabled'], [4, 4, 'Apex'], [5, 5, 'Apex']],
     note: "Approximate ratings based on Pyromaniac, whose abilities Pyro II resembles. Pyro II's identity and physical details are unknown.",
@@ -28,7 +28,7 @@ const members = [
     personal: ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'The Syndicate', 'Unknown', 'Unknown', 'Unknown']
   },
   {
-    name: 'Tiger Hide', image: '../images/tigerhide-design.png',
+    name: 'Tiger Hide', image: '../images/tigerhide-design.webp',
     stats: [[5, 7, 'Bulletproof', 'Nuclear'], [4, 7, 'Rocketeer', 'Nuclear'], [3, 4, 'Smart', 'Exceptional'], [0, 3, 'None', 'Puppet Master'], [4, 5, 'Apex', 'Subsonic'], [5, 6, 'Apex', 'Enhanced']],
     physical: ['Human (cursed)', "9'2''", '800lbs', 'Male', 'orange & black', 'Amber', '52'],
     personal: ['Zangief Draco', 'Magic', '4.2 - 5.7', 'Sabre', 'The Syndicate', 'Home Schooled', 'Hunter', 'Genova']

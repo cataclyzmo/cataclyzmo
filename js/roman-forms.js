@@ -2,11 +2,11 @@ const romanForms = document.getElementById('roman-forms');
 const romanPortrait = document.getElementById('characterImage');
 const romanAppearances = {
     roman: {
-        image: '../images/roman-design.png',
+        image: '../images/roman-design.webp',
         alt: 'Roman the Conqueror character portrait'
     },
     blueBuster: {
-        image: '../images/roman-blue-buster-mode.png',
+        image: '../images/roman-blue-buster-mode.webp',
         alt: 'Roman in Blue Buster Mode, wearing black and gold armor with blue accents and carrying a sword and shield'
     }
 };

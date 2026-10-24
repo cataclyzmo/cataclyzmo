@@ -1,4 +1,4 @@
-Asset: `images/goblinking-epic.png`
+Asset: `images/goblinking-epic.webp`
 
 Generated with the built-in image generation tool, transparent_background=true. PNG alpha verified. Original assets preserved.
 

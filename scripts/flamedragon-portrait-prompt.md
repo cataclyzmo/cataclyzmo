@@ -1,4 +1,4 @@
-Asset: `images/flamedragon-epic.png`
+Asset: `images/flamedragon-epic.webp`
 
 Generated with the built-in image generation tool, transparent_background=true. PNG alpha verified. Original assets preserved.
 

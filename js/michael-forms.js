@@ -15,9 +15,9 @@ const psionicsRating = scanner.querySelector('.scanner-meter[aria-label="Psionic
 const originalEnergyRating = energyRating.textContent;
 const originalPsionicsRating = psionicsRating.textContent;
 const appearances = {
-    michael: { name: 'Michael Preston', image: '../images/michael-design.png', alt: 'Michael Preston in his New World Technologies lab coat' },
-    proto: { name: 'Proto Armor', image: '../images/protoarmor-design.png', alt: 'Michael Preston wearing silver Proto Armor with a black visor, illustrated in detailed comic style' },
-    yesterdayMan: { name: 'The Yesterday Man', image: '../images/the-yesterday-man-design.png', alt: 'Michael Preston wearing The Yesterday Man’s white armor with glowing green accents' }
+    michael: { name: 'Michael Preston', image: '../images/michael-design.webp', alt: 'Michael Preston in his New World Technologies lab coat' },
+    proto: { name: 'Proto Armor', image: '../images/protoarmor-design.webp', alt: 'Michael Preston wearing silver Proto Armor with a black visor, illustrated in detailed comic style' },
+    yesterdayMan: { name: 'The Yesterday Man', image: '../images/the-yesterday-man-design.webp', alt: 'Michael Preston wearing The Yesterday Man’s white armor with glowing green accents' }
 };
 
 function showAppearance(form) {

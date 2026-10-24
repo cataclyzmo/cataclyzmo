@@ -2,7 +2,7 @@
 
 ## Mask and aiming update
 
-Generated with the built-in image generation tool. Edit target: `images/banner.png`; The Yesterday Man mask reference: `images/the-yesterday-man-design.png`.
+Generated with the built-in image generation tool. Edit target: `images/banner.png`; The Yesterday Man mask reference: `images/the-yesterday-man-design.webp`.
 
 Final prompt:
 
