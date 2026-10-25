@@ -14,9 +14,9 @@ document.querySelectorAll('.power-scanner').forEach((scanner) => {
         const boostKey = document.createElement('i');
         boostKey.className = 'stat-key stat-key-boost';
         boostKey.setAttribute('aria-hidden', 'true');
-        label.append(checkbox, boostKey, 'Max Potential');
+        label.append(checkbox, boostKey, 'Similar To');
     } else {
-        label.append(checkbox, ' Max Potential');
+        label.append(checkbox, ' Similar To');
     }
     scanner.querySelector('.stats-legend').prepend(label);
 

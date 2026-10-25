@@ -35,22 +35,17 @@
       row.append(heading);
       return row;
     }
-    const [base, potential, baseLabel, potentialLabel] = stat;
+    const [base, , baseLabel] = stat;
     heading.append(element('span', 'compare-stat-value', `${base}/10${baseLabel ? ` · ${baseLabel}` : ''}`));
     row.append(heading);
-    if (potential !== base) {
-      row.append(element('p', 'compare-potential', `Max potential: ${potential}/10${potentialLabel ? ` · ${potentialLabel}` : ''}`));
-    }
     const meter = element('div', 'compare-meter');
     meter.setAttribute('role', 'meter');
     meter.setAttribute('aria-label', name);
     meter.setAttribute('aria-valuemin', '0');
     meter.setAttribute('aria-valuemax', '10');
     meter.setAttribute('aria-valuenow', String(base));
-    meter.append(element('span', 'compare-meter-base'), element('span', 'compare-meter-potential'));
+    meter.append(element('span', 'compare-meter-base'));
     meter.children[0].style.width = `${base * 10}%`;
-    meter.children[1].style.left = `${base * 10}%`;
-    meter.children[1].style.width = `${Math.max(0, potential - base) * 10}%`;
     row.append(meter);
     return row;
   }
@@ -93,6 +88,14 @@
     const dossier = element('section', 'compare-dossier');
     dossier.append(element('h3', '', 'Power dossier'));
     names.forEach((name, statIndex) => dossier.append(statRow(name, character.stats?.[statIndex])));
+    const total = element('div', 'compare-total');
+    total.append(
+      element('span', '', 'Total'),
+      element('span', '', character.stats
+        ? `${character.stats.reduce((sum, stat) => sum + stat[0], 0)}/${names.length * 10}`
+        : 'Not documented')
+    );
+    dossier.append(total);
     const facts = character.facts || {};
     const physicalRows = physical.map(name => [name, facts[name]]);
     const personalRows = personal.map(name => [name, facts[name] || (name === 'Affiliations' ? facts.Affiliation : '') || (name === 'Planet' ? facts.Homeworld : '')]);

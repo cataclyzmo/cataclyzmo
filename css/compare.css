@@ -118,13 +118,6 @@
     text-align: right;
 }
 
-.compare-potential {
-    margin: 3px 0 0;
-    color: #6a5400;
-    font-size: 13px;
-    text-align: right;
-}
-
 .compare-meter {
     position: relative;
     height: 8px;
@@ -134,15 +127,23 @@
     background: #dedbd4;
 }
 
-.compare-meter-base,
-.compare-meter-potential {
+.compare-meter-base {
     position: absolute;
     top: 0;
     bottom: 0;
 }
 
 .compare-meter-base { left: 0; background: #596b78; }
-.compare-meter-potential { background: #e6b900; }
+
+.compare-total {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid #d8d2c6;
+    font-weight: 700;
+}
 
 .compare-facts table {
     width: 100%;

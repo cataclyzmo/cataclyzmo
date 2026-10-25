@@ -88,7 +88,7 @@ document.querySelectorAll('[data-team-roster]').forEach((card) => {
         render();
         legend.querySelector('input').focus();
       });
-      label.append(checkbox, ' Max Potential');
+      label.append(checkbox, ' Similar To');
       legend.append(label);
     }
 
@@ -112,7 +112,7 @@ document.querySelectorAll('[data-team-roster]').forEach((card) => {
       legend.append(key);
       if (hasBoost && showPotential) {
         const boostKey = document.createElement('span');
-        boostKey.innerHTML = '<i class="stat-key stat-key-boost" aria-hidden="true"></i> Max Potential';
+        boostKey.innerHTML = '<i class="stat-key stat-key-boost" aria-hidden="true"></i> Similar To';
         legend.append(boostKey);
       }
     }
