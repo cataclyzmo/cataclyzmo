@@ -78,6 +78,66 @@ aside h1{
 	margin: 0 auto;
 }
 
+.council-portrait {
+	margin: 0;
+	text-align: center;
+}
+
+.council-portrait figcaption {
+	padding: 8px;
+	font: 700 1.1rem 'Montserrat', sans-serif;
+}
+
+.council-selector {
+	padding: 0 8px 12px;
+}
+
+.council-selector h3 {
+	margin: 4px 0 10px;
+	font: 700 0.95rem 'Montserrat', sans-serif;
+}
+
+.council-options {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 7px;
+}
+
+.council-option {
+	min-width: 0;
+	padding: 4px;
+	border: 2px solid #c9c2ab;
+	border-radius: 5px;
+	background: #f6f1df;
+	color: #161616;
+	cursor: pointer;
+	font: 700 0.72rem 'Montserrat', sans-serif;
+}
+
+.council-option img {
+	display: block;
+	width: 100%;
+	height: 76px;
+	object-fit: contain;
+	background: radial-gradient(circle at center, #423746, #17151c 75%);
+}
+
+.council-option span {
+	display: block;
+	padding: 5px 0 2px;
+}
+
+.council-option:hover,
+.council-option[aria-pressed="true"] {
+	border-color: #a57400;
+	background: #ffdfa4;
+}
+
+.council-option:focus-visible {
+	outline: 3px solid #5e42a0;
+	outline-offset: 2px;
+}
+
 .teamImage{
 	cursor: pointer;
 }

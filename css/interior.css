@@ -312,6 +312,11 @@ body.interior-page {
     background: #22262c;
 }
 
+.profile-page .council-portrait #characterImage {
+    height: 390px;
+    background: radial-gradient(circle at center, #38303b, #17151c 72%);
+}
+
 .profile-page .team-carousel-controls {
     display: flex;
     align-items: center;

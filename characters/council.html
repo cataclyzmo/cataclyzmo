@@ -62,7 +62,24 @@
 
 		<aside>
             <h2> The Council </h2>
-			<img src="../images/council-design.webp" id="characterImage">
+			<figure class="council-portrait">
+				<img src="../images/council-design.webp" id="characterImage" alt="Fear, a skull-faced council member in a purple hood">
+				<figcaption id="council-portrait-name">Fear</figcaption>
+			</figure>
+			<section class="council-selector" aria-labelledby="council-selector-title">
+				<h3 id="council-selector-title">Choose a form</h3>
+				<div class="council-options">
+					<button type="button" class="council-option" data-name="Fear" aria-pressed="true"><img src="../images/council-design.webp" alt=""><span>Fear</span></button>
+					<button type="button" class="council-option" data-name="Serenity" aria-pressed="false"><img src="../images/council-serenity.png" alt="" loading="lazy"><span>Serenity</span></button>
+					<button type="button" class="council-option" data-name="Rage" aria-pressed="false"><img src="../images/council-rage.png" alt="" loading="lazy"><span>Rage</span></button>
+					<button type="button" class="council-option" data-name="Grief" aria-pressed="false"><img src="../images/council-grief.png" alt="" loading="lazy"><span>Grief</span></button>
+					<button type="button" class="council-option" data-name="Boredom" aria-pressed="false"><img src="../images/council-boredom.png" alt="" loading="lazy"><span>Boredom</span></button>
+					<button type="button" class="council-option" data-name="Hate" aria-pressed="false"><img src="../images/council-hate.png" alt="" loading="lazy"><span>Hate</span></button>
+					<button type="button" class="council-option" data-name="Logic" aria-pressed="false"><img src="../images/council-logic.png" alt="" loading="lazy"><span>Logic</span></button>
+					<button type="button" class="council-option" data-name="Shock" aria-pressed="false"><img src="../images/council-shock.png" alt="" loading="lazy"><span>Shock</span></button>
+					<button type="button" class="council-option" data-name="Rodney Smith" aria-pressed="false"><img src="../images/council-rodney-smith.png" alt="" loading="lazy"><span>Rodney Smith</span></button>
+				</div>
+			</section>
 
 			<section class="power-scanner" aria-label="Power dossier">
                 <div class="scanner-header"><span class="scanner-status" aria-hidden="true"></span><span>Power dossier</span><span class="scanner-scale">0—10</span></div>
@@ -203,7 +220,7 @@
 
 				Thirdly, there is Fear, a creature bestowing Rodney with the capacity to fly as well as haunt his victims with their impending doom. Fear also gives Rodney some minor telekinetic powers mainly intended to intimidate his opponents. Fear is also the source of Rodney's durability boost in a somewhat unconventional way in that he allows Rodney to become intangible. <br> <br>
 
-				Besides the main three, five more members lay hidden, knocking on random doors inside Rodney's virtual auditorium, desperate to get out and become summoned.<br> <br>
+				Besides the main three, five more members—Grief, Boredom, Hate, Logic, and Shock—lay hidden, knocking on random doors inside Rodney's virtual auditorium, desperate to get out and become summoned.<br> <br>
 
 				Also, there is one final thing probably worth mentioning, which is the source of Rodney's yellow stats, a wildcard by the name Unity of Emotion. This Unity only comes out when things are just right and perfectly balanced, giving Rodney powers from each member of the emotional council spectrum simultaneously and sometimes a little more (or perhaps a lot more).
 			</p>
@@ -224,5 +241,6 @@
 <!-- END SHARED FOOTER -->
 
     <script src="../js/character-stats.js" defer></script>
+    <script src="../js/council-forms.js" defer></script>
 </body>
 </html>
