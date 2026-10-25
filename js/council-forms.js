@@ -1,6 +1,9 @@
 const councilPortrait = document.getElementById('characterImage');
 const councilPortraitName = document.getElementById('council-portrait-name');
 const councilOptions = document.querySelectorAll('.council-option');
+const unityOption = document.querySelector('.council-option[data-name="Unity of Emotion"]');
+const requiredCouncilForms = [...councilOptions].filter((option) => option !== unityOption);
+const visitedCouncilForms = new Set();
 const councilScanner = document.querySelector('.power-scanner');
 const councilDossierTitle = document.getElementById('council-dossier-title');
 const councilStats = [...councilScanner.querySelectorAll('.scanner-stat')];
@@ -12,9 +15,10 @@ const councilRatings = {
     Rage: [7, 7, 2, 0, 7, 5],
     Grief: [9, 1, 2, [1, 5], 1, 1],
     Boredom: [8, 1, 2, 0, 1, 9],
-    Hate: [9, 8, 4, 6, 6, 7],
+    Hate: [9, 7, 4, 6, 6, 7],
     Logic: [2, 1, 9, 0, 2, 1],
-    Shock: [7, 7, 1, 1, 3, 8]
+    Shock: [7, 7, 1, 1, 3, 8],
+    'Unity of Emotion': [9, 9, 3, 8, 9, 10]
 };
 const councilRatingLabels = [
     ['None', 'Deficient', 'Average', 'Fighter', 'Apex', 'Bulletproof', 'Enhanced', 'Nuclear', 'Planetary', 'Nearly Indestructible', 'Immortal'],
@@ -31,6 +35,13 @@ function showCouncilRatings(name) {
     if (!ratings) return;
     const hasBoost = ratings.some(Array.isArray);
     councilDossierTitle.textContent = `Power dossier · ${name}`;
+    if (name === 'Unity of Emotion') {
+        councilDossierTitle.textContent = 'Power dossier';
+        const formName = document.createElement('span');
+        formName.className = 'council-dossier-form';
+        formName.textContent = name;
+        councilDossierTitle.append(formName);
+    }
     councilToggle.hidden = !hasBoost;
     councilBoostKey.hidden = !hasBoost;
 
@@ -69,16 +80,27 @@ function showCouncilRatings(name) {
     }
 }
 
+function showCouncilForm(option) {
+    const name = option.dataset.name;
+    councilPortrait.src = option.querySelector('img').src;
+    councilPortrait.alt = `${name} character portrait`;
+    councilPortraitName.textContent = name;
+    showCouncilRatings(name);
+
+    councilOptions.forEach((choice) => {
+        choice.setAttribute('aria-pressed', String(choice === option));
+    });
+}
+
+councilPortraitName.setAttribute('aria-live', 'polite');
 councilOptions.forEach((option) => {
     option.addEventListener('click', () => {
-        const name = option.dataset.name;
-        councilPortrait.src = option.querySelector('img').src;
-        councilPortrait.alt = `${name} character portrait`;
-        councilPortraitName.textContent = name;
-        showCouncilRatings(name);
-
-        councilOptions.forEach((choice) => {
-            choice.setAttribute('aria-pressed', String(choice === option));
-        });
+        if (option !== unityOption) visitedCouncilForms.add(option.dataset.name);
+        if (visitedCouncilForms.size === requiredCouncilForms.length && unityOption.hidden) {
+            unityOption.hidden = false;
+            showCouncilForm(unityOption);
+            return;
+        }
+        showCouncilForm(option);
     });
 });

@@ -138,6 +138,11 @@ aside h1{
 	outline-offset: 2px;
 }
 
+.council-dossier-form {
+	display: block;
+	white-space: nowrap;
+}
+
 .teamImage{
 	cursor: pointer;
 }
