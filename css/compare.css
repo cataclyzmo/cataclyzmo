@@ -103,10 +103,10 @@
 }
 
 .compare-stat-heading {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 4px 12px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, auto);
+    align-items: end;
+    gap: 12px;
     font-size: 14px;
 }
 
@@ -114,8 +114,21 @@
     font-weight: 700;
 }
 
-.compare-stat-value {
+.compare-stat-ratings {
     text-align: right;
+}
+
+.compare-stat-similar {
+    display: block;
+    min-height: 16px;
+    color: #8a6700;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.compare-stat-value {
+    display: block;
 }
 
 .compare-meter {
@@ -127,13 +140,17 @@
     background: #dedbd4;
 }
 
-.compare-meter-base {
+.compare-meter-base,
+.compare-meter-similar {
     position: absolute;
     top: 0;
     bottom: 0;
 }
 
 .compare-meter-base { left: 0; background: #596b78; }
+.compare-meter-similar { background: #d9aa00; }
+
+.compare-meter-missing { visibility: hidden; }
 
 .compare-total {
     display: flex;
@@ -144,6 +161,8 @@
     border-top: 1px solid #d8d2c6;
     font-weight: 700;
 }
+
+.compare-total-adjusted { color: #8a6700; }
 
 .compare-facts table {
     width: 100%;

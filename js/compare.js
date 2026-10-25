@@ -31,21 +31,34 @@
     link.href = `power-index.html#${name.toLowerCase()}`;
     heading.append(link);
     if (!stat) {
-      heading.append(element('span', 'compare-stat-value', 'Not documented'));
-      row.append(heading);
+      const ratings = element('div', 'compare-stat-ratings');
+      ratings.append(element('span', 'compare-stat-similar', ''), element('span', 'compare-stat-value', 'Not documented'));
+      heading.append(ratings);
+      row.append(heading, element('div', 'compare-meter compare-meter-missing'));
       return row;
     }
-    const [base, , baseLabel] = stat;
-    heading.append(element('span', 'compare-stat-value', `${base}/10${baseLabel ? ` · ${baseLabel}` : ''}`));
+    const [base, potential, baseLabel, potentialLabel] = stat;
+    const ratings = element('div', 'compare-stat-ratings');
+    const similar = element('span', 'compare-stat-similar', potential > base ? `${potential}/10 · ${potentialLabel}` : '');
+    if (potential > base) similar.setAttribute('aria-label', `Similar To: ${potential}/10 · ${potentialLabel}`);
+    ratings.append(similar, element('span', 'compare-stat-value', `${base}/10${baseLabel ? ` · ${baseLabel}` : ''}`));
+    heading.append(ratings);
     row.append(heading);
     const meter = element('div', 'compare-meter');
     meter.setAttribute('role', 'meter');
     meter.setAttribute('aria-label', name);
     meter.setAttribute('aria-valuemin', '0');
     meter.setAttribute('aria-valuemax', '10');
-    meter.setAttribute('aria-valuenow', String(base));
+    meter.setAttribute('aria-valuenow', String(potential));
+    if (potential > base) meter.setAttribute('aria-valuetext', `${base} regular, ${potential} Similar To`);
     meter.append(element('span', 'compare-meter-base'));
     meter.children[0].style.width = `${base * 10}%`;
+    if (potential > base) {
+      const similarFill = element('span', 'compare-meter-similar');
+      similarFill.style.left = `${base * 10}%`;
+      similarFill.style.width = `${(potential - base) * 10}%`;
+      meter.append(similarFill);
+    }
     row.append(meter);
     return row;
   }
@@ -89,12 +102,14 @@
     dossier.append(element('h3', '', 'Power dossier'));
     names.forEach((name, statIndex) => dossier.append(statRow(name, character.stats?.[statIndex])));
     const total = element('div', 'compare-total');
-    total.append(
-      element('span', '', 'Total'),
-      element('span', '', character.stats
-        ? `${character.stats.reduce((sum, stat) => sum + stat[0], 0)}/${names.length * 10}`
-        : 'Not documented')
-    );
+    const totalValue = element('span', '', 'Not documented');
+    if (character.stats) {
+      const regular = character.stats.reduce((sum, stat) => sum + stat[0], 0);
+      const adjusted = character.stats.reduce((sum, stat) => sum + stat[1], 0);
+      totalValue.textContent = adjusted > regular ? `${regular} → ` : '';
+      totalValue.append(element('span', adjusted > regular ? 'compare-total-adjusted' : '', `${adjusted}/${names.length * 10}`));
+    }
+    total.append(element('span', '', 'Total'), totalValue);
     dossier.append(total);
     const facts = character.facts || {};
     const physicalRows = physical.map(name => [name, facts[name]]);
