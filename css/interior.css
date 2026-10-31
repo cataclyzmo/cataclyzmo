@@ -85,6 +85,43 @@ body.interior-page {
     padding: 32px 24px 64px;
 }
 
+/* Short series context on the comics landing page. */
+.comic-series-intro {
+    box-sizing: border-box;
+    width: calc(100% - 48px);
+    max-width: 1104px;
+    margin: 32px auto 0;
+    padding: 20px 24px;
+    border-left: 4px solid #eab733;
+    background: #fffdf8;
+    color: #34363a;
+}
+
+.comic-series-intro h2 {
+    margin: 0 0 8px;
+    color: #181b20;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: left;
+}
+
+.comic-series-intro p {
+    margin: 8px 0 0;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.comic-series-intro a {
+    color: #695100;
+    text-underline-offset: 3px;
+}
+
+.comic-series-intro strong {
+    color: #181b20;
+}
+
 .catalog-page .character-search {
     box-sizing: border-box;
     width: 100%;
