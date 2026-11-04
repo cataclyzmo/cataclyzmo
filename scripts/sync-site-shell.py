@@ -27,7 +27,7 @@ def section_for(path: Path) -> str | None:
         "items.html": "items",
         "geo.html": "worlds",
         "power-index.html": "power_index",
-        "cmp.html": "cmp",
+        "compare.html": "cmp",
     }.get(parts[0])
 
 
