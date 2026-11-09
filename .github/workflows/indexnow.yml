@@ -1,0 +1,90 @@
+name: Submit changed pages to IndexNow
+
+# Run after each push to the branch that publishes the GitHub Pages site.
+on:
+  push:
+    branches: [main]
+
+# The workflow only needs to read the repository to find changed page paths.
+permissions:
+  contents: read
+
+# Keep submissions ordered when several commits arrive close together.
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+        with:
+          # The URL list is built from the pushed commit and its parent.
+          fetch-depth: 0
+
+      - name: Wait for the key file to be published
+        run: |
+          # GitHub Pages may take a short time to publish the key after a push.
+          for attempt in {1..12}; do
+            if curl --fail --silent --show-error \
+              https://cataclyzmo.com/7d4f1a9c2e8b6f305a1c9d7e4b2f8063.txt \
+              | grep -Fxq '7d4f1a9c2e8b6f305a1c9d7e4b2f8063'; then
+              exit 0
+            fi
+            sleep 10
+          done
+          echo 'IndexNow key file is not available on the live site.' >&2
+          exit 1
+
+      - name: Submit changed HTML pages
+        env:
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import subprocess
+          import urllib.request
+
+          host = "cataclyzmo.com"
+          key = "7d4f1a9c2e8b6f305a1c9d7e4b2f8063"
+          before = os.environ["BEFORE"]
+          after = os.environ["AFTER"]
+
+          # On the first push, announce all tracked pages. Later, submit only
+          # HTML paths changed by this push, including deleted pages.
+          if before == "0000000000000000000000000000000000000000":
+              paths = subprocess.check_output(
+                  ["git", "ls-files", "*.html"], text=True
+              ).splitlines()
+          else:
+              changed = subprocess.check_output(
+                  ["git", "diff", "--name-only", "--diff-filter=AMDR", before, after],
+                  text=True,
+              ).splitlines()
+              paths = [path for path in changed if path.endswith(".html")]
+
+          urls = sorted({f"https://{host}/{path}" for path in paths})
+          if not urls:
+              print("No HTML pages changed; nothing to submit.")
+              raise SystemExit(0)
+
+          # IndexNow accepts a JSON batch containing one host and its changed URLs.
+          payload = json.dumps({"host": host, "key": key, "urlList": urls}).encode()
+          request = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+              method="POST",
+          )
+          try:
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  print(f"IndexNow accepted {len(urls)} URL(s): HTTP {response.status}")
+          except Exception as error:
+              print(f"IndexNow submission failed: {error}")
+              raise
+          PY
